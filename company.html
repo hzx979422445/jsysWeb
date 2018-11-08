@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="content-language" content="zh-CN"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <title>以安全为核心的智慧物联解决方案提供商和运营服务商-江苏云深智能化系统有限公司</title>
+    <meta name="Keywords"
+          content="江苏云深智能化系统有限公司,摄像机,存储,云深,股份,解决方案,报警,门禁,智能交通,民用,创新技术,招聘,供应商,民用,乐橙,dahua,全球安防十强，江苏云深，视频，无人机，机器视觉，服务商，安防品牌，好的安防品牌，产品中心，产品，服务支持，"/>
+    <meta name="Description" content="江苏云深智能化系统有限公司是领先的监控产品供应商和解决方案服务商，面向全球提供领先的视频存储、前端、显示控制和智能交通等系列化产品。"/>
+    <meta name="author" content="江苏云深智能化系统有限公司"/>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="img/favicon.ico" rel="shortcut icon">
+    <script>
+        var STATIC_URL = "bocweb/";
+        var UPLOAD_URL = "upload/";
+        var GLOBAL_URL = "index.php/";
+        var SITE_URL = "/";
+        var UPLOADDO_URL = "index.php/upload/";
+        var STATIC_VER = "";
+    </script>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/mobile.css" type="text/css" media="screen" charset="utf-8">
+    <script src="js/jQuery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/levideo.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.transit.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/html5.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bocfe.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/plug.preload.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+<div class="headerWrap">
+
+</div>
+
+<script>
+    $(function () {
+        $(".headerWrap").load('header.html', function () {
+            $('header .nav-box li').hover(function () {
+                $(this).find('.con').slideDown(0);
+                $(this).find('.con').show();
+            }, function () {
+                $(this).find('.con').slideUp(0);
+            })
+
+            function conSize() {
+                var bodyW = $("body").width();
+                $("header .nav-box li .con").css({
+                    "width": bodyW,
+                    "margin-left": -bodyW / 2
+                })
+            }
+
+            conSize();
+            window.onresize = function () {
+                conSize();
+            }
+            $('header .nav-box .pro-li dd .link-b').each(function () {
+                var _this = $(this);
+                var bg = _this.data('bg');
+                var bgh = _this.data('bgh');
+                _this.css('background-image', 'url(' + bg + ')');
+                if (_this.hasClass("cur")) {
+                    _this.css('background-image', 'url(' + bgh + ')');
+                }
+                ;
+            })
+
+
+            $('header .nav-box .link-b').hover(function () {
+                $(this).addClass("cur").siblings("").removeClass("cur");
+                $(this).parent(".log-four").siblings(".log-four").find('.link-b').removeClass("cur")
+                $(this).parents(".con").show();
+            })
+
+            $('header .nav-box .pro-li dd .link-b').hover(function () {
+                var id = $(this).data('id');
+                var conn = $(this).data('conn');
+                var psr = $(this).parents('.con').find('.right');
+                $(this).addClass("cur").parent("dd").siblings("dd").find('.link-b').removeClass("cur");
+                $('header .nav-box .pro-li dd .link-b').each(function () {
+                    var bg = $(this).data('bg');
+                    var bgh = $(this).data('bgh');
+                    if ($(this).hasClass("cur")) {
+                        $(this).css('background-image', 'url(' + bgh + ')')
+                    } else {
+                        $(this).css('background-image', 'url(' + bg + ')')
+                    }
+                })
+            }, function () {
+                $('header .nav-box .pro-li dd .link-b').each(function () {
+                    var bg = $(this).data('bg');
+                    var bgh = $(this).data('bgh');
+                    if ($(this).hasClass("cur")) {
+                        $(this).css('background-image', 'url(' + bgh + ')')
+                    } else {
+                        $(this).css('background-image', 'url(' + bg + ')')
+                    }
+                })
+            })
+
+            $('.mobile-nav-box h2').on('click', function () {
+                if (!$(this).hasClass("cur")) {
+                    $(this).addClass("cur").parent("li").siblings("li").find("h2").removeClass("cur");
+                    $(this).next('.con').slideDown().parent("li").siblings("li").find('.con').slideUp();
+                } else {
+                    $(this).removeClass("cur");
+                    $(this).next('.con').slideUp()
+                }
+            })
+
+            $('.mobile-nav-box p.on').on('click', function () {
+                if (!$(this).hasClass("but")) {
+                    $(this).addClass("but").siblings(".on").removeClass("but").parent(".con").parent("li").siblings("li").find(".on").removeClass("but");
+                    $(this).next('.tit-con').fadeIn().siblings(".tit-con").slideUp().parent(".con").parent("li").siblings("li").find(".tit-con").hide();
+                } else {
+                    $(this).removeClass("but");
+                    $(this).next('.tit-con').hide();
+                }
+            })
+
+            $('.mobile-nav').on('click', function () {
+                if (!$(this).hasClass("on")) {
+                    $(this).addClass("on");
+                    $(".mobile-nav-box").slideDown();
+                } else {
+                    $(this).removeClass("on");
+                    $(".mobile-nav-box").slideUp();
+                }
+            })
+
+            $('header .enght').hover(function () {
+                $(this).find('.con').fadeIn();
+            }, function () {
+                $(this).find('.con').fadeOut();
+            })
+        });
+        $(".footerwrap").load("footer.html");
+    })
+</script>
+<div class="body-box company">
+    <div class="inliner-banner">
+        <ul class="slides f-cb">
+            <li>
+                <a href="javascript:;">
+                    <img src="img/2017/09/29/15066745938652gipgq.jpg " alt="关于我们"
+                         class="pic">
+                    <span class="con">
+						<h2>关于我们</h2>
+						<p class="font">About US</p>
+					</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="w1400">
+        <div class="now">
+            <a href="index.html ">首页</a><i></i>
+            <a href="about.html ">关于我们 </a><i></i>
+            <a href="javascript:;">公司简介</a>
+        </div>
+    </div>
+    <div class="company-top">
+        <div class="w1400 f-cb">
+            <div class="left">
+                <h2>江苏云深智能化系统有限公司</h2>
+                <div class="font-hei">
+                    <div class="font-box">
+                        <p style="line-height: 3em; text-indent: 2em;">
+
+                        </p>
+                        <p style="line-height: 3em; text-indent: 2em;">
+                            <span style="font-size: 16px;">江苏云深智能化系统有限公司是一家专注于大中型企业安全生产标准化与应急指挥系统
+					解决方案及关联产品研发、生产和销售的现代化高科技企业&nbsp;,&nbsp;主要涵盖火灾自动报警与在线
+					监测、动力与环境远程监控系统、室内定位技术、电子智能化系统、人员安全教育培训认证等。</span>
+                        </p>
+                        <p><br/></p>
+                    </div>
+                </div>
+                <a href="javascript:;" class="font-more">
+                    <img src="img/ab16.png " alt="">
+                    了解更多
+                </a>
+            </div>
+            <div class="right" data-id="35">
+                <img src="img/1506732033394imq2w.jpg " alt="公司视频">
+
+            </div>
+        </div>
+    </div>
+    <div class="company-center"
+         style="background:url(img/ab17.jpg ) no-repeat center;">
+        <div class="w1400">
+            <div class="list">
+                <ul class="slides">
+                    <li>
+                        <h2>公司实力</h2>
+                        <img src="img/2018/10/30/15408883222697kq60l.png "
+                             alt="全球建立42个分支机构">
+                        <p>全球建立42个分支机构</p>
+                    </li>
+                    <li>
+                        <h2>公司实力</h2>
+                        <img src="img/2018/10/30/15408881962829nrqrz.png "
+                             alt="产品覆盖全球180个 国家和地区">
+                        <p>产品覆盖全球180个 国家和地区</p>
+                    </li>
+                    <li>
+                        <h2>公司实力</h2>
+                        <img src="img/2018/10/30/15408878130009c7o7y.png "
+                             alt="拥有16000+公司员工">
+                        <p>拥有16000+公司员工</p>
+                    </li>
+                    <li>
+                        <h2>公司实力</h2>
+                        <img src="img/2018/10/30/15408879384088e6tph.png "
+                             alt="公司申请专利1700+项">
+                        <p>公司申请专利1700+项</p>
+                    </li>
+                    <li>
+                        <h2>公司实力</h2>
+                        <img src="img/2018/10/30/15409790419072a2qgm.png "
+                             alt="2018年IHS权威机构发布 全球视频监控设备市场占有率报告中排名第二">
+                        <p>2018年IHS权威机构发布 全球视频监控设备市场占有率报告中排名第二</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="company-column">
+        <div class="w1400">
+            <h2>其他栏目</h2>
+            <ul class="f-cb">
+                <li>
+                    <a href="join.html">
+                        <img src="img/ab25.png " alt="">
+                        <h3>招贤纳士</h3>
+                        <p>点击展开你的职业生涯</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="img/ab26.png " alt="">
+                        <h3>企业视频</h3>
+                        <p>云深多媒体中心</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <img src="img/ab27.png " alt="">
+                        <h3>联系我们</h3>
+                        <p>全国各地43个办事处</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="video-ajax"></div>
+
+<div class="footerwrap"></div>
+<script>window._bd_share_config = {
+    "common": {
+        "bdSnsKey": {},
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": "",
+        "bdStyle": "2",
+        "bdSize": "32"
+    }, "share": {}
+};
+with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+<script>
+    $(function () {
+        $('.right-flex li.top').on('click', function () {
+            $('html,body').stop().animate({scrollTop: 0}, 1000);
+        })
+    })
+</script>
+<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/flexslider.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" charset="utf-8">
+<script>
+    var $window = $(window),
+        flexslider = {vars: {}},
+        flexslider1 = {vars: {}};
+    $(function () {
+        function getGridSize() {
+            return (window.innerWidth >= 1025) ? "fade" : "slide";
+        }
+
+        $(window).resize(function () {
+            flexslider.vars.animation = getGridSize();
+        })
+
+        //首页banner图
+        $('.inliner-banner').flexslider({
+            animation: getGridSize(),
+            slideshowSpeed: 4000,
+            animationSpeed: 1000,
+            touch: true,
+            slideshow: true,
+            start: function (slider) {
+                flexslider = slider;
+                $('.flex-direction-nav a').text("");
+            }
+        });
+
+        $('.company-center .list').flexslider({
+            animation: 'slide',
+            slideshowSpeed: 4000,
+            animationSpeed: 1000,
+            touch: true,
+            slideshow: true,
+            start: function (slider) {
+                flexslider1 = slider;
+                $('.flex-direction-nav a').text("");
+            }
+        });
+
+        var winw = $(window).width();
+        var winh = $(window).height();
+        $('.video-ajax').width(winw);
+        $('.video-ajax').height(winh);
+        $('.font-ajax').width(winw);
+        $('.font-ajax').height(winh);
+        $(window).resize(function () {
+            var winw = $(window).width();
+            var winh = $(window).height();
+            $('.video-ajax').width(winw);
+            $('.video-ajax').height(winh);
+            $('.font-ajax').width(winw);
+            $('.font-ajax').height(winh);
+        })
+
+        var url_ajax = "https://www.dahuatech.com/ajax/video";
+        $('.company-top .right').on('click', function () {
+            var id = $(this).data('id');
+            $.ajax({
+                url: url_ajax + '/' + id,
+                success: function (data) {
+                    $(".video-ajax").html(data);
+                    $('.video-ajax').fadeIn();
+                }
+            });
+        })
+
+        // $('.company-top .font-more').on('click',function(){
+        //     var h = $('.company-top .left .font-box').height();
+        //     $('.company-top .font-more').hide();
+        //     $('.company-top .left .font-hei').stop().animate({height:h},200);
+        // })
+
+        // $('.company-g li .more').on('click',function(){
+        //     var h = $(this).parent('.con').find('p').height();
+        //     $(this).hide();
+        //     $(this).parent('.con').find('.font').stop().animate({height:h},200);
+        // })
+
+
+
+        $('.font-ajax .bg').on('click', function () {
+            $('.font-ajax').fadeOut();
+            $('body').css('height', 'auto');
+        })
+
+    })
+</script>
+</body>
+</html>

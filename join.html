@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="content-language" content="zh-CN"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <title>以安全为核心的智慧物联解决方案提供商和运营服务商-江苏云深智能化系统有限公司</title>
+    <meta name="Keywords"
+          content="江苏云深智能化系统有限公司,摄像机,存储,云深,股份,解决方案,报警,门禁,智能交通,民用,创新技术,招聘,供应商,民用,乐橙,dahua,全球安防十强，江苏云深，视频，无人机，机器视觉，服务商，安防品牌，好的安防品牌，产品中心，产品，服务支持，"/>
+    <meta name="Description" content="江苏云深智能化系统有限公司是领先的监控产品供应商和解决方案服务商，面向全球提供领先的视频存储、前端、显示控制和智能交通等系列化产品。"/>
+    <meta name="author" content="江苏云深智能化系统有限公司"/>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="favicon.ico" rel="shortcut icon">
+    <script>
+        var STATIC_URL = "bocweb/";
+        var UPLOAD_URL = "upload/";
+        var GLOBAL_URL = "index.php/";
+        var SITE_URL = "/";
+        var UPLOADDO_URL = "index.php/upload/";
+        var STATIC_VER = "";
+    </script>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/mobile.css" type="text/css" media="screen" charset="utf-8">
+    <script src="js/jQuery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/levideo.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.transit.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/html5.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bocfe.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/plug.preload.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+<div class="headerWrap">
+
+</div>
+
+<script>
+    $(function () {
+        $(".headerWrap").load('header.html', function () {
+            $('header .nav-box li').hover(function () {
+                $(this).find('.con').slideDown(0);
+                $(this).find('.con').show();
+            }, function () {
+                $(this).find('.con').slideUp(0);
+            })
+
+            function conSize() {
+                var bodyW = $("body").width();
+                $("header .nav-box li .con").css({
+                    "width": bodyW,
+                    "margin-left": -bodyW / 2
+                })
+            }
+
+            conSize();
+            window.onresize = function () {
+                conSize();
+            }
+            $('header .nav-box .pro-li dd .link-b').each(function () {
+                var _this = $(this);
+                var bg = _this.data('bg');
+                var bgh = _this.data('bgh');
+                _this.css('background-image', 'url(' + bg + ')');
+                if (_this.hasClass("cur")) {
+                    _this.css('background-image', 'url(' + bgh + ')');
+                }
+                ;
+            })
+
+
+            $('header .nav-box .link-b').hover(function () {
+                $(this).addClass("cur").siblings("").removeClass("cur");
+                $(this).parent(".log-four").siblings(".log-four").find('.link-b').removeClass("cur")
+                $(this).parents(".con").show();
+            })
+
+            $('header .nav-box .pro-li dd .link-b').hover(function () {
+                var id = $(this).data('id');
+                var conn = $(this).data('conn');
+                var psr = $(this).parents('.con').find('.right');
+                $(this).addClass("cur").parent("dd").siblings("dd").find('.link-b').removeClass("cur");
+                $('header .nav-box .pro-li dd .link-b').each(function () {
+                    var bg = $(this).data('bg');
+                    var bgh = $(this).data('bgh');
+                    if ($(this).hasClass("cur")) {
+                        $(this).css('background-image', 'url(' + bgh + ')')
+                    } else {
+                        $(this).css('background-image', 'url(' + bg + ')')
+                    }
+                })
+            }, function () {
+                $('header .nav-box .pro-li dd .link-b').each(function () {
+                    var bg = $(this).data('bg');
+                    var bgh = $(this).data('bgh');
+                    if ($(this).hasClass("cur")) {
+                        $(this).css('background-image', 'url(' + bgh + ')')
+                    } else {
+                        $(this).css('background-image', 'url(' + bg + ')')
+                    }
+                })
+            })
+
+            $('.mobile-nav-box h2').on('click', function () {
+                if (!$(this).hasClass("cur")) {
+                    $(this).addClass("cur").parent("li").siblings("li").find("h2").removeClass("cur");
+                    $(this).next('.con').slideDown().parent("li").siblings("li").find('.con').slideUp();
+                } else {
+                    $(this).removeClass("cur");
+                    $(this).next('.con').slideUp()
+                }
+            })
+
+            $('.mobile-nav-box p.on').on('click', function () {
+                if (!$(this).hasClass("but")) {
+                    $(this).addClass("but").siblings(".on").removeClass("but").parent(".con").parent("li").siblings("li").find(".on").removeClass("but");
+                    $(this).next('.tit-con').fadeIn().siblings(".tit-con").slideUp().parent(".con").parent("li").siblings("li").find(".tit-con").hide();
+                } else {
+                    $(this).removeClass("but");
+                    $(this).next('.tit-con').hide();
+                }
+            })
+
+            $('.mobile-nav').on('click', function () {
+                if (!$(this).hasClass("on")) {
+                    $(this).addClass("on");
+                    $(".mobile-nav-box").slideDown();
+                } else {
+                    $(this).removeClass("on");
+                    $(".mobile-nav-box").slideUp();
+                }
+            })
+
+            $('header .enght').hover(function () {
+                $(this).find('.con').fadeIn();
+            }, function () {
+                $(this).find('.con').fadeOut();
+            })
+        });
+        $(".footerwrap").load("footer.html");
+    })
+</script>
+<div class="body-box company">
+    <div class="inliner-banner">
+        <ul class="slides f-cb">
+            <li>
+                <a href="javascript:;">
+                    <img src="img/2017/09/29/15066745938652gipgq.jpg " alt="关于我们" class="pic">
+                    <span class="con">
+						<h2>关于我们</h2>
+						<p class="font">About US</p>
+					</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="w1400">
+        <div class="now">
+            <a href="index.html ">首页</a><i></i>
+            <a href="about.html ">关于我们 </a><i></i>
+            <a href="javascript:;">加入我们</a>
+        </div>
+    </div>
+    <div class="authen_nav join-nav">
+        <div class="w1400 f-cb">
+            招贤纳士
+            <a href="javascript:;" class="fr">校园招聘</a>
+            <a href="join.html " class="fr">社会招聘</a>
+        </div>
+    </div>
+    <div class="join-box">
+        <div class="w1400">
+            <h2>社会招聘</h2>
+            <form action="" class="f-cb">
+                <input type="text" placeholder="输入关键字" name='keyword' value="" class="text">
+                <select name="department">
+                    <option value="">招聘部门</option>
+                    <option value="研发中心">研发中心</option>
+                </select>
+                <select name="place">
+                    <option value="">工作地点</option>
+                    <option value="南京">南京</option>
+                </select>
+                <input type="submit" value="" class="submit" disabled>
+            </form>
+            <div class="title f-cb">
+                <p>
+                    招聘职位
+                </p>
+                <p>
+                    招聘部门
+                </p>
+                <p>
+                    工作地点
+                </p>
+                <p>
+                    发布日期
+                </p>
+                <p>
+                    职位申请
+                </p>
+            </div>
+            <ul>
+                <li>
+                    <div class="tit f-cb">
+                        <p>
+                            Android开发工程师 </p>
+                        <p>
+                            研发中心 </p>
+                        <p>
+                            南京 </p>
+                        <p>
+                            2017-03-01 </p>
+                        <p>
+                            立即申请
+                        </p>
+                    </div>
+                    <div class="in f-cb">
+                        <dl class="top f-cb">
+                            <dd>
+                                       <span>
+                                           工作地点 ：南京
+                                       </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           年龄 ：不限
+                                       </span>
+
+                            </dd>
+                            <dd>
+                                      <span>
+                                          薪资待遇 : 15000-20000/月
+                                      </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           发布日期 :2017-03-01
+                                       </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           工作经验 ： 3-5年
+                                       </span>
+                            </dd>
+                            <dd>
+                                       <span>
+                                           学历 ：本科及以上
+                                       </span>
+                            </dd>
+                            <dd>
+                                      <span>
+                                          招聘人数 : 5
+                                      </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           职位有效期 : 2019-11-31
+                                       </span>
+
+                            </dd>
+                        </dl>
+                        <div class="bot f-cb">
+                            <div class="left">
+                                <h1>
+                                    岗位职责
+                                </h1>
+                                <p>
+                                    <br/>
+                                    <span style="font-size:14px;font-family:宋体">
+                                        1、负责移动Android平台客户端产品开发、维护、优化工作.  <br/>
+                                        2、参与项目相关部分需求分析，负责客户端具体编码工作.  <br/>
+                                        3、按照项目计划，根据需求文档、设计文档编写开发文档，完成代码编写和自测工作.  <br/>
+                                        4、思路清晰，具备良好的沟通能力和理解能力.  <br/>
+                                        5、与产品经理紧密配合，提高应用端用户体验.  <br/>
+                                        6、对已有代码进行维护，保证其容错性，及时修正已知错误.
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="left">
+                                <h1>
+                                    职位要求
+                                </h1>
+                                <p>
+                                    <br/>
+                                    <span style="font-size:14px;font-family:宋体">
+                                        1、三年以上Android开发经验，精通Android开发平台及框架原理，熟悉Android SDK、对Android应用结构有深刻的认识，具备出色的调试知识、经验和技能.<br/>
+                                        2、有架构设计经验，可以独力负责Android软件架构设计和方案选型；有带领开发团队开发过Android应用成功案例的优先.<br/>
+                                        3、精通android平台下的高性能编程及性能调优.<br/>
+                                        4、熟练掌握网络编程，对Socket、TCP和HTTP有较深刻的理解和经验.<br/>
+                                        5、有强烈的责任心和团队精神，善于沟通和合作，思维敏锐.
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="tit f-cb">
+                        <p>
+                            ui设计师 </p>
+                        <p>
+                            研发中心 </p>
+                        <p>
+                            南京 </p>
+                        <p>
+                            2017-03-01 </p>
+                        <p>
+                            立即申请
+                        </p>
+                    </div>
+                    <div class="in f-cb">
+                        <dl class="top f-cb">
+                            <dd>
+                                       <span>
+                                           工作地点 ：南京
+                                       </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           年龄 ：不限
+                                       </span>
+
+                            </dd>
+                            <dd>
+                                      <span>
+                                          薪资待遇 : 8000-15000/月
+                                      </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           发布日期 :2017-03-01
+                                       </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           工作经验 ： 1-3年
+                                       </span>
+                            </dd>
+                            <dd>
+                                       <span>
+                                           学历 ：本科及以上
+                                       </span>
+                            </dd>
+                            <dd>
+                                      <span>
+                                          招聘人数 : 2
+                                      </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           职位有效期 : 2019-11-31
+                                       </span>
+
+                            </dd>
+                        </dl>
+                        <div class="bot f-cb">
+                            <div class="left">
+                                <h1>
+                                    岗位职责
+                                </h1>
+                                <p>
+                                    <br/>
+                                    <span style="font-size:14px;font-family:宋体">
+                                         1、负责软件产品的视觉风格创意设计及交互设计（包含PC、Android、IOS端应用.<br/>
+                                         2、把握客户的视觉需求、充分发挥创意，提高产品易用性及用户体验.<br/>
+                                         3、协助完成公司VI、产品包装、广告宣传等其它美术设计工作.<br/>
+                                         4、参与产品前期规划，进行视觉规范整理.<br/>
+                                         5、对大型项目的设计有一定的组织协调能力，能够根据项目优先级进行很好的分工及把控.
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="left">
+                                <h1>
+                                    职位要求
+                                </h1>
+                                <p>
+                                    <br/>
+                                    <span style="font-size:14px;font-family:宋体">
+                                        1、美术、平面设计或相关专业，本科以上学历.<br/>
+                                        2、熟练掌握Dreamweaver, Photoshop, Fireworks, AI, Coreldraw等设计软件，对图片渲染和视觉效果有较好认识.<br/>
+                                        3、三年及以上设计经验和成熟项目案例，有移动端设计经验,有扎实的的美术功底和良好创意构思.<br/>
+                                        4、了解XHTML、DIV+CSS、JavaScript（jQuery）等页面技术.<br/>
+                                        5、精通各种视觉效果的呈现，界面、图标设计能力突出，注重细节把控.
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="tit f-cb">
+                        <p>
+                            产品经理 </p>
+                        <p>
+                            研发中心 </p>
+                        <p>
+                            南京 </p>
+                        <p>
+                            2017-03-01 </p>
+                        <p>
+                            立即申请
+                        </p>
+                    </div>
+                    <div class="in f-cb">
+                        <dl class="top f-cb">
+                            <dd>
+                                       <span>
+                                           工作地点 ：南京
+                                       </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           年龄 ：不限
+                                       </span>
+
+                            </dd>
+                            <dd>
+                                      <span>
+                                          薪资待遇 : 16000-25000/月
+                                      </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           发布日期 :2017-03-01
+                                       </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           工作经验 ： 3-5年
+                                       </span>
+                            </dd>
+                            <dd>
+                                       <span>
+                                           学历 ：本科及以上
+                                       </span>
+                            </dd>
+                            <dd>
+                                      <span>
+                                          招聘人数 : 1
+                                      </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           职位有效期 : 2019-11-31
+                                       </span>
+
+                            </dd>
+                        </dl>
+                        <div class="bot f-cb">
+                            <div class="left">
+                                <h1>
+                                    岗位职责
+                                </h1>
+                                <p>
+                                    <br/>
+                                    <span style="font-size:14px;font-family:宋体">
+                                         1、参与客户需求沟通及讨论，根据项目经验、技术实现等多维度引导客户需求（包含新需求机会挖掘）.<br/>
+                                         2、综合客户项目周期、需求等多方面因素，组织业务需求讨论与评审，参与产品定义评估.<br/>
+                                         3、给设计开发人员、测试人员和实施人员培训需求，跟进需求在各个环节的落实，确认系统的各项产出物与需求一致.<br/>
+                                         4、对需求变更进行分析，跟进需求变更在各个环节的落实.<br/>
+                                         5、参与测试方案/用例等评审，判断测试是否满足需求.
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="left">
+                                <h1>
+                                    职位要求
+                                </h1>
+                                <p>
+                                    <br/>
+                                    <span style="font-size:14px;font-family:宋体">
+                                         1、3年以上工作经验，计算机相关专业本科以上学历.<br/>
+                                         2、较强的用户需求判断、引导、控制能力，优秀的文字表达、业务理解、交流能力.<br/>
+                                         3、具有较强的理解和分析能力，与业务相关人员或者行业专家进行沟通，独立完成对需求的分析和整理.<br/>
+                                         4、负责与用户确认需求，分析及整合后形成需求分析文档.<br/>
+                                         5、负责向内部开发、测试团队讲解用户的需求及解决方案.
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="tit f-cb">
+                        <p>
+                            软件测试工程师 </p>
+                        <p>
+                            研发中心 </p>
+                        <p>
+                            南京 </p>
+                        <p>
+                            2017-03-01 </p>
+                        <p>
+                            立即申请
+                        </p>
+                    </div>
+                    <div class="in f-cb">
+                        <dl class="top f-cb">
+                            <dd>
+                                       <span>
+                                           工作地点 ：南京
+                                       </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           年龄 ：不限
+                                       </span>
+
+                            </dd>
+                            <dd>
+                                      <span>
+                                          薪资待遇 : 8000-15000/月
+                                      </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           发布日期 :2017-03-01
+                                       </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           工作经验 ： 1-3年
+                                       </span>
+                            </dd>
+                            <dd>
+                                       <span>
+                                           学历 ：本科及以上
+                                       </span>
+                            </dd>
+                            <dd>
+                                      <span>
+                                          招聘人数 : 2
+                                      </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           职位有效期 : 2019-11-31
+                                       </span>
+
+                            </dd>
+                        </dl>
+                        <div class="bot f-cb">
+                            <div class="left">
+                                <h1>
+                                    岗位职责
+                                </h1>
+                                <p>
+                                    <br/>
+                                    <span style="font-size:14px;font-family:宋体">
+                                        1、根据需求文档、设计文档分析测试点、确定测试范围、制定测试策略、编写测试计划.<br/>
+                                        2、独立负责兼容性测试、功能测试、回归测试、接口测试、性能测试.<br/>
+                                        3、控制测试进度、汇报测试情况、减少项目风险、保证项目质量.<br/>
+                                        4、编写自动化测试脚本及辅助测试工具，提高工作效率.<br/>
+                                        5、协助定位BUG产生的真正原因、配合开发重现及修复BUG.<br/>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="left">
+                                <h1>
+                                    职位要求
+                                </h1>
+                                <p>
+                                    <br/>
+                                    <span style="font-size:14px;font-family:宋体">
+                                        1、2年以上工作经验，计算机相关专业本科以上学历.<br/>
+                                        2、熟练使用bug管理工具，熟悉常用测试工具，了解自动化测试.<br/>
+                                        3、熟悉软件工程、基础的SQL语句（mysql、SQL Server、Oracle）、熟悉操作系统（Linux、Windows）.<br/>
+                                        4、有良好的测试文档编写能力.<br/>
+                                        5、熟悉android、ios手机操作系统，有android及ios系统APP测试经验.
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="tit f-cb">
+                        <p>
+                            软硬件产品销售经理 </p>
+                        <p>
+                            研发中心 </p>
+                        <p>
+                            南京 </p>
+                        <p>
+                            2017-03-01 </p>
+                        <p>
+                            立即申请
+                        </p>
+                    </div>
+                    <div class="in f-cb">
+                        <dl class="top f-cb">
+                            <dd>
+                                       <span>
+                                           工作地点 ：南京
+                                       </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           年龄 ：不限
+                                       </span>
+
+                            </dd>
+                            <dd>
+                                      <span>
+                                          薪资待遇 : 10000-15000/月
+                                      </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           发布日期 :2017-03-01
+                                       </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           工作经验 ： 3-5年
+                                       </span>
+                            </dd>
+                            <dd>
+                                       <span>
+                                           学历 ：本科及以上
+                                       </span>
+                            </dd>
+                            <dd>
+                                      <span>
+                                          招聘人数 : 5
+                                      </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           职位有效期 : 2019-11-31
+                                       </span>
+
+                            </dd>
+                        </dl>
+                        <div class="bot f-cb">
+                            <div class="left">
+                                <h1>
+                                    岗位职责
+                                </h1>
+                                <p>
+                                    <br/>
+                                    <span style="font-size:14px;font-family:宋体">
+                                        1. 负责公司软硬件产品的销售与推广，成为客户和公司技术沟通桥梁.<br/>
+                                        2. 管理维护客户关系以及客户间的长期战略合作计划.<br/>
+                                        3. 负责搜集客户资料并进行沟通，开发新客户，并负责客户培训.<br/>
+                                        4. 根据项目背景与需求、制作产品演示方案，并独立负责公司产品演示，参与项目讨论，结合公司产品方案特点，能出合理的建议.<br/>
+                                        5. 认真、有效完成上级领导交办的工作.
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="left">
+                                <h1>
+                                    职位要求
+                                </h1>
+                                <p>
+                                    <br/>
+                                    <span style="font-size:14px;font-family:宋体">
+                                        1.专科及以上学历有三年以上销售经验者优先.<br/>
+                                        2.思维敏捷、善于沟通会、与客户建立长期的合作关系、有超强的责任心.<br/>
+                                        3.有弱电或软件产品销售经验者优先.<br/>
+                                        4.能适应外地出差.
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="tit f-cb">
+                        <p>
+                            现场实施项目主管 </p>
+                        <p>
+                            研发中心 </p>
+                        <p>
+                            南京 </p>
+                        <p>
+                            2017-03-01 </p>
+                        <p>
+                            立即申请
+                        </p>
+                    </div>
+                    <div class="in f-cb">
+                        <dl class="top f-cb">
+                            <dd>
+                                       <span>
+                                           工作地点 ：南京
+                                       </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           年龄 ：不限
+                                       </span>
+
+                            </dd>
+                            <dd>
+                                      <span>
+                                          薪资待遇 : 8000-10000/月
+                                      </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           发布日期 :2017-03-01
+                                       </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           工作经验 ： 3-5年
+                                       </span>
+                            </dd>
+                            <dd>
+                                       <span>
+                                           学历 ：本科及以上
+                                       </span>
+                            </dd>
+                            <dd>
+                                      <span>
+                                          招聘人数 : 5
+                                      </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           职位有效期 : 2019-11-31
+                                       </span>
+
+                            </dd>
+                        </dl>
+                        <div class="bot f-cb">
+                            <div class="left">
+                                <h1>
+                                    岗位职责
+                                </h1>
+                                <p>
+                                    <br/>
+                                    <span style="font-size:14px;font-family:宋体">
+                                        1、负责公司产品的系统集成，到客户现场施工或施工指导、调试与优化系统.<br/>
+                                        2、负责为客户提供远程技术支持，解决客户在使用公司产品过程中遇到的问题.<br/>
+                                        3、负责根据客户提供的图纸和照片，制作公司产品的部署方案.<br/>
+                                        4、负责公司展会系统的搭建与效果保证.
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="left">
+                                <h1>
+                                    职位要求
+                                </h1>
+                                <p>
+                                    <br/>
+                                    <span style="font-size:14px;font-family:宋体">
+                                        1、计算机相关专业，本科及以上学历； 具有3年以上相关工作经验.<br/>
+                                        2、为人诚实守信，做事细心负责.<br/>
+                                        3、具有快速分析、解决问题的能力，有不断学习和自我提高的意愿.<br/>
+                                        4、良好的沟通能力，有耐心.<br/>
+                                        5、熟悉网络架构，有基础的CAD制图能力者优先.<br/>
+                                        6、2年以上工作经验，具有安防或集成行业从业经验者及能适应出差优先，
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="tit f-cb">
+                        <p>
+                            销售技术工程师 </p>
+                        <p>
+                            研发中心 </p>
+                        <p>
+                            南京 </p>
+                        <p>
+                            2017-03-01 </p>
+                        <p>
+                            立即申请
+                        </p>
+                    </div>
+                    <div class="in f-cb">
+                        <dl class="top f-cb">
+                            <dd>
+                                       <span>
+                                           工作地点 ：南京
+                                       </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           年龄 ：不限
+                                       </span>
+
+                            </dd>
+                            <dd>
+                                      <span>
+                                          薪资待遇 : 8000-10000/月
+                                      </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           发布日期 :2017-03-01
+                                       </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           工作经验 ： 3-5年
+                                       </span>
+                            </dd>
+                            <dd>
+                                       <span>
+                                           学历 ：本科及以上
+                                       </span>
+                            </dd>
+                            <dd>
+                                      <span>
+                                          招聘人数 : 3
+                                      </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           职位有效期 : 2019-11-31
+                                       </span>
+
+                            </dd>
+                        </dl>
+                        <div class="bot f-cb">
+                            <div class="left">
+                                <h1>
+                                    岗位职责
+                                </h1>
+                                <p>
+                                    <br/>
+                                    <span style="font-size:14px;font-family:宋体">
+                                        1. 负责投标现场技术讲标和答辩，成为客户和公司技术沟通桥梁，维护良好的客户关系.<br/>
+                                        2. 售前方案的规划、编写，项目申报等技术文件的设计、编写.<br/>
+                                        3. 负责协助销售团队挖掘、分析项目机会。提供解决方案和售前的技术支持，编写项目招投标需要的技术文档.<br/>
+                                        4.  有一级建造师（机电）二级建造师（机电），计算机、电子、通信、自动化、电气（八大员证）优先.<br/>
+                                        5. 认真、有效完成上级领导交办的工作
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="left">
+                                <h1>
+                                    职位要求
+                                </h1>
+                                <p>
+                                    <br/>
+                                    <span style="font-size:14px;font-family:宋体">
+                                        1. 五年以上相关工作经验.<br/>
+                                        2. 丰富的技术文件、招投标文件、项目申报编写经验.<br/>
+                                        3. 优秀的技术文档编写能力.<br/>
+                                        4. 丰富的软件系统知识.<br/>
+                                        5.有安防或智能化系统技术支撑工作经验者优先.
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="tit f-cb">
+                        <p>
+                            java高级研发工程师 </p>
+                        <p>
+                            研发中心 </p>
+                        <p>
+                            南京 </p>
+                        <p>
+                            2017-03-01 </p>
+                        <p>
+                            立即申请
+                        </p>
+                    </div>
+                    <div class="in f-cb">
+                        <dl class="top f-cb">
+                            <dd>
+                                       <span>
+                                           工作地点 ：南京
+                                       </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           年龄 ：不限
+                                       </span>
+
+                            </dd>
+                            <dd>
+                                      <span>
+                                          薪资待遇 : 20000-25000/月
+                                      </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           发布日期 :2017-03-01
+                                       </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           工作经验 ： 3-5年
+                                       </span>
+                            </dd>
+                            <dd>
+                                       <span>
+                                           学历 ：本科及以上
+                                       </span>
+                            </dd>
+                            <dd>
+                                      <span>
+                                          招聘人数 : 5
+                                      </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           职位有效期 : 2019-11-31
+                                       </span>
+
+                            </dd>
+                        </dl>
+                        <div class="bot f-cb">
+                            <div class="left">
+                                <h1>
+                                    岗位职责
+                                </h1>
+                                <p>
+                                    <br/>
+                                    <span style="font-size:14px;font-family:宋体">
+                                        1. 负责Java服务器端开发，承担核心功能、公共核心模块的代码编写，确保项目进度和质量.<br/>
+                                        2. 参与系统架构设计及系统框架的评估选型、接口规范制定、技术文档编写等.<br/>
+                                        3. 指导和培训工程师.
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="left">
+                                <h1>
+                                    职位要求
+                                </h1>
+                                <p>
+                                    <br/>
+                                    <span style="font-size:14px;font-family:宋体">
+                                        1. 大学本科或以上学历，计算机相关专业，五年以上工作经验.<br/>
+                                        2. 扎实的Java/J2EE知识基础和功底(重点包括包括JVM、类装载机制、多线程并发、IO、网络等)，熟悉Spring框架开发.<br/>
+                                        3. 精通Mysql、mongoDB等数据库，熟悉Redis、memcached、netty等更佳.<br/>
+                                        4. 熟悉Nginx、Tomcat等常见应用服务器，具有相关部署、配置经验.<br/>
+                                        5. 熟练使用Eclipse/IDEA/Maven/Git等软件开发工具.<br/>
+                                        6. 熟悉分布式技术（包括存储、缓存、消息系统等）优先.<br/>
+                                        7. 乐于探索，学习能力、表达能力、团队协作能力强.
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="tit f-cb">
+                        <p>
+                            技术总监 </p>
+                        <p>
+                            研发中心 </p>
+                        <p>
+                            南京 </p>
+                        <p>
+                            2017-03-01 </p>
+                        <p>
+                            立即申请
+                        </p>
+                    </div>
+                    <div class="in f-cb">
+                        <dl class="top f-cb">
+                            <dd>
+                                       <span>
+                                           工作地点 ：南京
+                                       </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           年龄 ：不限
+                                       </span>
+
+                            </dd>
+                            <dd>
+                                      <span>
+                                          薪资待遇 : 25000-40000/月
+                                      </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           发布日期 :2017-03-01
+                                       </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           工作经验 ： 5-10年
+                                       </span>
+                            </dd>
+                            <dd>
+                                       <span>
+                                           学历 ：本科及以上
+                                       </span>
+                            </dd>
+                            <dd>
+                                      <span>
+                                          招聘人数 : 1
+                                      </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           职位有效期 : 2019-11-31
+                                       </span>
+
+                            </dd>
+                        </dl>
+                        <div class="bot f-cb">
+                            <div class="left">
+                                <h1>
+                                    岗位职责
+                                </h1>
+                                <p>
+                                    <br/>
+                                    <span style="font-size:14px;font-family:宋体">
+                                        1. 打造、管理研发团队，包括但不限于系统架构、嵌入式软、硬件开发、电机控制、测试等人员的组建和管理.<br/>
+                                        2. 整合公司内部现有研发资源，规范研发评审、设计、测试和验收等管理流程，形成统一的技术平台，保证产品质量.<br/>
+                                        3. 根据行业发展和市场需求，拟订新产品技术路线或已有产品的升级换代，明确开发设计总体方案.<br/>
+                                        4. 负责主持技术协作与技术交流活动，寻找技术合作伙伴，引进先进的行业技术.<br/>
+                                        5. 负责核心技术问题的攻关，系统优化；解决项目开发过程中的技术难题.<br/>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="left">
+                                <h1>
+                                    职位要求
+                                </h1>
+                                <p>
+                                    <br/>
+                                    <span style="font-size:14px;font-family:宋体">
+                                        1. 本科及以上学历，计算机、通信、电子、电气工程、自动化、控制工程等相关专业.<br/>
+                                        2. 6年以上嵌入式软、硬件开发经验，3年以上手机APP的完整研发经历（属于自己的作品）.<br/>
+                                        3. 3年以上研发总监或技术总监岗位经验，有成熟研发团队带领的经验，团队规模不少于15人.<br/>
+                                        4. 较强的项目管理能力和项目推动能力；扎实的物联网、智能电子产品等方面的技术功底和工作经验，对行业背景和常见的技术方案有深刻了解.<br/>
+                                        5. 认同创业公司的企业理念，能够承受较大的工作压力，愿意与公司一起成长、发展.
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="tit f-cb">
+                        <p>
+                            销售总监 </p>
+                        <p>
+                            研发中心 </p>
+                        <p>
+                            南京 </p>
+                        <p>
+                            2017-03-01 </p>
+                        <p>
+                            立即申请
+                        </p>
+                    </div>
+                    <div class="in f-cb">
+                        <dl class="top f-cb">
+                            <dd>
+                                       <span>
+                                           工作地点 ：南京
+                                       </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           年龄 ：不限
+                                       </span>
+
+                            </dd>
+                            <dd>
+                                      <span>
+                                          薪资待遇 : 25000-30000/月
+                                      </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           发布日期 :2017-03-01
+                                       </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           工作经验 ： 5-7年
+                                       </span>
+                            </dd>
+                            <dd>
+                                       <span>
+                                           学历 ：本科及以上
+                                       </span>
+                            </dd>
+                            <dd>
+                                      <span>
+                                          招聘人数 : 1
+                                      </span>
+
+                            </dd>
+                            <dd>
+                                       <span>
+                                           职位有效期 : 2019-11-31
+                                       </span>
+
+                            </dd>
+                        </dl>
+                        <div class="bot f-cb">
+                            <div class="left">
+                                <h1>
+                                    岗位职责
+                                </h1>
+                                <p>
+                                    <br/>
+                                    <span style="font-size:14px;font-family:宋体">
+                                        1. 领导以及管理团队，负责本团队销售任务的完成，包括公司级战略任务管理与推进.<br/>
+                                        2. 负责市场不同阶段的市场规划以及重点项目、重点市场的推进，并维护良好的客户关系.<br/>
+                                        3. 对市场的变化做出及时的判断和预测，对公司制定的市场策略及实施情况进行督查、评判和修正.<br/>
+                                        4. 有制作客户解决方案的专业能力，并且可以辅导团队进行相关能力的提升.<br/>
+                                        5. 负责监测、搜集、整理和分析各种市场信息，及时了解和总结市场反馈，对产品迭代给出建议，为公司提供决策建议.<br/>
+                                        6. 负责团队建设与管理，协调处理与各部门之间的关系.<br/>
+                                        7. 负责参与销售部内部经营任务及考核政策制定，并在本部门内执行.
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="left">
+                                <h1>
+                                    职位要求
+                                </h1>
+                                <p>
+                                    <br/>
+                                    <span style="font-size:14px;font-family:宋体">
+                                        1. 通信工程、计算机、电子类、市场营销等专业本科及以上学历，有5年以上销售管理经验.<br/>
+                                        2. 对软件、服务、网络等IT领域有基本了解； 熟悉移动互联网市场，具有敏锐的市场洞察力，擅长捕捉机会，有创新思维，有团队合作精神.<br/>
+                                        3. 极强的目标感、执行力、沟通能力、推动能力、自我学习能力，善于自我激励，心态开放、正向、良好的抗压能力.<br/>
+                                        4. 接受改变、接受挑战、注重承诺、结果和过程并重、平等尊重、追求卓越； 计算机软件、硬件、互联网、大数据、云计算、SAAS行业经验.<br/>
+                                        5. 有在企业级客户及KA方向有工作经验、包含互联网金融、互联网SAAS、企业（供应链、制造、零售、高科技等）、金融、电信等行业客户.
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footerwrap"></div>
+
+<script>window._bd_share_config = {
+    "common": {
+        "bdSnsKey": {},
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": "",
+        "bdStyle": "2",
+        "bdSize": "32"
+    }, "share": {}
+};
+with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+<script>
+    $(function () {
+        $('.right-flex li.top').on('click', function () {
+            $('html,body').stop().animate({scrollTop: 0}, 1000);
+        })
+    })
+</script>
+<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/flexslider.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="css/flexslider.css?t=1541144369" type="text/css" media="screen" charset="utf-8">
+<script>
+    var $window = $(window),
+        flexslider = {vars: {}};
+    $(function () {
+        function getGridSize() {
+            return (window.innerWidth >= 1025) ? "fade" : "slide";
+        }
+
+        $(window).resize(function () {
+            flexslider.vars.animation = getGridSize();
+        })
+
+        $('.authen_nav a').eq(1).addClass("on");
+
+        //首页banner图
+        $('.inliner-banner').flexslider({
+            animation: getGridSize(),
+            slideshowSpeed: 4000,
+            animationSpeed: 1000,
+            touch: true,
+            slideshow: true,
+            start: function (slider) {
+                flexslider = slider;
+                $('.flex-direction-nav a').text("");
+            }
+        });
+
+        $(".join-box li").eq(0).find(".tit").addClass("on");
+        $(".join-box li").eq(0).find(".in").addClass("on");
+
+        $(".join-box li .tit").on('click', function (event) {
+            if ($(this).hasClass('on') == "") {
+                $(this).addClass('on');
+                $(this).next().stop(true, true).slideDown();
+                $(this).parent().siblings().find('.tit').removeClass('on');
+                $(this).parent().siblings().find('.in').stop(true, true).slideUp();
+            } else {
+                $(this).removeClass('on');
+                $(this).next().stop(true, true).slideUp();
+                $(this).parent().siblings().find('.tit').removeClass('on');
+                $(this).parent().siblings().find('.in').stop(true, true).slideUp();
+            }
+        });
+    })
+</script>
+</body>
+</html>

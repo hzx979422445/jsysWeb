@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-language" content="zh-CN" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>新闻中心-江苏云深智能化系统有限公司</title>
+<meta name="Keywords" content="江苏云深智能化系统有限公司,摄像机,存储,云深,股份,解决方案,报警,门禁,智能交通,民用,创新技术,招聘,供应商,民用,乐橙,dahua,全球安防十强，江苏云深，视频，无人机，机器视觉，服务商，安防品牌，好的安防品牌，产品中心，产品，服务支持，"/>
+<meta name="Description" content="江苏云深智能化系统有限公司是领先的监控产品供应商和解决方案服务商，面向全球提供领先的视频存储、前端、显示控制和智能交通等系列化产品。"/>
+<meta name="author" content="江苏云深智能化系统有限公司"/>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link href="favicon.ico" rel="shortcut icon">
+<script>
+	var STATIC_URL  = "bocweb/" ;
+	var UPLOAD_URL  = "upload/" ;
+	var GLOBAL_URL = "index.php/";
+	var SITE_URL = "/";
+	var UPLOADDO_URL = "index.php/upload/";
+	var STATIC_VER = "";
+</script>
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" href="css/mobile.css" type="text/css" media="screen" charset="utf-8">
+<script src="js/jQuery.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/levideo.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.transit.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/html5.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/bocfe.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/plug.preload.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+<div class="headerWrap">
+
+</div>
+
+<script>
+	$(function(){
+		$(".headerWrap").load('header.html', function () {
+			$('header .nav-box li').hover(function(){
+				$(this).find('.con').slideDown(0);
+				$(this).find('.con').show();
+			},function(){
+				$(this).find('.con').slideUp(0);
+			})
+			function conSize(){
+                var bodyW = $("body").width();
+                $("header .nav-box li .con").css({
+                    "width":bodyW,
+                    "margin-left":-bodyW/2
+                })
+            }
+            conSize();
+            window.onresize = function(){
+                conSize();
+            }
+			$('header .nav-box .pro-li dd .link-b').each(function(){
+				var _this = $(this);
+				var bg = _this.data('bg');
+				var bgh = _this.data('bgh');
+				_this.css('background-image','url('+bg+')');
+				if (_this.hasClass("cur")) {
+					_this.css('background-image','url('+bgh+')');
+				};
+			})
+	
+	
+			$('header .nav-box .link-b').hover(function(){
+				$(this).addClass("cur").siblings("").removeClass("cur");
+				$(this).parent(".log-four").siblings(".log-four").find('.link-b').removeClass("cur")
+				$(this).parents(".con").show();
+			})
+	
+			$('header .nav-box .pro-li dd .link-b').hover(function(){
+				var id = $(this).data('id');
+				var conn = $(this).data('conn');
+				var psr = $(this).parents('.con').find('.right');
+				$(this).addClass("cur").parent("dd").siblings("dd").find('.link-b').removeClass("cur");
+				$('header .nav-box .pro-li dd .link-b').each(function(){
+					var bg = $(this).data('bg');
+					var bgh = $(this).data('bgh');
+					if ($(this).hasClass("cur")) {
+						$(this).css('background-image','url('+bgh+')')
+					}else{
+						$(this).css('background-image','url('+bg+')')
+					}
+				})
+			},function(){
+				$('header .nav-box .pro-li dd .link-b').each(function(){
+					var bg = $(this).data('bg');
+					var bgh = $(this).data('bgh');
+					if ($(this).hasClass("cur")) {
+						$(this).css('background-image','url('+bgh+')')
+					}else{
+						$(this).css('background-image','url('+bg+')')
+					}
+				})
+			})
+	
+			$('.mobile-nav-box h2').on('click',function(){
+				if (!$(this).hasClass("cur")) {
+					$(this).addClass("cur").parent("li").siblings("li").find("h2").removeClass("cur");
+					$(this).next('.con').slideDown().parent("li").siblings("li").find('.con').slideUp();
+				}else{
+					$(this).removeClass("cur");
+					$(this).next('.con').slideUp()
+				}
+			})
+	
+			$('.mobile-nav-box p.on').on('click',function(){
+				if (!$(this).hasClass("but")) {
+					$(this).addClass("but").siblings(".on").removeClass("but").parent(".con").parent("li").siblings("li").find(".on").removeClass("but");
+					$(this).next('.tit-con').fadeIn().siblings(".tit-con").slideUp().parent(".con").parent("li").siblings("li").find(".tit-con").hide();
+				}else{
+					$(this).removeClass("but");
+					$(this).next('.tit-con').hide();
+				}
+			})
+	
+			$('.mobile-nav').on('click',function(){
+				if (!$(this).hasClass("on")) {
+					$(this).addClass("on");
+					$(".mobile-nav-box").slideDown();
+				}else{
+					$(this).removeClass("on");
+					$(".mobile-nav-box").slideUp();
+				}
+			})
+	
+			$('header .enght').hover(function(){
+				$(this).find('.con').fadeIn();
+			},function(){
+				$(this).find('.con').fadeOut();
+			})
+		});
+		$(".footerwrap").load("footer.html");
+	})
+</script>
+	<div class="body-box">
+		<div class="news-nav">
+	<div class="w1400 f-cb">
+		<div class="left-nav">
+			<a href="news.html ">新闻中心</a>
+			<a href="javascript:;">电视媒体</a>
+		</div>
+		<div class="news-now">
+			<a href="javascript:;" class="b">新闻中心</a>
+			<i></i><a href="about.html ">关于我们</a>
+			<i></i><a href="index.html ">首页</a>
+		</div>
+	</div>
+</div>		<div class="news-box">
+			<div class="news-list-top w1400">
+				<ul class="slides">
+					<li>
+							<a href="707.html?index=2">
+								<p class="pic">
+									<img src="img/2018/10/30/15408805812247014ye.jpg " alt="2018年公安消防工作会议、全面推荐智慧消防建设">
+								</p>
+								<span class="con">
+									<h3>2018/05/20</h3>
+									<h2>2018年公安消防工作会议、全面推荐智慧消防建设</h2>
+									<p class="font">灾事故威胁着人民群众的生命和财产安全，往往造成极坏的社会影响。“防范重于救灾，责任重于泰山”...</p>
+									<p class="more">查看详情</p>
+								</span>
+							</a>
+					</li>
+						
+				</ul>
+			</div>
+			<div class="news-list-bot w1400">
+				<ul class="f-cb">
+					<li>
+						<a href="707.html?index=0">
+							<p class="pic">
+								<img src="img/2018/10/30/15408816952563x4u5p.jpg " alt="公安部召开冬春火灾防控会议">
+							</p>
+							<span class="con">
+									<h2>公安部召开冬春火灾防控...</h2>
+									<p class="time">2018-03-15</p>
+									<p class="font">冬春季节是火灾的高发季节，接连不断的火灾事故，更要落实好冬春火灾防控工作。这既关系到全年火灾形势的稳定...</p>
+								</span>
+						</a>
+					</li>
+					<li>
+							<a href="707.html?index=1">
+								<p class="pic">
+									<img src="img/2018/10/30/15408860767483p0f0f.jpg " alt="2018年5月1日起正式实施《消防设施物联网系统技术标准》">
+								</p>
+								<span class="con">
+									<h2>2018年5月1日起正式实施《消防设施物联网系统技术标准》...</h2>
+									<p class="time">2018-05-01</p>
+									<p class="font">从2017年10月10日公安部发布的《关于全面推进“智慧消防”建设的指导意见》发布之后，大家还在着急智慧消防该如何建设...</p>
+								</span>
+							</a>
+						</li>
+						
+					<li>
+							<a href="707.html?index=3">
+								<p class="pic">
+									<img src="img/2018/10/30/154088644703688kuc.jpg " alt="消防部队转制纳入应急管理部">
+								</p>
+								<span class="con">
+									<h2>消防部队转制纳入应急管理部...</h2>
+									<p class="time">2018-05-25</p>
+									<p class="font">国务院提请审议机构改革方案议案，公安消防部队、武警森林部队转制...</p>
+								</span>
+							</a>
+						</li>
+						
+					<li>
+							<a href="707.html?index=4">
+								<p class="pic">
+									<img src="img/2018/10/30/15408825354714kjolm.jpg " alt="大工地必备的“五牌一图”都是啥内容...">
+								</p>
+								<span class="con">
+									<h2>大工地必备的“五牌一图”都是啥内容...</h2>
+									<p class="time">2018-03-23</p>
+									<p class="font">根据《建筑施工安全检查标准》规定施工现场必须设有“五牌一图...</p>
+								</span>
+							</a>
+						</li>
+						
+
+						
+					   <li>
+							<a href="707.html?index=5">
+								<p class="pic">
+									<img src="img/2018/10/30/15408818692388xt2s2.jpg " alt="火灾发生后，有多少黄金时间留给我们逃生">
+								</p>
+								<span class="con">
+									<h2>火灾发生后，有多少黄金时间留给我们逃生...</h2>
+									<p class="time">2018-06-25</p>
+									<p class="font">着火了，大家的第一反应就是逃，快逃，赶紧逃！消防叔叔表示逃生既要讲究方式方法...</p>
+								</span>
+							</a>
+						</li>
+						
+					<li>
+							<a href="707.html?index=6">
+								<p class="pic">
+									<img src="img/2018/10/30/153933469978025tt9v.png " alt="我国第一本关于火灾自动报警系统的图书">
+								</p>
+								<span class="con">
+									<h2>我国第一本关于火灾自动报警系统的图书...</h2>
+									<p class="time">2017-12-08</p>
+									<p class="font">火灾自动报警系统是以实现火灾早期探测和报警，向各类消防设备发出控制信号...</p>
+								</span>
+							</a>
+						</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="footerwrap"></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"32"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+<script>
+	$(function(){
+		$('.right-flex li.top').on('click',function(){
+			$('html,body').stop().animate({scrollTop:0},1000);
+		})
+	})
+</script>
+<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/flexslider.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/flexslider-min.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" charset="utf-8">
+<script src="js/scrollbar.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="css/scrollbar.css" type="text/css" media="screen" charset="utf-8"><script>
+	function dump(){
+        var page = $('#pageNum').val();
+        var maxPage = 61;
+        if(isNaN(page)==false&&page!=''&&page<=maxPage){
+            window.location.href="news/index"+'/'+page+'.html';
+        }
+    }
+	var $window = $(window),
+		flexslider = { vars:{} };
+	$(function(){
+		$('.news-nav .left-nav a').eq(0).addClass("on");
+
+		//介绍
+	    $('.news-list-top').flexslider({
+	        animation:'slide',
+	        slideshowSpeed: 4000,
+	        animationSpeed: 1000,
+	        touch: true,
+	        slideshow: true, 
+	        start: function(slider){
+	            flexslider = slider;
+	            $('.flex-direction-nav a').text("");
+	        }
+	    });
+
+
+	    $('.news-list-bot li').each(function(){
+	    	var index = $(this).index();
+	    	if (index % 3 == 2) {
+	    		$(this).addClass("cur");
+	    	}
+	    	if (index % 2 == 1) {
+				$(this).addClass("cut");
+	    	}
+	    })
+
+	})
+</script>
+</body>
+</html>

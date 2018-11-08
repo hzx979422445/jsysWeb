@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="content-language" content="zh-CN" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<title>以安全为核心的智慧物联解决方案提供商和运营服务商-江苏云深智能化系统有限公司</title>
+		<meta name="Keywords" content="江苏云深智能化系统有限公司,摄像机,存储,云深,股份,解决方案,报警,门禁,智能交通,民用,创新技术,招聘,供应商,民用,乐橙,dahua,全球安防十强，江苏云深，视频，无人机，机器视觉，服务商，安防品牌，好的安防品牌，产品中心，产品，服务支持，" />
+		<meta name="Description" content="江苏云深智能化系统有限公司是领先的监控产品供应商和解决方案服务商，面向全球提供领先的视频存储、前端、显示控制和智能交通等系列化产品。" />
+		<meta name="author" content="江苏云深智能化系统有限公司" />
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<link href="favicon.ico" rel="shortcut icon">
+		<script>
+			var STATIC_URL = "bocweb/";
+			var UPLOAD_URL = "upload/";
+			var GLOBAL_URL = "index.php/";
+			var SITE_URL = "/";
+			var UPLOADDO_URL = "index.php/upload/";
+			var STATIC_VER = "";
+		</script>
+		<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen" charset="utf-8">
+		<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" charset="utf-8">
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">
+		<link rel="stylesheet" href="css/mobile.css" type="text/css" media="screen" charset="utf-8">
+		<script src="js/jQuery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/levideo.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.transit.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/html5.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bocfe.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/plug.preload.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/getUrlParam.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body style="background:#f9f9f9;">
+		<div class="headerWrap">
+
+		</div>
+
+		<script>
+			$(function() {
+				$(".headerWrap").load('header.html', function() {
+					$('header .nav-box li').hover(function() {
+						$(this).find('.con').slideDown(0);
+						$(this).find('.con').show();
+					}, function() {
+						$(this).find('.con').slideUp(0);
+					})
+
+					$('header .nav-box .pro-li dd .link-b').each(function() {
+						var _this = $(this);
+						var bg = _this.data('bg');
+						var bgh = _this.data('bgh');
+						_this.css('background-image', 'url(' + bg + ')');
+						if(_this.hasClass("cur")) {
+							_this.css('background-image', 'url(' + bgh + ')');
+						};
+					})
+
+					$('header .nav-box .link-b').hover(function() {
+						$(this).addClass("cur").siblings("").removeClass("cur");
+						$(this).parent(".log-four").siblings(".log-four").find('.link-b').removeClass("cur")
+						$(this).parents(".con").show();
+					})
+
+					$('header .nav-box .pro-li dd .link-b').hover(function() {
+						var id = $(this).data('id');
+						var conn = $(this).data('conn');
+						var psr = $(this).parents('.con').find('.right');
+						$(this).addClass("cur").parent("dd").siblings("dd").find('.link-b').removeClass("cur");
+						$('header .nav-box .pro-li dd .link-b').each(function() {
+							var bg = $(this).data('bg');
+							var bgh = $(this).data('bgh');
+							if($(this).hasClass("cur")) {
+								$(this).css('background-image', 'url(' + bgh + ')')
+							} else {
+								$(this).css('background-image', 'url(' + bg + ')')
+							}
+						})
+					}, function() {
+						$('header .nav-box .pro-li dd .link-b').each(function() {
+							var bg = $(this).data('bg');
+							var bgh = $(this).data('bgh');
+							if($(this).hasClass("cur")) {
+								$(this).css('background-image', 'url(' + bgh + ')')
+							} else {
+								$(this).css('background-image', 'url(' + bg + ')')
+							}
+						})
+					})
+
+					$('.mobile-nav-box h2').on('click', function() {
+						if(!$(this).hasClass("cur")) {
+							$(this).addClass("cur").parent("li").siblings("li").find("h2").removeClass("cur");
+							$(this).next('.con').slideDown().parent("li").siblings("li").find('.con').slideUp();
+						} else {
+							$(this).removeClass("cur");
+							$(this).next('.con').slideUp()
+						}
+					})
+
+					$('.mobile-nav-box p.on').on('click', function() {
+						if(!$(this).hasClass("but")) {
+							$(this).addClass("but").siblings(".on").removeClass("but").parent(".con").parent("li").siblings("li").find(".on").removeClass("but");
+							$(this).next('.tit-con').fadeIn().siblings(".tit-con").slideUp().parent(".con").parent("li").siblings("li").find(".tit-con").hide();
+						} else {
+							$(this).removeClass("but");
+							$(this).next('.tit-con').hide();
+						}
+					})
+
+					$('.mobile-nav').on('click', function() {
+						if(!$(this).hasClass("on")) {
+							$(this).addClass("on");
+							$(".mobile-nav-box").slideDown();
+						} else {
+							$(this).removeClass("on");
+							$(".mobile-nav-box").slideUp();
+						}
+					})
+
+					$('header .enght').hover(function() {
+						$(this).find('.con').fadeIn();
+					}, function() {
+						$(this).find('.con').fadeOut();
+					})
+				});
+				$(".footerwrap").load("footer.html");
+			})
+		</script>
+		<div class="body-box">
+
+			<div class="wel-banner case-banner">
+				<ul class="slides f-cb">
+					<li data-pc="img/2017/11/23/151141843118ec4i0.jpg" data-mobile="img/2017/11/23/15114184385756uo2ht.jpg">
+						<a href="javascript:;">
+							<img src="" alt="" class="pic">
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="w1400 product-list">
+				<div class="now">
+					<a href="index.html ">首页</a><i></i>
+					<a href="product.html ">产品中心</a>
+					<i></i>
+					<a href="javascript:;" class="product_type"></a>
+					<i></i>
+				</div>
+				<form action="" class="form">
+					<input type="text" placeholder="输入要搜索的产品" name="keyword" class="fl text">
+					<input type="submit" value="" class="submit fr" disabled>
+				</form>
+
+				<div class="product-list-b">
+					<ul class="f-cb product-list-wrap">
+
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footerwrap"></div>
+
+		<script>
+			window._bd_share_config = {
+				"common": {
+					"bdSnsKey": {},
+					"bdText": "",
+					"bdMini": "2",
+					"bdMiniList": false,
+					"bdPic": "",
+					"bdStyle": "2",
+					"bdSize": "32"
+				},
+				"share": {}
+			};
+			with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+		</script>
+		<script>
+			$(function() {
+                var news_index= UrlParm.parm("key");
+                var news_name = UrlParm.parm("name");
+				$(".product_type").html(news_name);
+                $.ajax({
+                    type:"get",
+                    url:"product.json",
+                    async:true,
+                    success:function(data){
+                        var datas = data[news_index];
+                        if(datas.length > 0){
+                            for(var i = 0; i < datas.length; i++){
+                                var div = '<li class="product-list-item" style="width: 30.7%" key=\''+news_index+'\'>'
+                                div +='<p class="pic">'
+                                div +='<a href="javascript:;" class="link">'
+                                div +='<img src=\''+datas[i].img+'\' alt=\''+datas[i].name+'\'>'
+                                div +='<span class="newss"></span>'
+                                div +='</a>'
+                                div +='</p>'
+                                div +='<span class="con">'
+                                div +='<a href="javascript:;">'
+                                div +='<h3 data-title=\''+datas[i].code+'\'>'+datas[i].code+'</h3>'
+                                div +='<p class="font" data-font=\''+datas[i].name+'\'>'+datas[i].name+'</p>'
+                                div +='<p class="more">查看详情</p>'
+                                div +='</a>'
+                                div +='</span>'
+                                div +=' </li>'
+								$(".product-list-wrap").append(div);
+							}
+						}else{
+                            var div = '<h2 style="text-align: center">暂无数据！</h2>';
+                            $(".product-list-wrap").append(div);
+						}
+                    },
+					error:function(){
+
+					}
+                });
+				$(document).on("click",'.product-list-item',function () {
+				    var on = $(this);
+					var index = on.index();
+					var key = on.attr("key");
+					location.href='875.html?index='+index+"&key="+key;
+                })
+
+				$('.right-flex li.top').on('click', function() {
+					$('html,body').stop().animate({
+						scrollTop: 0
+					}, 1000);
+				})
+			})
+		</script>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/flexslider.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/flexslider-min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" charset="utf-8">
+		<script src="js/scrollbar.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="css/scrollbar.css" type="text/css" media="screen" charset="utf-8">
+		<script>
+			var $window = $(window),
+				flexslider = {
+					vars: {}
+				},
+				flexslider1 = {
+					vars: {}
+				};
+			$(function() {
+				// $('.product-list-b li').eq(1).addClass("newss");
+				$('.news-page a').each(function(index, el) {
+					if($(el).attr('href') != "#") {
+						el.href += location.search;
+					}
+				});
+
+				function getGridSize() {
+					return(window.innerWidth >= 1025) ? "fade" : "slide";
+				}
+
+				function getGridSize1() {
+					return(window.innerWidth < 480) ? 1 :
+						(window.innerWidth < 1025) ? 2 : 4;
+				}
+				getwidth()
+				winsize()
+				$(window).resize(function() {
+					flexslider.vars.animation = getGridSize();
+					getwidth()
+					winsize()
+
+					flexslider1.vars.minItems = getGridSize1();
+					flexslider1.vars.maxItems = getGridSize1();
+				})
+
+				//首页banner图
+				function winsize() {
+					var winw = $(window).width();
+					if(winw > 1025) {
+						$('.wel-banner .slides li').each(function() {
+							var wb = $(this).attr('data-pc');
+							$(this).find(".pic").attr('src', wb);
+						})
+
+						var hs = $('.wel-case .slides li').width();
+						$('.wel-case .slides li').hover(function() {
+							var h = $(this).find('img').width();
+							$(this).stop().animate({
+								width: h
+							}, 500);
+						}, function() {
+							$(this).stop().animate({
+								width: hs
+							}, 500);
+						})
+					} else {
+						$('.wel-banner .slides li').each(function() {
+							var wb = $(this).attr('data-mobile');
+							$(this).find(".pic").attr('src', wb);
+						})
+					}
+
+				}
+
+				var size = $('.wel-case .slides li').size();
+				if(size > 1) {
+					$('.wel-banner').flexslider({
+						animation: 'slide',
+						slideshowSpeed: 4000,
+						animationSpeed: 1000,
+						touch: true,
+						slideshow: true,
+						start: function(slider) {
+							flexslider = slider;
+							$('.wel-banner .loader').hide();
+							$('.flex-direction-nav a').text("");
+						}
+					});
+				};
+
+				$('.product-list-b li').each(function() {
+					var index = $(this).index();
+					if(index % 3 == 2) {
+						$(this).addClass("on");
+					}
+					if(index % 2 == 1) {
+						$(this).addClass("cur");
+					}
+				})
+
+				$('.product-list .text').focus(function() {
+					$(this).parents('.form').addClass('on');
+				})
+
+				$('.product-list .text').blur(function() {
+					$(this).parents('.form').removeClass('on');
+				})
+
+				function getwidth() {
+					var winw = $(window).width(),
+						w14 = $('.w1400').width(),
+						nw = (winw - w14) / 2
+
+					$('.product-nav').css('left', -nw);
+				}
+
+				$('.product-nav .link-box .link-tit').on('click', function(e) {
+					if($(this).hasClass("cur")) {
+						$(this).removeClass("cur");
+						$(this).next('.link-box-b').slideUp();
+					} else {
+						$(this).addClass("cur").siblings('.link-tit').removeClass("cur");
+						$(this).next('.link-box-b').slideDown().siblings(".link-box-b").slideUp();
+					}
+					e.preventDefault();
+					var _this = $(this);
+					var link = _this.attr('href');
+					console.log(link);
+					if(link == "javascript:;") {
+						return false;
+					} else {
+						var html = '';
+						$('.product-list-b li.but').each(function(i) {
+							var othis = $(this);
+							if(i) {
+								html += '-' + othis.attr('data-id');
+							} else {
+								html += othis.attr('data-id');
+							}
+						});
+						_this.attr("href", link + '&var=' + html)
+						var windows = _this.attr('href');
+						console.log(windows);
+						window.location.href = windows;
+					}
+				})
+
+				$('.product-nav .link-box-tit').on('click', function(e) {
+					if($(this).hasClass("into")) {
+						$(this).removeClass("into");
+						$(this).next('.link-box-con').slideUp();
+					} else {
+						$(this).addClass("into").siblings('.link-box-tit').removeClass("into");
+						$(this).next('.link-box-con').slideDown().siblings(".link-box-con").slideUp();
+					}
+					e.preventDefault();
+					var _this = $(this);
+					var link = _this.attr('href');
+					console.log(link);
+					if(link == "javascript:;") {
+						return false;
+					} else {
+						var html = '';
+						$('.product-list-b li.but').each(function(i) {
+							var othis = $(this);
+							if(i) {
+								html += '-' + othis.attr('data-id');
+							} else {
+								html += othis.attr('data-id');
+							}
+						});
+						_this.attr("href", link + '&var=' + html)
+						var windows = _this.attr('href');
+						console.log(windows);
+						window.location.href = windows;
+					}
+				})
+
+				$('.product-nav .tit').on('click', function(e) {
+					//  	if ($(this).hasClass("on")) {
+					//  		$(this).removeClass("on");
+					//  		$('.product-nav .tit-box').slideUp();
+					//  	}else{
+					// $(this).addClass("on");
+					// $('.product-nav .tit-box').slideDown();
+					//  	}
+					e.preventDefault();
+					var _this = $(this);
+					var link = _this.attr('href');
+					console.log(link);
+					if(link == "javascript:;") {
+						return false;
+					} else {
+						var html = '';
+						$('.product-list-b li.but').each(function(i) {
+							var othis = $(this);
+							if(i) {
+								html += '-' + othis.attr('data-id');
+							} else {
+								html += othis.attr('data-id');
+							}
+						});
+						_this.attr("href", link + '&var=' + html)
+						var windows = _this.attr('href');
+						console.log(windows);
+						window.location.href = windows;
+					}
+				})
+				$('.product-nav .tit').hover(function() {
+					$(this).addClass("on");
+					$('.product-nav .tit-box').slideDown(200);
+				}, function() {
+					$(this).removeClass("on");
+					$('.product-nav .tit-box').slideUp(200);
+				})
+
+				$('.product-nav .nav-link').on('click', function() {
+					if($(this).hasClass("on")) {
+						$(this).removeClass("on");
+						$(this).next('.link-box').slideUp();
+					} else {
+						$(this).addClass("on");
+						$(this).next('.link-box').slideDown();
+					}
+				})
+
+				//产品导航
+
+				//初始
+				// $('.pn-list li').eq(0).find('.pn-tit-one').next('.pn-con-one').slideDown();
+				//    $('.pn-list li').eq(0).find('.pn-tit-two').eq(0).addClass('cur').next('.pn-con-two').slideDown().find('.pn-tit-three').eq(0).addClass('cut ').next('.pn-con-three').slideDown().find(".pn-tit-four").eq(0).addClass("cur").next(".pn-con-four").slideDown().find(".pn-tit-five").eq(0).addClass("cur");
+
+				$('.pn-list .pn-tit.cursleect').parents('.pn-content').slideDown().prev('.pn-tit').addClass('cur cut');
+
+				$('.pn-box').hover(function() {
+					$('.pn-list').addClass('on')
+				}, function() {
+					$('.pn-list').removeClass('on')
+				})
+
+				$('.pn-list li .pn-tit-one').on('click', function() {
+					var sss = $(this).parent('li').index();
+					var len = $('.pn-list li').length - 1;
+					if(sss == len) {
+						var off = $(this).offset().top - ($('.pn-list').height() / 2);
+						$('.pn-list').stop().animate({
+							'scrollTop': off
+						}, 500);
+					};
+
+					if(!$(this).hasClass('cut')) {
+						$(this).addClass('cut').parents('li').siblings('li').find('.pn-tit-one').removeClass('cut');
+						$(this).next('.pn-con-one').slideDown().parents('li').siblings('li').find('.pn-con-one').slideUp()
+					} else {
+						$(this).removeClass('cut')
+						$(this).next('.pn-con-one').slideUp()
+					}
+				})
+				$('.pn-list li .pn-tit-two').on('click', function() {
+					if(!$(this).hasClass('cur')) {
+						$(this).addClass('cur').siblings('.pn-tit-two').removeClass('cur').parents('li').siblings('li').find('.pn-tit-two').removeClass('cur');
+						$(this).next('.pn-con-two').slideDown().siblings('.pn-con-two').slideUp().parents('li').siblings('li').find('.pn-con-two').slideUp()
+					} else {
+						$(this).removeClass('cur')
+						$(this).next('.pn-con-two').slideUp()
+					}
+				})
+
+				$('.pn-list li .pn-tit-three').on('click', function() {
+					if(!$(this).hasClass('cur')) {
+						$(this).addClass('cur').siblings('.pn-tit-three').removeClass('cur').parents('li').siblings('li').find('.pn-tit-three').removeClass('cur');
+						$(this).next('.pn-con-three').slideDown().siblings('.pn-con-three').slideUp().parents('li').siblings('li').find('.pn-con-three').slideUp()
+					} else {
+						$(this).removeClass('cur')
+						$(this).next('.pn-con-three').slideUp()
+					}
+				})
+
+				$('.pn-list li .pn-tit-four').on('click', function() {
+					if(!$(this).hasClass('cur')) {
+						$(this).addClass('cur').siblings('.pn-tit-four').removeClass('cur').parents('li').siblings('li').find('.pn-tit-four').removeClass('cur');
+						$(this).next('.pn-con-four').slideDown().siblings('.pn-con-four').slideUp().parents('li').siblings('li').find('.pn-con-four').slideUp()
+					} else {
+						$(this).removeClass('cur')
+						$(this).next('.pn-con-four').slideUp()
+					}
+				})
+				//产品对比
+
+				$('.product-contrast .contrast-list').flexslider({
+					animation: 'slide',
+					animationLoop: false,
+					slideshow: false,
+					itemWidth: 310,
+					itemMargin: 4,
+					move: 1,
+					minItems: getGridSize1(),
+					maxItems: getGridSize1(),
+					start: function(slider) {
+						flexslider1 = slider;
+						$('.flex-direction-nav a').text("");
+					}
+				})
+
+				$('.product-list-b li .add').on('click', function() {
+
+					var part = $(this).parents("li");
+					var SPEARTER = "-";
+					var sku = $(this).data('sku');
+					var id = part.data('id');
+					var hre = part.find('.link').attr('href');
+					var src = part.find('img').attr('src');
+					var tit = part.find('h3').data('title');
+					var font = part.find('.font').data('font');
+					$('.product-contrast').height('auto');
+					match = true;
+					if(!part.hasClass("but")) {
+						var ajaxUrl = "https://www.dahuatech.com/product/addcompare.html";
+						$.ajax({
+								url: ajaxUrl,
+								async: false,
+								type: 'POST',
+								dataType: 'json',
+								data: {
+									'_scfs': 'ac0ac0c96c2e02fc8c033d76975544ef',
+									id: id
+								},
+							})
+							.done(function(data) {
+								if(data.status == 2) {
+									alert(data.msg);
+								} else if(data.status == 1) {
+									part.addClass("but");
+									$('.product-contrast .contrast-list .slides li').each(function(i) {
+										var othis = $(this);
+										if(!othis.attr("data-id") && match) {
+											match = false;
+											othis.attr('data-id', id);
+											othis.attr('data-sku', id);
+											othis.find('a').attr('href', hre).html('<p class="pic fl"><img src="' + src + '" alt=""><h2>' + tit + '</h2><p class="font">' + font + '</p>').after('<span class="closes"></span>');
+											inVal();
+											$(".product-contrast .title span b").html(data.count)
+											// if(othis.index()>2 && othis.index()<8){
+											// 	$(".flex-next").click();
+											// 	return false
+											// }
+										}
+									});
+
+								}
+							})
+
+					} else {
+						part.removeClass("but");
+						$('.product-contrast .contrast-list .slides li').each(function(i) {
+							var othis = $(this);
+							var sid = othis.data('id');
+
+							if(id == sid) {
+								othis.attr('data-id', '');
+								othis.attr('data-sku', '');
+								othis.find("a").attr('href', 'javascript:;').html('<p class="font-none">您还可以继续添加</p>')
+								order_state();
+								inVal();
+								//    if(1<othis.index()){
+								//     $(".flex-prev").click();
+								//     return false
+								// }
+								var ajaxUrl = "https://www.dahuatech.com/product/delcompare.html";
+								$.ajax({
+										url: ajaxUrl,
+										async: false,
+										type: 'POST',
+										dataType: 'json',
+										data: {
+											'_scfs': 'ac0ac0c96c2e02fc8c033d76975544ef',
+											id: sid
+										},
+									})
+									.done(function(data) {
+										if(data.status == 1) {
+											$(".product-contrast .title span b").html(data.count)
+										}
+									})
+							}
+						});
+					}
+				})
+
+				//删除
+				$('.product-contrast .contrast-list').on('click', '.closes', function() {
+					var _this = $(this);
+					var par = _this.parent('li')
+					var sid = par.attr('data-id');
+					var ajaxUrl = "https://www.dahuatech.com/product/delcompare.html";
+					$.ajax({
+							url: ajaxUrl,
+							async: false,
+							type: 'POST',
+							dataType: 'json',
+							data: {
+								'_scfs': 'ac0ac0c96c2e02fc8c033d76975544ef',
+								id: sid
+							},
+						})
+						.done(function(data) {
+							if(data.status == 1) {
+								$(".product-contrast .title span b").html(data.count)
+							}
+						})
+					$('.product-list-b li.but').each(function() {
+						var _the = $(this)
+						var id = _the.data('id');
+						if(sid == id) {
+							_the.removeClass("but");
+						};
+					})
+					par.attr('data-id', '');
+					par.attr('data-sku', '');
+					par.find("a").attr('href', 'javascript:;').html('<p class="font-none">您还可以继续添加</p>')
+					order_state();
+					inVal();
+				})
+				//清空
+				$('.contrast-empty').on('click', function() {
+					$('.product-contrast .contrast-list .slides li').each(function(i) {
+						var othis = $(this);
+						if(othis.attr("data-id")) {
+							othis.find("a").attr('href', 'javascript:;').html('<p class="font-none">您还可以继续添加</p>')
+							othis.attr('data-id', '')
+							othis.attr('data-sku', '')
+						}
+					});
+					var ajaxUrl = "https://www.dahuatech.com/product/delcompareall.html";
+					$.ajax({
+							url: ajaxUrl,
+							async: false,
+							type: 'POST',
+							dataType: 'json',
+							data: {
+								'_scfs': 'ac0ac0c96c2e02fc8c033d76975544ef'
+							},
+						})
+						.done(function(data) {
+							if(data.status == 1) {
+								$(".product-contrast .title span b").html(data.count)
+							}
+						})
+					$('.product-contrast .contrast-btn.on').removeClass("on").attr("href", "javascript:;");
+
+					$('.product-list-b li').removeClass('but');
+				});
+
+				//调整位置
+				function order_state() {
+					var htmlArr = [];
+					$('.product-contrast .contrast-list .slides li').each(function(i) {
+						var othis = $(this);
+						if(othis.attr("data-id")) {
+							htmlArr.push({
+								all: othis.find("a").html(),
+								id: othis.attr('data-id'),
+								sku: othis.attr('data-sku')
+							});
+							othis.find("a").attr('href', 'javascript:;').html('<p class="font-none">您还可以继续添加</p>')
+							othis.attr('data-id', '')
+							othis.attr('data-sku', '')
+						}
+					});
+
+					$('.product-contrast .contrast-list .slides li').each(function(i) {
+						var othis = $(this);
+						if(i < htmlArr.length) {
+							othis.find("a").html(htmlArr[i].all)
+							othis.attr('data-id', htmlArr[i].id)
+							othis.attr('data-sku', htmlArr[i].sku)
+						}
+					});
+				}
+
+				//赋值
+				function inVal() {
+					var html = '';
+					$('.product-contrast .contrast-list .slides li').each(function(i) {
+						var othis = $(this);
+						if(othis.attr('data-sku')) {
+							if(i) {
+								html += '-' + othis.attr('data-sku');
+							} else {
+								html += othis.attr('data-sku');
+							}
+							//对比按钮
+							if(i > 0) {
+								$('.product-contrast .contrast-btn').addClass("on");
+								// $('.product-contrast .contrast-btn').attr("href","?val="+html)
+								$('.product-contrast .contrast-btn').attr("href", "https://www.dahuatech.com/product/contrast.html")
+							} else {
+								$('.product-contrast .contrast-btn').removeClass("on");
+								$('.product-contrast .contrast-btn').attr("href", "javascript:;")
+							}
+						}
+					});
+					//$('.munber-me').val(html);
+				}
+
+				//隐藏
+				$('.product-contrast .product-hide').on('click', function() {
+					$('.product-contrast').height(0);
+				})
+
+			})
+		</script>
+	</body>
+
+</html>

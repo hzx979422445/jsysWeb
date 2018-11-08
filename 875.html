@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="content-language" content="zh-CN"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <title>以安全为核心的智慧物联解决方案提供商和运营服务商-江苏云深智能化系统有限公司</title>
+    <meta name="Keywords"
+          content="江苏云深智能化系统有限公司,摄像机,存储,云深,股份,解决方案,报警,门禁,智能交通,民用,创新技术,招聘,供应商,民用,乐橙,dahua,全球安防十强，江苏云深，视频，无人机，机器视觉，服务商，安防品牌，好的安防品牌，产品中心，产品，服务支持，"/>
+    <meta name="Description" content="江苏云深智能化系统有限公司是领先的监控产品供应商和解决方案服务商，面向全球提供领先的视频存储、前端、显示控制和智能交通等系列化产品。"/>
+    <meta name="author" content="江苏云深智能化系统有限公司"/>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="img/favicon.ico" rel="shortcut icon">
+    <script>
+        var STATIC_URL  = "bocweb/" ;
+        var UPLOAD_URL  = "upload/" ;
+        var GLOBAL_URL = "index.php/";
+        var SITE_URL = "/";
+        var UPLOADDO_URL = "index.php/upload/";
+        var STATIC_VER = "";
+    </script>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/mobile.css" type="text/css" media="screen" charset="utf-8">
+    <script src="js/jQuery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/levideo.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.transit.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/html5.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bocfe.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/plug.preload.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/getUrlParam.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<style>
+    table{width: 100%}
+    table{border-right:1px solid #000;border-bottom:1px solid #000}
+    table td{border-left:1px solid #000;border-top:1px solid #000;padding-left: 15px;}
+    table th{border-left:1px solid #000;border-top:1px solid #000;padding-left: 15px;}
+    table tr th:first-child{width: 20% !important}
+    table tr td:first-child{width: 20% !important}
+    table tr th:last-child{width: 60% !important}
+    table tr td:last-child{width: 60% !important;word-break: break-all;}
+</style>
+<body>
+<div class="headerWrap">
+
+</div>
+
+<script>
+    $(function () {
+        $(".headerWrap").load('header.html', function () {
+            $('header .nav-box li').hover(function () {
+                $(this).find('.con').slideDown(0);
+                $(this).find('.con').show();
+            }, function () {
+                $(this).find('.con').slideUp(0);
+            })
+            function conSize(){
+                var bodyW = $("body").width();
+                $("header .nav-box li .con").css({
+                    "width":bodyW,
+                    "margin-left":-bodyW/2
+                })
+            }
+            conSize();
+            window.onresize = function(){
+                conSize();
+            }
+            $('header .nav-box .pro-li dd .link-b').each(function () {
+                var _this = $(this);
+                var bg = _this.data('bg');
+                var bgh = _this.data('bgh');
+                _this.css('background-image', 'url(' + bg + ')');
+                if (_this.hasClass("cur")) {
+                    _this.css('background-image', 'url(' + bgh + ')');
+                }
+                ;
+            })
+
+
+            $('header .nav-box .link-b').hover(function () {
+                $(this).addClass("cur").siblings("").removeClass("cur");
+                $(this).parent(".log-four").siblings(".log-four").find('.link-b').removeClass("cur")
+                $(this).parents(".con").show();
+            })
+
+            $('header .nav-box .pro-li dd .link-b').hover(function () {
+                var id = $(this).data('id');
+                var conn = $(this).data('conn');
+                var psr = $(this).parents('.con').find('.right');
+                $(this).addClass("cur").parent("dd").siblings("dd").find('.link-b').removeClass("cur");
+                $('header .nav-box .pro-li dd .link-b').each(function () {
+                    var bg = $(this).data('bg');
+                    var bgh = $(this).data('bgh');
+                    if ($(this).hasClass("cur")) {
+                        $(this).css('background-image', 'url(' + bgh + ')')
+                    } else {
+                        $(this).css('background-image', 'url(' + bg + ')')
+                    }
+                })
+            }, function () {
+                $('header .nav-box .pro-li dd .link-b').each(function () {
+                    var bg = $(this).data('bg');
+                    var bgh = $(this).data('bgh');
+                    if ($(this).hasClass("cur")) {
+                        $(this).css('background-image', 'url(' + bgh + ')')
+                    } else {
+                        $(this).css('background-image', 'url(' + bg + ')')
+                    }
+                })
+            })
+
+            $('.mobile-nav-box h2').on('click', function () {
+                if (!$(this).hasClass("cur")) {
+                    $(this).addClass("cur").parent("li").siblings("li").find("h2").removeClass("cur");
+                    $(this).next('.con').slideDown().parent("li").siblings("li").find('.con').slideUp();
+                } else {
+                    $(this).removeClass("cur");
+                    $(this).next('.con').slideUp()
+                }
+            })
+
+            $('.mobile-nav-box p.on').on('click', function () {
+                if (!$(this).hasClass("but")) {
+                    $(this).addClass("but").siblings(".on").removeClass("but").parent(".con").parent("li").siblings("li").find(".on").removeClass("but");
+                    $(this).next('.tit-con').fadeIn().siblings(".tit-con").slideUp().parent(".con").parent("li").siblings("li").find(".tit-con").hide();
+                } else {
+                    $(this).removeClass("but");
+                    $(this).next('.tit-con').hide();
+                }
+            })
+
+            $('.mobile-nav').on('click', function () {
+                if (!$(this).hasClass("on")) {
+                    $(this).addClass("on");
+                    $(".mobile-nav-box").slideDown();
+                } else {
+                    $(this).removeClass("on");
+                    $(".mobile-nav-box").slideUp();
+                }
+            })
+
+            $('header .enght').hover(function () {
+                $(this).find('.con').fadeIn();
+            }, function () {
+                $(this).find('.con').fadeOut();
+            })
+        });
+        $(".footerwrap").load("footer.html");
+    })
+</script>
+<div class="body-box por">
+    <div class="product-info">
+        <div class="w1400 f-cb">
+            <div class="now">
+                <a id="one" href="index.html">首页</a><i></i>
+                <a id="two" href="product.html">产品中心</a>
+                <i></i>
+                <a id="three" href="javascript:;">H.265 600万像素网络摄像机</a>
+            </div>
+
+            <div class="info-pic fl">
+                <div id="slider" class="picture-ajax">
+                    <ul class="slides f-cb">
+                        <li class="img_wrap_one">
+
+                        </li>
+                    </ul>
+                </div>
+                <div id="carousel" class="picture-list">
+                    <ul class="slides">
+                        <li class="img_wrap_one">
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="info-font fr">
+                <h2 class="product_code"></h2>
+                <h3 class="product_name"></h3>
+
+                <a href="javascript:;" data-id="875" class="link">加入产品对比</a>
+            </div>
+        </div>
+    </div>
+    <div class="product-info-b">
+
+        <div class="product-info-list">
+            <div class="w1400 product-itit">
+                <ul class="slides">
+                    <li data-id="1">
+                        产品概述
+                        <span class="line"></span>
+                    </li>
+                    <li data-id="2">
+                        技术参数
+                        <span class="line"></span>
+                    </li>
+                    <li data-id="3">
+                        尺寸图
+                        <span class="line"></span>
+                    </li>
+                    <li data-id="4">
+                        订货型号
+                        <span class="line"></span>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="w1400 product-ajaxi">
+
+        </div>
+    </div>
+</div>
+<div class="footerwrap"></div>
+<script>window._bd_share_config = {
+    "common": {
+        "bdSnsKey": {},
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": "",
+        "bdStyle": "2",
+        "bdSize": "32"
+    }, "share": {}
+};
+with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+<script>
+    $(function () {
+        var news_index= UrlParm.parm("index");
+        var news_key = UrlParm.parm("key");
+        var dataobj;
+        $.ajax({
+            type:"get",
+            url:"product.json",
+            async:true,
+            success:function(data){
+                var datas = data[news_key][news_index];
+                dataobj = datas;
+                var img = '<img src=\''+datas.img+'\' alt=\''+datas.name+'\'>';
+                $(".img_wrap_one").append(img);
+                $(".product_code").html(datas.code);
+                $(".product_name").html(datas.name);
+                $(".product-ajaxi").html(datas.detail[0]);
+                $('table').css("border","none");
+                $('table th').css({
+                    "border":"none",
+                    "padding-left":"0px"
+                });
+                $('table td').css({
+                    "border":"none",
+                    "padding-left":"0px"
+                });
+            },
+            error:function(){
+
+            }
+        });
+        $('.slides > li').on("click",function () {
+            var on = $(this);
+            $(".product-ajaxi").html(dataobj.detail[on.index()]);
+            if(on.index() == 0){
+                $('table').css("border","none");
+                $('table th').css({
+                    "border":"none",
+                    "padding-left":"0px"
+                });
+                $('table td').css({
+                    "border":"none",
+                    "padding-left":"0px"
+                });
+            }else{
+                $('table').css({
+                    "border-right":"1px solid #000",
+                    "border-bottom":"1px solid #000"
+                });
+                $('table th').css({
+                    "border-left":"1px solid #000",
+                    "border-top":"1px solid #000",
+                    "padding-left":"15px"
+                });
+                $('table td').css({
+                    "border-left":"1px solid #000",
+                    "border-top":"1px solid #000",
+                    "padding-left":"15px"
+                });
+            }
+
+        })
+
+        $('.right-flex li.top').on('click', function () {
+            $('html,body').stop().animate({scrollTop: 0}, 1000);
+        })
+    })
+</script>
+<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/flexslider.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/flexslider-min.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" charset="utf-8">
+<script src="js/scrollbar.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="css/scrollbar.css" type="text/css" media="screen" charset="utf-8">
+<script>
+    var $window = $(window),
+        flexslider = {vars: {}},
+        flexslider1 = {vars: {}},
+        flexslider2 = {vars: {}};
+    $(function () {
+        function getitemsSize() {
+            return (window.innerWidth < 480) ? 2 :
+                (window.innerWidth < 1024) ? 3 : 4;
+        }
+
+        function getitemsSize1() {
+            return (window.innerWidth < 480) ? 1 :
+                (window.innerWidth < 1024) ? 4 : 8;
+        }
+
+
+        $('#carousel').flexslider({
+            animation: "slide",
+            controlNav: false,
+            animationLoop: false,
+            slideshow: false,
+            itemWidth: 100,
+            itemMargin: 10,
+            asNavFor: '#slider',
+            start: function (slider) {
+                flexslider = slider;
+                var n = $('#carousel .slides li').length;
+                if (n <= 1) {
+                    $('.product-info #carousel .flex-viewport').css({
+                        'margin':0,
+                        "width":"145px"
+                    });
+                }
+            }
+        });
+
+        $('#slider').flexslider({
+            animation: "slide",
+            controlNav: false,
+            animationLoop: false,
+            slideshow: false,
+            minItems: getitemsSize(),
+            maxItems: getitemsSize(),
+            sync: "#carousel",
+            start: function (slider) {
+                flexslider1 = slider;
+                $('#carousel .flex-direction-nav .flex-prev').text("");
+                $('#carousel .flex-direction-nav .flex-next').text("");
+            }
+        });
+
+
+        $(window).resize(function () {
+            flexslider1.vars.minItems = getitemsSize();
+            flexslider1.vars.maxItems = getitemsSize();
+
+            flexslider2.vars.minItems = getitemsSize1();
+            flexslider2.vars.maxItems = getitemsSize1();
+
+            var n = $('#carousel .slides li').length;
+            if (n <= 1) {
+                $('.product-info #carousel .flex-viewport').css({
+                    'margin':0,
+                    "width":"145px"
+                });
+            }
+        })
+
+        $('.product-itit').flexslider({
+            animation: "slide",
+            animationLoop: false,
+            itemWidth: 175,
+            itemMargin: 0,
+            slideshow: false,
+            minItems: getitemsSize1(),
+            maxItems: getitemsSize1(),
+            start: function (slider) {
+                flexslider2 = slider;
+                $('.flex-direction-nav a').text("");
+                $('.flex-direction-nav .flex-next').text("")
+            }
+        });
+
+        $(".product-info-list .slides li").eq(0).addClass('on');
+        var url = "https://www.dahuatech.com/ajax/product";
+        var _id = $(".product-info-list .slides li").eq(0).data('id');
+        var pid = 875;
+        /*$.ajax({
+            url: url + '/' + pid + '/' + _id,
+            success: function (data) {
+                $(".product-ajaxi").html(data);
+            }
+        });*/
+
+        $(".product-info-list .slides li").click(function (e) {
+            $(this).addClass("on").siblings().removeClass("on");
+            var id = $(this).data("id");
+           /* $.ajax({
+                url: url + '/' + pid + "/" + id,
+                success: function (data) {
+                    $(".product-ajaxi").html(data);
+                }
+            });*/
+        })
+
+        function getGridSize1() {
+            return (window.innerWidth < 480) ? 1 :
+                (window.innerWidth < 1025) ? 2 : 4;
+        }
+
+        $('.product-contrast .contrast-list').flexslider({
+            animation: 'slide',
+            animationLoop: false,
+            slideshow: false,
+            itemWidth: 310,
+            itemMargin: 4,
+            move: 1,
+            minItems: getGridSize1(),
+            maxItems: getGridSize1(),
+            start: function (slider) {
+                flexslider1 = slider;
+                $('.flex-direction-nav a').text("");
+            }
+        })
+
+
+        $(".info-font .link").on('click', function () {
+            $('.product-contrast').height('auto');
+            var id = $(this).data('id');
+            var sku = $(this).data('id');
+            var hre = "https://www.dahuatech.com/product/info/875.html";
+            var src = "http://prod.dahuatech.com:8070/jsUploadNoSql/system/upload/app/get.shtml?file=/app/files/2017/10/24/31536623499670902.png";
+            var tit = "DH-IPC-HFW4631F变焦系列";
+            var font = "高清（600万）红外变焦枪型网络摄像机";
+            var match = true;
+            var ajaxUrl = "https://www.dahuatech.com/product/addcompare.html";
+           /* $.ajax({
+                url: ajaxUrl,
+                async: false,
+                type: 'POST',
+                dataType: 'json',
+                data: {'_scfs': 'ed7b3d265487a7d35f873feaec682669', id: id},
+            })
+                .done(function (data) {
+                    if (data.status == 2) {
+                        alert(data.msg);
+                    } else if (data.status == 1) {
+                        $('.product-contrast .contrast-list .slides li').each(function (i) {
+                            var othis = $(this);
+                            if (!othis.attr("data-id") && match) {
+                                match = false;
+                                othis.attr('data-id', id);
+                                othis.attr('data-sku', id);
+                                othis.find('a').attr('href', hre).html('<p class="pic fl"><img src="' + src + '" alt=""><h2>' + tit + '</h2><p class="font">' + font + '</p>').after('<span class="closes"></span>');
+                                inVal();
+                                $(".product-contrast .title span b").html(data.count)
+                            }
+                        });
+
+                    }
+                })*/
+        })
+
+        $('.product-contrast .contrast-list').on('click', '.closes', function () {
+            var _this = $(this);
+            var par = _this.parent('li')
+            var sid = par.attr('data-id');
+            var ajaxUrl = "https://www.dahuatech.com/product/delcompare.html";
+           /* $.ajax({
+                url: ajaxUrl,
+                async: false,
+                type: 'POST',
+                dataType: 'json',
+                data: {'_scfs': 'ed7b3d265487a7d35f873feaec682669', id: sid},
+            })
+                .done(function (data) {
+                    if (data.status == 1) {
+                        $(".product-contrast .title span b").html(data.count)
+                    }
+                })*/
+            $('.product-list-b li.but').each(function () {
+                var _the = $(this)
+                var id = _the.data('id');
+                if (sid == id) {
+                    _the.removeClass("but");
+                }
+                ;
+            })
+            par.attr('data-id', '');
+            par.attr('data-sku', '');
+            par.find("a").attr('href', 'javascript:;').html('<p class="font-none">您还可以继续添加</p>')
+            order_state();
+            inVal();
+        })
+
+
+        //清空
+        $('.contrast-empty').on('click', function () {
+            $('.product-contrast .contrast-list .slides li').each(function (i) {
+                var othis = $(this);
+                if (othis.attr("data-id")) {
+                    othis.find("a").attr('href', 'javascript:;').html('<p class="font-none">您还可以继续添加</p>')
+                    othis.attr('data-id', '')
+                    othis.attr('data-sku', '')
+                }
+            });
+            var ajaxUrl = "https://www.dahuatech.com/product/delcompareall.html";/*
+            $.ajax({
+                url: ajaxUrl,
+                async: false,
+                type: 'POST',
+                dataType: 'json',
+                data: {'_scfs': 'ed7b3d265487a7d35f873feaec682669'},
+            })
+                .done(function (data) {
+                    if (data.status == 1) {
+                        $(".product-contrast .title span b").html(data.count)
+                    }
+                })*/
+            $('.product-contrast .contrast-btn.on').removeClass("on").attr("href", "javascript:;");
+
+            $('.product-list-b li').removeClass('but');
+        });
+
+        //调整位置
+        function order_state() {
+            var htmlArr = [];
+            $('.product-contrast .contrast-list .slides li').each(function (i) {
+                var othis = $(this);
+                if (othis.attr("data-id")) {
+                    htmlArr.push({
+                        all: othis.find("a").html(),
+                        id: othis.attr('data-id'),
+                        sku: othis.attr('data-sku')
+                    });
+                    othis.find("a").attr('href', 'javascript:;').html('<p class="font-none">您还可以继续添加</p>')
+                    othis.attr('data-id', '')
+                    othis.attr('data-sku', '')
+                }
+            });
+
+            $('.product-contrast .contrast-list .slides li').each(function (i) {
+                var othis = $(this);
+                if (i < htmlArr.length) {
+                    othis.find("a").html(htmlArr[i].all)
+                    othis.attr('data-id', htmlArr[i].id)
+                    othis.attr('data-sku', htmlArr[i].sku)
+                }
+            });
+        }
+
+        //赋值
+        function inVal() {
+            var html = '';
+            $('.product-contrast .contrast-list .slides li').each(function (i) {
+                var othis = $(this);
+                if (othis.attr('data-sku')) {
+                    if (i) {
+                        html += '-' + othis.attr('data-sku');
+                    } else {
+                        html += othis.attr('data-sku');
+                    }
+                    //对比按钮
+                    if (i > 0) {
+                        $('.product-contrast .contrast-btn').addClass("on");
+                        // $('.product-contrast .contrast-btn').attr("href","?val="+html)
+                        $('.product-contrast .contrast-btn').attr("href", "https://www.dahuatech.com/product/contrast.html")
+                    } else {
+                        $('.product-contrast .contrast-btn').removeClass("on");
+                        $('.product-contrast .contrast-btn').attr("href", "javascript:;")
+                    }
+                }
+            });
+            //$('.munber-me').val(html);
+        }
+
+        //隐藏
+        $('.product-contrast .product-hide').on('click', function () {
+            $('.product-contrast').height(0);
+        })
+
+
+        //产品导航
+
+        $('.pn-list .pn-tit.cursleect').parents('.pn-content').slideDown().prev('.pn-tit').addClass('cur cut');
+
+
+        $('.pn-box').hover(function () {
+            $('.pn-list').addClass('on')
+        }, function () {
+            $('.pn-list').removeClass('on')
+        })
+
+        $('.pn-list li .pn-tit-one').on('click', function () {
+            var sss = $(this).parent('li').index();
+            var len = $('.pn-list li').length - 1;
+            if (sss == len) {
+                var off = $(this).offset().top - ($('.pn-list').height() / 2);
+                $('.pn-list').stop().animate({'scrollTop': off}, 500);
+            }
+            ;
+            if (!$(this).hasClass('cut')) {
+                $(this).addClass('cut').parents('li').siblings('li').find('.pn-tit-one').removeClass('cut');
+                $(this).next('.pn-con-one').slideDown().parents('li').siblings('li').find('.pn-con-one').slideUp()
+            } else {
+                $(this).removeClass('cut')
+                $(this).next('.pn-con-one').slideUp()
+            }
+        })
+        $('.pn-list li .pn-tit-two').on('click', function () {
+            if (!$(this).hasClass('cur')) {
+                $(this).addClass('cur').siblings('.pn-tit-two').removeClass('cur').parents('li').siblings('li').find('.pn-tit-two').removeClass('cur');
+                $(this).next('.pn-con-two').slideDown().siblings('.pn-con-two').slideUp().parents('li').siblings('li').find('.pn-con-two').slideUp()
+            } else {
+                $(this).removeClass('cur')
+                $(this).next('.pn-con-two').slideUp()
+            }
+        })
+
+        $('.pn-list li .pn-tit-three').on('click', function () {
+            if (!$(this).hasClass('cur')) {
+                $(this).addClass('cur').siblings('.pn-tit-three').removeClass('cur').parents('li').siblings('li').find('.pn-tit-three').removeClass('cur');
+                $(this).next('.pn-con-three').slideDown().siblings('.pn-con-three').slideUp().parents('li').siblings('li').find('.pn-con-three').slideUp()
+            } else {
+                $(this).removeClass('cur')
+                $(this).next('.pn-con-three').slideUp()
+            }
+        })
+
+        $('.pn-list li .pn-tit-four').on('click', function () {
+            if (!$(this).hasClass('cur')) {
+                $(this).addClass('cur').siblings('.pn-tit-four').removeClass('cur').parents('li').siblings('li').find('.pn-tit-four').removeClass('cur');
+                $(this).next('.pn-con-four').slideDown().siblings('.pn-con-four').slideUp().parents('li').siblings('li').find('.pn-con-four').slideUp()
+            } else {
+                $(this).removeClass('cur')
+                $(this).next('.pn-con-four').slideUp()
+            }
+        })
+        var firstTitle = $('.pn-list ul li>a.cut').text();
+        var firstId = $('.pn-list ul li>a.cut').data('id');
+
+        var secondTitle = $('.pn-con-one>a.cut').text();
+        var secondId = $('.pn-con-one>a.cut').data('id');
+
+        var thirdTitle = $('.pn-con-two>a.cut').text();
+        var thirdId = $('.pn-con-two>a.cut').data('id');
+
+        var fourthTitle = $('.pn-con-three>a.cut').text();
+        var fourthId = $('.pn-con-three>a.cut').data('id');
+
+        var fifthTitle = $('.pn-con-four>a.cut').text();
+        var fifthId = $('.pn-con-four>a.cut').data('id');
+
+
+        var baseUrl = "https://www.dahuatech.com/product/lists";
+        var baseLink = baseUrl + '/' + firstId + '.html?area=';
+
+        if (fifthTitle != '') {
+            $('a#three').attr('href', baseLink + fifthId);
+            $('a#three').text(fifthTitle);
+            $('a#two').attr('href', baseLink + fourthId);
+            $('a#two').text(fourthTitle);
+            $('a#one').attr('href', baseLink + thirdId);
+            $('a#one').text(thirdTitle);
+        } else if (fourthTitle != '') {
+            $('a#three').attr('href', baseLink + fourthId);
+            $('a#three').text(fourthTitle);
+            $('a#two').attr('href', baseLink + thirdId);
+            $('a#two').text(thirdTitle);
+            $('a#one').attr('href', baseLink + secondId);
+            $('a#one').text(secondTitle);
+        } else if (thirdTitle != '') {
+            $('a#three').attr('href', baseLink + thirdId);
+            $('a#three').text(thirdTitle);
+            $('a#two').attr('href', baseLink + secondId);
+            $('a#two').text(secondTitle);
+            $('a#one').attr('href', baseLink + firstId);
+            $('a#one').text(firstTitle);
+        } else if (secondTitle != '') {
+            $('a#three').attr('href', baseLink + secondId);
+            $('a#three').text(secondTitle);
+            $('a#two').attr('href', baseLink + firstId);
+            $('a#two').text(firstTitle);
+            $('a#one').css('display', 'none');
+            $('a#one').next('i').css('display', 'none');
+        } else {
+            $('a#three').attr('href', baseLink + firstId);
+            $('a#three').text(firstTitle);
+            $('a#two').css('display', 'none');
+            $('a#two').next('i').css('display', 'none');
+            $('a#one').css('display', 'none');
+            $('a#one').next('i').css('display', 'none');
+        }
+    })
+</script>
+</body>
+</html>

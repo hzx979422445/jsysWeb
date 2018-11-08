@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="content-language" content="zh-CN"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <title>以安全为核心的智慧物联解决方案提供商和运营服务商-江苏云深智能化系统有限公司</title>
+    <meta name="Keywords"
+          content="江苏云深智能化系统有限公司,摄像机,存储,云深,股份,解决方案,报警,门禁,智能交通,民用,创新技术,招聘,供应商,民用,乐橙,dahua,全球安防十强，江苏云深，视频，无人机，机器视觉，服务商，安防品牌，好的安防品牌，产品中心，产品，服务支持，"/>
+    <meta name="Description" content="江苏云深智能化系统有限公司是领先的监控产品供应商和解决方案服务商，面向全球提供领先的视频存储、前端、显示控制和智能交通等系列化产品。"/>
+    <meta name="author" content="江苏云深智能化系统有限公司"/>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="favicon.ico" rel="shortcut icon">
+    <script>
+        var STATIC_URL = "bocweb/";
+        var UPLOAD_URL = "upload/";
+        var GLOBAL_URL = "index.php/";
+        var SITE_URL = "/";
+        var UPLOADDO_URL = "index.php/upload/";
+        var STATIC_VER = "";
+    </script>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/mobile.css" type="text/css" media="screen" charset="utf-8">
+    <script src="js/jQuery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/levideo.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.transit.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/html5.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bocfe.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/plug.preload.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+<div class="headerWrap">
+
+</div>
+
+<script>
+    $(function () {
+        $(".headerWrap").load('header.html', function () {
+            $('header .nav-box li').hover(function () {
+                $(this).find('.con').slideDown(0);
+                $(this).find('.con').show();
+            }, function () {
+                $(this).find('.con').slideUp(0);
+            })
+
+            function conSize() {
+                var bodyW = $("body").width();
+                $("header .nav-box li .con").css({
+                    "width": bodyW,
+                    "margin-left": -bodyW / 2
+                })
+            }
+
+            conSize();
+            window.onresize = function () {
+                conSize();
+            }
+            $('header .nav-box .pro-li dd .link-b').each(function () {
+                var _this = $(this);
+                var bg = _this.data('bg');
+                var bgh = _this.data('bgh');
+                _this.css('background-image', 'url(' + bg + ')');
+                if (_this.hasClass("cur")) {
+                    _this.css('background-image', 'url(' + bgh + ')');
+                }
+                ;
+            })
+
+            $('header .nav-box .link-b').hover(function () {
+                $(this).addClass("cur").siblings("").removeClass("cur");
+                $(this).parent(".log-four").siblings(".log-four").find('.link-b').removeClass("cur")
+                $(this).parents(".con").show();
+            })
+
+            $('header .nav-box .pro-li dd .link-b').hover(function () {
+                var id = $(this).data('id');
+                var conn = $(this).data('conn');
+                var psr = $(this).parents('.con').find('.right');
+                $(this).addClass("cur").parent("dd").siblings("dd").find('.link-b').removeClass("cur");
+                $('header .nav-box .pro-li dd .link-b').each(function () {
+                    var bg = $(this).data('bg');
+                    var bgh = $(this).data('bgh');
+                    if ($(this).hasClass("cur")) {
+                        $(this).css('background-image', 'url(' + bgh + ')')
+                    } else {
+                        $(this).css('background-image', 'url(' + bg + ')')
+                    }
+                })
+            }, function () {
+                $('header .nav-box .pro-li dd .link-b').each(function () {
+                    var bg = $(this).data('bg');
+                    var bgh = $(this).data('bgh');
+                    if ($(this).hasClass("cur")) {
+                        $(this).css('background-image', 'url(' + bgh + ')')
+                    } else {
+                        $(this).css('background-image', 'url(' + bg + ')')
+                    }
+                })
+            })
+
+            $('.mobile-nav-box h2').on('click', function () {
+                if (!$(this).hasClass("cur")) {
+                    $(this).addClass("cur").parent("li").siblings("li").find("h2").removeClass("cur");
+                    $(this).next('.con').slideDown().parent("li").siblings("li").find('.con').slideUp();
+                } else {
+                    $(this).removeClass("cur");
+                    $(this).next('.con').slideUp()
+                }
+            })
+
+            $('.mobile-nav-box p.on').on('click', function () {
+                if (!$(this).hasClass("but")) {
+                    $(this).addClass("but").siblings(".on").removeClass("but").parent(".con").parent("li").siblings("li").find(".on").removeClass("but");
+                    $(this).next('.tit-con').fadeIn().siblings(".tit-con").slideUp().parent(".con").parent("li").siblings("li").find(".tit-con").hide();
+                } else {
+                    $(this).removeClass("but");
+                    $(this).next('.tit-con').hide();
+                }
+            })
+
+            $('.mobile-nav').on('click', function () {
+                if (!$(this).hasClass("on")) {
+                    $(this).addClass("on");
+                    $(".mobile-nav-box").slideDown();
+                } else {
+                    $(this).removeClass("on");
+                    $(".mobile-nav-box").slideUp();
+                }
+            })
+
+            $('header .enght').hover(function () {
+                $(this).find('.con').fadeIn();
+            }, function () {
+                $(this).find('.con').fadeOut();
+            })
+        });
+        $(".footerwrap").load("footer.html");
+    })
+</script>
+<div class="body-box">
+    <div class="inliner-banner">
+        <ul class="slides f-cb">
+            <li>
+                <a href="javascript:;">
+                    <img src="img/2017/09/30/15067592652017wbe1w.jpg" alt="供应商平台" class="pic">
+                    <span class="con">
+						<h2>供应商平台</h2>
+						<p class="font">supplier</p>
+					</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="supplier-notice">
+    <div class="w1400">
+        <h1>合作须知</h1>
+        <div class="supplier-notice-list f-cb">
+            <p class="fl">为了提高沟通效率及质量，请您前在首次来访前仔细阅读以下内容</p>
+            <ul class="fr">
+                <li data-id="128">
+                    <span>诚信原则</span>
+                </li>
+                <li data-id="129">
+                    <span>采购原则</span>
+                </li>
+                <li data-id="130">
+                    <span>采购程序</span>
+                </li>
+            </ul>
+        </div>
+        <div class="supplier-notice-box f-cb">
+            <div class="left">
+                <div class="font">
+                    <span class="ont"></span>
+                    <div class="font-box">
+                        <p>
+                            不对云深员工个人及其亲友，提供现金、有价证券、非公司制式礼品、休闲或旅游等高消费宴请及娱乐招待活动、报销应由其个人支付的费用、以象征性收费的方式向其个人提供财物、住房装修、或其他任何对其个人的利益输送。</p>
+                        <p>不与云深员工个人及其亲友进行非公务上指定的借贷、租赁、投资及任何非属直接公务往来的活动。</p>
+                        <p>不给予云深员工个人及其亲友酬佣式的工作安排；若云深员工个人及其亲友持有贵公司股权，请及时向云深披露。</p>
+
+
+                    </div>
+                </div>
+                <a href="javascript:;" class="more-ajax">查看更多 +</a>
+            </div>
+            <div class="right">
+                <img src="img/2017/09/30/15067598531316asmrq.jpg " alt="诚信原则">
+            </div>
+            <script>
+                $(function () {
+                    var hei = $('.supplier-notice-box .font-box').height() + 100;
+                    $('.supplier-notice-box .more-ajax').on('click', function () {
+                        var _this = $(this)
+                        $('.supplier-notice-box .left .font').stop().animate({
+                            height: hei
+                        }, 500, function () {
+                            _this.fadeOut();
+                        });
+                    })
+                })
+            </script>
+        </div>
+        <div class="supplier-notice-box f-cb" style="display: none;">
+            <div class="left">
+                <div class="font">
+                    <span class="ont"></span>
+                    <div class="font-box">
+                        <ol class=" list-paddingleft-2" style="list-style-type: decimal;">
+                            <li><p style="line-height: 1.5em;"><span style="font-size: 16px;">产品：供应商的产品已在《采购订单》中列明。如供应商未经云深研发部门同意，擅自更改其产品、结构、材质、性能等，云深将立即终止《采购订单》，且要求供应商承担违约责任。</span>
+                            </p></li>
+                            <li><p style="line-height: 1.5em;"><span style="font-size: 16px;">产品质量：为了更好地服务于客户，向客户提供优质产品，云深要求供应商保证交付的产品符合国家有关法律、法规的相关规定，符合国家有关知识产权、工业产权的法律、法规要求。详见《供货质量保证协议》。</span>
+                            </p></li>
+                            <li><p style="line-height: 1.5em;"><span style="font-size: 16px;">产品交付：云深各采购将会以《采购订单》的形式下达采购信息，供应商按照云深订单的要求地址及提货计划的时间、数量进行送货，保质、保量地送到指定地点。因故不能按约定时间送货的，应提前24小时以邮件方式通知到云深的相关人员。</span>
+                            </p></li>
+                            <li><p style="line-height: 1.5em;"><span style="font-size: 16px;">产品价格：为确保在市场上具有良好的竞争优势，供应商提供的产品价格不得高于同类商家，若供应商同期供货产品的价格高于该产品市场价格或供应商供给第三方的价格，云深有权更改已执行订单（以12个月内为限）的价格，且供应商同意云深从应付给供应商的货款中将差价款直接扣除。如需对产品的价格进行调整，应提前十五天书面通知云深，双方协商签订新价格。</span>
+                            </p></li>
+                        </ol>
+                    </div>
+                </div>
+                <a href="javascript:;" class="more-ajax">查看更多 +</a>
+            </div>
+            <div class="right">
+                <img src="img/2017/09/30/15067598531316asmrq.jpg " alt="采购原则">
+            </div>
+        </div>
+        <div class="supplier-notice-box f-cb" style="display: none;">
+            <div class="left">
+                <div class="font">
+                    <span class="ont"></span>
+                    <div class="font-box">
+                        <ol class=" list-paddingleft-2" style="list-style-type: decimal;">
+                            <li><p style="line-height: 1.75em;">合格供应商纳入到批量采购流程示意图（平均周期：一个月）：</p>
+                                <p style="line-height: 1.75em;"><img
+                                        src="img/151209881039692589EE.png"
+                                        title="151209881039692589EE.png" alt="work_in.png" width="526" height="56"
+                                        style="width: 526px; height: 56px;"><br data-filtered="filtered"
+                                                                                style="padding: 0px; margin: 0px; list-style: none;"><span
+                                        style="font-size: 14px;">备注：以上流程中只有前一环节通过后，才可进入下一环节导入流程。</span></p></li>
+                            <li><p style="line-height: 1.75em;">
+                                在就合作/开发工作展开实质性沟通之前,供应商需要签订《保密协议》，协议签订之前不作实质性沟通或者文件、信息传递。</p></li>
+                        </ol>
+                        <p style="line-height: 1.75em;"><br></p></div>
+                </div>
+                <a href="javascript:;" class="more-ajax">查看更多 +</a>
+            </div>
+            <div class="right">
+                <img src="img/2017/09/30/15067598531316asmrq.jpg " alt="采购程序">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="supplier-intro">
+    <div class="w1400">
+        <h2>供方导入介绍</h2>
+        <p><img src="img/su02.jpg " alt=""/></p>
+    </div>
+</div>
+<div class="footerwrap"></div>
+
+<script>
+    window._bd_share_config = {
+        "common": {
+            "bdSnsKey": {},
+            "bdText": "",
+            "bdMini": "2",
+            "bdMiniList": false,
+            "bdPic": "",
+            "bdStyle": "2",
+            "bdSize": "32"
+        },
+        "share": {}
+    };
+    with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+</script>
+<script>
+    $(function () {
+        $('.right-flex li.top').on('click', function () {
+            $('html,body').stop().animate({
+                scrollTop: 0
+            }, 1000);
+        })
+    })
+</script>
+<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/flexslider.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/flexslider-min.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="css/flexslider.css?t=1541144369" type="text/css" media="screen" charset="utf-8">
+<script>
+    var $window = $(window),
+        flexslider = {
+            vars: {}
+        };
+    $(function () {
+        function getGridSize() {
+            return (window.innerWidth >= 1025) ? "fade" : "slide";
+        }
+
+        $(window).resize(function () {
+            flexslider.vars.animation = getGridSize();
+        })
+
+        //首页banner图
+        $('.inliner-banner').flexslider({
+            animation: getGridSize(),
+            slideshowSpeed: 4000,
+            animationSpeed: 1000,
+            touch: true,
+            slideshow: true,
+            start: function (slider) {
+                flexslider = slider;
+                $('.flex-direction-nav a').text("");
+            }
+        });
+
+        var url = "ajax/supplier";
+        $('.supplier-notice-list li').eq(0).addClass("cur");
+        var id0 = $('.supplier-notice-list li').eq(0).data('id');
+        // $.ajax({
+        // 	url: url + "/" + id0,
+        // 	success: function(data) {
+        // 		$(".supplier-notice-box").html(data);
+        // 	}
+        // })
+
+        $('.supplier-notice-list li').on('click', function () {
+            var on = $(this);
+            $(".supplier-notice-box").hide();
+            $(".supplier-notice-box").eq(on.index()).show();
+            var id = $(this).data("id");
+            $(this).addClass("cur").siblings().removeClass('cur');
+            /*$.ajax({
+                url: url + "/" + id,
+                success: function(data) {
+                    $(".supplier-notice-box").html(data);
+                }
+            });*/
+        })
+    })
+</script>
+</body>
+
+</html>

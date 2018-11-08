@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="content-language" content="zh-CN"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <title>以安全为核心的智慧物联解决方案提供商和运营服务商-江苏云深智能化系统有限公司</title>
+    <meta name="Keywords"
+          content="江苏云深智能化系统有限公司,摄像机,存储,云深,股份,解决方案,报警,门禁,智能交通,民用,创新技术,招聘,供应商,民用,乐橙,dahua,全球安防十强，江苏云深，视频，无人机，机器视觉，服务商，安防品牌，好的安防品牌，产品中心，产品，服务支持，"/>
+    <meta name="Description" content="江苏云深智能化系统有限公司是领先的监控产品供应商和解决方案服务商，面向全球提供领先的视频存储、前端、显示控制和智能交通等系列化产品。"/>
+    <meta name="author" content="江苏云深智能化系统有限公司"/>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="img/favicon.ico" rel="shortcut icon">
+    <script>
+        var STATIC_URL = "bocweb/";
+        var UPLOAD_URL = "upload/";
+        var GLOBAL_URL = "index.php/";
+        var SITE_URL = "/";
+        var UPLOADDO_URL = "index.php/upload/";
+        var STATIC_VER = "";
+    </script>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/mobile.css" type="text/css" media="screen" charset="utf-8">
+    <script src="js/jQuery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/levideo.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.transit.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/html5.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bocfe.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/plug.preload.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+<div class="headerWrap">
+
+</div>
+
+<script>
+    $(function () {
+        $(".headerWrap").load('header.html', function () {
+            $('header .nav-box li').hover(function () {
+                $(this).find('.con').slideDown(0);
+                $(this).find('.con').show();
+            }, function () {
+                $(this).find('.con').slideUp(0);
+            })
+
+            function conSize() {
+                var bodyW = $("body").width();
+                $("header .nav-box li .con").css({
+                    "width": bodyW,
+                    "margin-left": -bodyW / 2
+                })
+            }
+
+            conSize();
+            window.onresize = function () {
+                conSize();
+            }
+            $('header .nav-box .pro-li dd .link-b').each(function () {
+                var _this = $(this);
+                var bg = _this.data('bg');
+                var bgh = _this.data('bgh');
+                _this.css('background-image', 'url(' + bg + ')');
+                if (_this.hasClass("cur")) {
+                    _this.css('background-image', 'url(' + bgh + ')');
+                }
+                ;
+            })
+
+
+            $('header .nav-box .link-b').hover(function () {
+                $(this).addClass("cur").siblings("").removeClass("cur");
+                $(this).parent(".log-four").siblings(".log-four").find('.link-b').removeClass("cur")
+                $(this).parents(".con").show();
+            })
+
+            $('header .nav-box .pro-li dd .link-b').hover(function () {
+                var id = $(this).data('id');
+                var conn = $(this).data('conn');
+                var psr = $(this).parents('.con').find('.right');
+                $(this).addClass("cur").parent("dd").siblings("dd").find('.link-b').removeClass("cur");
+                $('header .nav-box .pro-li dd .link-b').each(function () {
+                    var bg = $(this).data('bg');
+                    var bgh = $(this).data('bgh');
+                    if ($(this).hasClass("cur")) {
+                        $(this).css('background-image', 'url(' + bgh + ')')
+                    } else {
+                        $(this).css('background-image', 'url(' + bg + ')')
+                    }
+                })
+            }, function () {
+                $('header .nav-box .pro-li dd .link-b').each(function () {
+                    var bg = $(this).data('bg');
+                    var bgh = $(this).data('bgh');
+                    if ($(this).hasClass("cur")) {
+                        $(this).css('background-image', 'url(' + bgh + ')')
+                    } else {
+                        $(this).css('background-image', 'url(' + bg + ')')
+                    }
+                })
+            })
+
+            $('.mobile-nav-box h2').on('click', function () {
+                if (!$(this).hasClass("cur")) {
+                    $(this).addClass("cur").parent("li").siblings("li").find("h2").removeClass("cur");
+                    $(this).next('.con').slideDown().parent("li").siblings("li").find('.con').slideUp();
+                } else {
+                    $(this).removeClass("cur");
+                    $(this).next('.con').slideUp()
+                }
+            })
+
+            $('.mobile-nav-box p.on').on('click', function () {
+                if (!$(this).hasClass("but")) {
+                    $(this).addClass("but").siblings(".on").removeClass("but").parent(".con").parent("li").siblings("li").find(".on").removeClass("but");
+                    $(this).next('.tit-con').fadeIn().siblings(".tit-con").slideUp().parent(".con").parent("li").siblings("li").find(".tit-con").hide();
+                } else {
+                    $(this).removeClass("but");
+                    $(this).next('.tit-con').hide();
+                }
+            })
+
+            $('.mobile-nav').on('click', function () {
+                if (!$(this).hasClass("on")) {
+                    $(this).addClass("on");
+                    $(".mobile-nav-box").slideDown();
+                } else {
+                    $(this).removeClass("on");
+                    $(".mobile-nav-box").slideUp();
+                }
+            })
+
+            $('header .enght').hover(function () {
+                $(this).find('.con').fadeIn();
+            }, function () {
+                $(this).find('.con').fadeOut();
+            })
+        });
+        $(".footerwrap").load("footer.html");
+    })
+</script>
+<div class="body-box">
+    <div class="inliner-banner">
+        <ul class="slides f-cb">
+            <li>
+                <a href="javascript:;">
+                    <img src="img/2017/10/17/15082274862785t4wsz.jpg " alt="投资者关系" class="pic">
+                    <span class="con">
+						<h2>投资者关系</h2>
+						<p class="font">Investor Relations</p>
+					</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="w1400 notice-t">
+        <h2 class="inv-title">公司公告</h2>
+        <ul class="f-cb">
+            <li>
+                <a target="_blank" href="javascript:;">
+                    <p class="time">2018-10-26</p>
+                    <p class="font">江苏云深智能化系统有限公司2018 年第三季度报告</p>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="javascript:;">
+                    <p class="time">2018-10-26</p>
+                    <p class="font">江苏云深智能化系统有限公司 2018 年第三季度报告正文</p>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="javascript:;">
+                    <p class="time">2018-08-29</p>
+                    <p class="font">江苏云深：独立董事关于相关事项的独立意见</p>
+                </a>
+            </li>
+
+        </ul>
+        <a href="javascript:;" class="more">查看更多</a>
+    </div>
+</div>
+<div class="govem-t">
+    <div class="w1400">
+        <h2 class="inv-title">公司治理</h2>
+        <div class="govem-t-box f-cb">
+            <div class="right">
+                <ul class="slides">
+                    <li>
+                        <a target="_blank" href="javascript:;">
+                            <img src="img/15236116679521taadz.jpg " alt="对外担保管理制度（2018年3月）">
+                            <p>对外担保管理制度（2018年3月）</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="javascript:;">
+                            <img src="img/15236116679521taadz.jpg " alt="风险投资管理制度（2018年3月）">
+                            <p>风险投资管理制度（2018年3月）</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="javascript:;">
+                            <img src="img/15236116679521taadz.jpg " alt="信息披露管理制度（2018年3月）">
+                            <p>信息披露管理制度（2018年3月）</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="left">
+                <ul>
+                    <li>
+                        <a target="_blank" href="javascript:;" class="f-cb">
+                            <span class="tit">对外担保管理制度（2018年3月）</span>
+                            <span class="time">2018-03-09</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="javascript:;" class="f-cb">
+                            <span class="tit">风险投资管理制度（2018年3月）</span>
+                            <span class="time">2018-03-09</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="javascript:;" class="f-cb">
+                            <span class="tit">信息披露管理制度（2018年3月）</span>
+                            <span class="time">2018-03-09</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="javascript:;" class="f-cb">
+                            <span class="tit">关联交易管理制度（2018年3月）</span>
+                            <span class="time">2018-03-09</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="javascript:;" class="f-cb">
+                            <span class="tit">对外投资管理制度（2018年3月）</span>
+                            <span class="time">2018-03-09</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="javascript:;" class="f-cb">
+                            <span class="tit">公司章程（2018年3月）</span>
+                            <span class="time">2018-03-09</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <a href="javascript:;" class="more">查看更多</a>
+    </div>
+</div>
+<div class="finance-t">
+    <div class="w1400">
+        <h2 class="inv-title">财务数据</h2>
+        <ul class="f-cb">
+
+            <li>
+                <a target="_blank" href="javascript:;">
+                    <p class="pic fl">
+                        <img src="img/su12.png " alt="">
+                    </p>
+                    <span class="con">
+                                <h2>江苏云深智能化系统有限公司 2018 年第三季度报告正文</h2>
+                                <p class="font">2018-10-30</p>
+                            </span>
+                </a>
+            </li>
+
+            <li>
+                <a target="_blank" href="javascript:;">
+                    <p class="pic fl">
+                        <img src="img/su12.png " alt="">
+                    </p>
+                    <span class="con">
+                                <h2>江苏云深智能化系统有限公司2018 年第三季度报告</h2>
+                                <p class="font">2018-10-30</p>
+                            </span>
+                </a>
+            </li>
+
+            <li>
+                <a target="_blank" href="javascript:;">
+                    <p class="pic fl">
+                        <img src="img/su12.png " alt="">
+                    </p>
+                    <span class="con">
+                                <h2>2017年年度报告主要财务指标及分配预案</h2>
+                                <p class="font">2018-03-09</p>
+                            </span>
+                </a>
+            </li>
+
+            <li>
+                <a target="_blank" href="javascript:;">
+                    <p class="pic fl">
+                        <img src="img/su12.png " alt="">
+                    </p>
+                    <span class="con">
+                                <h2>2017年年度报告</h2>
+                                <p class="font">2018-03-09</p>
+                            </span>
+                </a>
+            </li>
+
+            <li>
+                <a target="_blank" href="javascript:;">
+                    <p class="pic fl">
+                        <img src="img/su12.png " alt="">
+                    </p>
+                    <span class="con">
+                                <h2>2017年年度报告摘要</h2>
+                                <p class="font">2018-03-09</p>
+                            </span>
+                </a>
+            </li>
+
+            <li>
+                <a target="_blank" href="javascript:;">
+                    <p class="pic fl">
+                        <img src="img/su12.png " alt="">
+                    </p>
+                    <span class="con">
+                                <h2>2017年度业绩快报</h2>
+                                <p class="font">2018-01-25</p>
+                            </span>
+                </a>
+            </li>
+        </ul>
+        <a href="javascript:;" class="more">查看更多</a>
+    </div>
+</div>
+<div class="platform">
+    <div class="w1400">
+        <h2 class="inv-title">投资者平台</h2>
+        <a href="javascript:;" class="platform-link w1400" target="_blank">
+            <img src="img/su14.jpg " alt="" class="pic">
+            <span class="bg"></span>
+            <div class="con">
+                <img src="img/su15.png " alt="" class="img01">
+                <img src="img/su15_h.png " alt="" class="img02">
+                <span class="font">查看详情</span>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class="footerwrap"></div>
+<script>window._bd_share_config = {
+    "common": {
+        "bdSnsKey": {},
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": "",
+        "bdStyle": "2",
+        "bdSize": "32"
+    }, "share": {}
+};
+with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+<script>
+    $(function () {
+        $('.right-flex li.top').on('click', function () {
+            $('html,body').stop().animate({scrollTop: 0}, 1000);
+        })
+    })
+</script>
+<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/flexslider.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/flexslider-min.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" charset="utf-8">
+<script>
+    var $window = $(window),
+        flexslider = {vars: {}},
+        flexslider1 = {vars: {}};
+    $(function () {
+        function getGridSize() {
+            return (window.innerWidth >= 1025) ? "fade" : "slide";
+        }
+
+        $(window).resize(function () {
+            flexslider.vars.animation = getGridSize();
+        })
+
+        //首页banner图
+        $('.inliner-banner').flexslider({
+            animation: getGridSize(),
+            slideshowSpeed: 4000,
+            animationSpeed: 1000,
+            touch: true,
+            slideshow: true,
+            start: function (slider) {
+                flexslider = slider;
+                $('.flex-direction-nav a').text("");
+            }
+        });
+
+        $('.govem-t-box .right').flexslider({
+            animation: "slide",
+            slideshowSpeed: 4000,
+            animationSpeed: 1000,
+            touch: true,
+            slideshow: true,
+            start: function (slider) {
+                flexslider1 = slider;
+                $('.flex-direction-nav a').text("");
+                $('.flex-control-nav a').text("");
+            }
+        });
+
+        $('.notice-t li').each(function () {
+            var index = $(this).index();
+            if (index % 3 == 2) {
+                $(this).addClass('cur');
+            }
+        })
+
+        $('.finance-t li').each(function () {
+            var index = $(this).index();
+            if (index % 2 == 1) {
+                $(this).addClass('even');
+            }
+        })
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-language" content="zh-CN" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>关于我们-江苏云深智能化系统有限公司</title>
+<meta name="Keywords" content="江苏云深智能化系统有限公司,摄像机,存储,云深,股份,解决方案,报警,门禁,智能交通,民用,创新技术,招聘,供应商,民用,乐橙,dahua,全球安防十强，江苏云深，视频，无人机，机器视觉，服务商，安防品牌，好的安防品牌，产品中心，产品，服务支持，"/>
+<meta name="Description" content="江苏云深智能化系统有限公司是领先的监控产品供应商和解决方案服务商，面向全球提供领先的视频存储、前端、显示控制和智能交通等系列化产品。"/>
+<meta name="author" content="江苏云深智能化系统有限公司"/>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link href="favicon.ico" rel="shortcut icon">
+<script>
+	var STATIC_URL  = "bocweb/" ;
+	var UPLOAD_URL  = "upload/" ;
+	var GLOBAL_URL = "index.php/";
+	var SITE_URL = "/";
+	var UPLOADDO_URL = "index.php/upload/";
+	var STATIC_VER = "";
+</script>
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" href="css/style1.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" href="css/mobile.css" type="text/css" media="screen" charset="utf-8">
+<script src="js/jQuery.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/levideo.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.transit.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/html5.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/bocfe.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/plug.preload.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+<div class="headerWrap">
+
+</div>
+
+<script>
+	$(function(){
+		$(".headerWrap").load('header.html', function () {
+			$('header .nav-box li').hover(function(){
+				$(this).find('.con').slideDown(0);
+				$(this).find('.con').show();
+			},function(){
+				$(this).find('.con').slideUp(0);
+			})
+			function conSize(){
+                var bodyW = $("body").width();
+                $("header .nav-box li .con").css({
+                    "width":bodyW,
+                    "margin-left":-bodyW/2
+                })
+            }
+            conSize();
+            window.onresize = function(){
+                conSize();
+            }
+			$('header .nav-box .pro-li dd .link-b').each(function(){
+				var _this = $(this);
+				var bg = _this.data('bg');
+				var bgh = _this.data('bgh');
+				_this.css('background-image','url('+bg+')');
+				if (_this.hasClass("cur")) {
+					_this.css('background-image','url('+bgh+')');
+				};
+			})
+	
+	
+			$('header .nav-box .link-b').hover(function(){
+				$(this).addClass("cur").siblings("").removeClass("cur");
+				$(this).parent(".log-four").siblings(".log-four").find('.link-b').removeClass("cur")
+				$(this).parents(".con").show();
+			})
+	
+			$('header .nav-box .pro-li dd .link-b').hover(function(){
+				var id = $(this).data('id');
+				var conn = $(this).data('conn');
+				var psr = $(this).parents('.con').find('.right');
+				$(this).addClass("cur").parent("dd").siblings("dd").find('.link-b').removeClass("cur");
+				$('header .nav-box .pro-li dd .link-b').each(function(){
+					var bg = $(this).data('bg');
+					var bgh = $(this).data('bgh');
+					if ($(this).hasClass("cur")) {
+						$(this).css('background-image','url('+bgh+')')
+					}else{
+						$(this).css('background-image','url('+bg+')')
+					}
+				})
+			},function(){
+				$('header .nav-box .pro-li dd .link-b').each(function(){
+					var bg = $(this).data('bg');
+					var bgh = $(this).data('bgh');
+					if ($(this).hasClass("cur")) {
+						$(this).css('background-image','url('+bgh+')')
+					}else{
+						$(this).css('background-image','url('+bg+')')
+					}
+				})
+			})
+	
+			$('.mobile-nav-box h2').on('click',function(){
+				if (!$(this).hasClass("cur")) {
+					$(this).addClass("cur").parent("li").siblings("li").find("h2").removeClass("cur");
+					$(this).next('.con').slideDown().parent("li").siblings("li").find('.con').slideUp();
+				}else{
+					$(this).removeClass("cur");
+					$(this).next('.con').slideUp()
+				}
+			})
+	
+			$('.mobile-nav-box p.on').on('click',function(){
+				if (!$(this).hasClass("but")) {
+					$(this).addClass("but").siblings(".on").removeClass("but").parent(".con").parent("li").siblings("li").find(".on").removeClass("but");
+					$(this).next('.tit-con').fadeIn().siblings(".tit-con").slideUp().parent(".con").parent("li").siblings("li").find(".tit-con").hide();
+				}else{
+					$(this).removeClass("but");
+					$(this).next('.tit-con').hide();
+				}
+			})
+	
+			$('.mobile-nav').on('click',function(){
+				if (!$(this).hasClass("on")) {
+					$(this).addClass("on");
+					$(".mobile-nav-box").slideDown();
+				}else{
+					$(this).removeClass("on");
+					$(".mobile-nav-box").slideUp();
+				}
+			})
+	
+			$('header .enght').hover(function(){
+				$(this).find('.con').fadeIn();
+			},function(){
+				$(this).find('.con').fadeOut();
+			})
+		});
+		$(".footerwrap").load("footer.html");
+	})
+</script>
+    <div class="about-channel body-box">
+    	<div class="ac-banner" style="background:url(img/2018/10/30/15408871334816tji7n.jpg ) no-repeat center;">
+    	 	<span class="con">
+				<div class="box">
+					<a href="company.html " class="link">
+						<img src="img/ab02.png " alt="">
+						了解公司概况
+					</a>
+					<a href="javascript:;" class="video-b" data-id="34">
+						<img src="img/ab03.png " alt="">
+						观看完整视频
+					</a>
+				 </div>
+    	 	</span>
+    	</div>
+    	<div class="ac-number">
+    		<div class="w1400">
+    			<ul class="f-cb">
+					    <li>
+        					<h2>42</h2>
+        					<p>全球建立42个分支机构</p>
+        				</li>
+                        
+					    <li>
+        					<h2>180</h2>
+        					<p>产品覆盖全球180个 国家和地区</p>
+        				</li>
+                        
+					    <li>
+        					<h2>1700</h2>
+        					<p>公司申请专利1700+项</p>
+        				</li>
+                        
+					    <li>
+        					<h2>16000+</h2>
+        					<p>拥有16000+公司员工</p>
+        				</li>
+                        
+					     <li>
+        					<h2>NO.2</h2>
+        					<p>2018年IHS权威机构发布 全球视频监控设备市场占有率报告中排名第二</p>
+        				</li>
+                        
+                        				
+    			</ul>
+    		</div>
+    	</div>
+    	<div class="ac-about">
+    		<div class="w1400">
+    			<h2>企业概况</h2>
+    			<ul class="f-cb">
+    				<li>
+    					<a href="javascript:;">
+    						<p class="pic">
+    							<img src="img/2017/09/29/15066761482209a4zvm.jpg " alt="公司介绍">
+    						</p>
+    						<h3>公司介绍</h3>
+    						<p class="font">江苏云深是一家专注于大中型企业安全生产标准化与应急指挥系统解决...</p>
+    						<p class="more">查看更多</p>
+    					</a>
+    				</li>
+    				<li>
+    					<a href="javascript:;">
+    						<p class="pic">
+    							<img src="img/2017/10/23/150874936735196jgdo.jpg " alt="管理体系">
+    						</p>
+    						<h3>管理体系</h3>
+    						<p class="font">江苏云深秉承“以客户为中心，以奋斗者为本”的核心理念和“让社会更安全、让...</p>
+    						<p class="more">查看更多</p>
+    					</a>
+    				</li>
+    				<li>
+    					<a href="javascript:;">
+    						<p class="pic">
+    							<img src="img/2017/09/29/15066761991941ukbid.jpg " alt="愿景使命">
+    						</p>
+    						<h3>愿景使命</h3>
+    						<p class="font">积极开拓市场，推进业务本地化并优化营收结构，进一步实现...</p>
+    						<p class="more">查看更多</p>
+    					</a>
+    				</li>
+    				<li>
+						<a href="javascript:;">
+    						<p class="pic">
+    							<img src="img/2017/09/29/15066762419908psr8n.jpg " alt="竞争优势">
+    						</p>
+    						<h3>竞争优势</h3>
+    						<p class="font">江苏云深基于在安全领域多年来的技术积累和行业经验，拥有广泛的用户基...</p>
+    						<p class="more">查看更多</p>
+    					</a>
+    				</li>
+    			</ul>
+    		</div>
+    	</div>
+    	<div class="ac-media">
+    		<a href="javascript:;">
+    			<img src="img/2017/09/29/15066764061624up2u3.jpg " alt="多媒体中心" class="pic">
+    			<span class="con">
+    				<h3>多媒体中心</h3>
+    				<h2>让社会更安全 让生活更智能</h2>
+    				<p class="more"><img src="img/ab02.png " alt="">查看更多</p>
+    			</span>
+    		</a>
+    	</div>
+    	<div class="ac-join">
+    		<div class="w1400">
+    			<ul class="f-cb">
+    				<li>
+    					<a href="join.html">
+    						<p class="pic">
+    							<img src="img/2017/09/29/15066765220663c0vrh.jpg " alt="社会招聘">
+    						</p>
+    						<span class="con">
+    							<h2>社会招聘</h2>
+    							<p class="more">点击展开你的职业生涯</p>
+    						</span>
+    					</a>
+    				</li>
+    				<li>
+    					<a target="_blank" href="javascript:;">
+    						<p class="pic">
+    							<img src="img/2017/09/29/15066765547853zig3a.jpg " alt="校园招聘">
+    						</p>
+    						<span class="con">
+    							<h2>校园招聘</h2>
+    							<p class="more">点击查看更多校招职位</p>
+    						</span>
+    					</a>
+    				</li>
+    				<li>
+    					<a href="contact.html">
+    						<p class="pic">
+    							<img src="img/2017/09/29/150667657680452ohnm.jpg " alt="联系我们">
+    						</p>
+    						<span class="con">
+    							<h2>联系我们</h2>
+    							<p class="more">全国各地43个办事处</p>
+    						</span>
+    					</a>
+    				</li>
+    			</ul>
+    		</div>
+    	</div>
+    </div>
+<div class="video-ajax"></div>
+
+<div class="footerwrap"></div>
+
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"32"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+<script>
+	$(function(){
+		$('.right-flex li.top').on('click',function(){
+			$('html,body').stop().animate({scrollTop:0},1000);
+		})
+	})
+</script><script src="js/main.js" type="text/javascript" charset="utf-8"></script><script>
+$(function(){
+	var winw = $(window).width();
+	var winh = $(window).height();
+	$('.video-ajax').width(winw);
+	$('.video-ajax').height(winh);
+	$(window).resize(function(){
+		var winw = $(window).width();
+		var winh = $(window).height();
+		$('.video-ajax').width(winw);
+		$('.video-ajax').height(winh);
+	})
+
+	var url_ajax = "https://www.dahuatech.com/ajax/video";
+	    $('.video-b').on('click',function(){
+	    	var id = $(this).data("id");
+	    	$.ajax({ 
+                url: url_ajax+"/"+id, 
+                success: function(data){
+                     $(".video-ajax").html(data);
+                     $('.video-ajax').fadeIn();
+                }
+            });
+	    })
+})
+</script>
+</body>
+</html>

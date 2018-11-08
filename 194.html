@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="content-language" content="zh-CN"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <title>以安全为核心的智慧物联解决方案提供商和运营服务商-江苏云深智能化系统有限公司</title>
+    <meta name="Keywords"
+          content="江苏云深智能化系统有限公司,摄像机,存储,云深,股份,解决方案,报警,门禁,智能交通,民用,创新技术,招聘,供应商,民用,乐橙,dahua,全球安防十强，江苏云深，视频，无人机，机器视觉，服务商，安防品牌，好的安防品牌，产品中心，产品，服务支持，"/>
+    <meta name="Description" content="江苏云深智能化系统有限公司是领先的监控产品供应商和解决方案服务商，面向全球提供领先的视频存储、前端、显示控制和智能交通等系列化产品。"/>
+    <meta name="author" content="江苏云深智能化系统有限公司"/>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="img/favicon.ico" rel="shortcut icon">
+    <script>
+        var STATIC_URL = "bocweb/";
+        var UPLOAD_URL = "upload/";
+        var GLOBAL_URL = "index.php/";
+        var SITE_URL = "/";
+        var UPLOADDO_URL = "index.php/upload/";
+        var STATIC_VER = "";
+    </script>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/mobile.css" type="text/css" media="screen" charset="utf-8">
+    <script src="js/jQuery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/levideo.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.transit.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/html5.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bocfe.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/plug.preload.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/getUrlParam.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+<div class="headerWrap">
+
+</div>
+
+<script>
+    $(function () {
+        $(".headerWrap").load('header.html', function () {
+            $('header .nav-box li').hover(function () {
+                $(this).find('.con').slideDown(0);
+                $(this).find('.con').show();
+            }, function () {
+                $(this).find('.con').slideUp(0);
+            })
+
+            function conSize() {
+                var bodyW = $("body").width();
+                $("header .nav-box li .con").css({
+                    "width": bodyW,
+                    "margin-left": -bodyW / 2
+                })
+            }
+
+            conSize();
+            window.onresize = function () {
+                conSize();
+            }
+            $('header .nav-box .pro-li dd .link-b').each(function () {
+                var _this = $(this);
+                var bg = _this.data('bg');
+                var bgh = _this.data('bgh');
+                _this.css('background-image', 'url(' + bg + ')');
+                if (_this.hasClass("cur")) {
+                    _this.css('background-image', 'url(' + bgh + ')');
+                }
+                ;
+            })
+
+
+            $('header .nav-box .link-b').hover(function () {
+                $(this).addClass("cur").siblings("").removeClass("cur");
+                $(this).parent(".log-four").siblings(".log-four").find('.link-b').removeClass("cur")
+                $(this).parents(".con").show();
+            })
+
+            $('header .nav-box .pro-li dd .link-b').hover(function () {
+                var id = $(this).data('id');
+                var conn = $(this).data('conn');
+                var psr = $(this).parents('.con').find('.right');
+                $(this).addClass("cur").parent("dd").siblings("dd").find('.link-b').removeClass("cur");
+                $('header .nav-box .pro-li dd .link-b').each(function () {
+                    var bg = $(this).data('bg');
+                    var bgh = $(this).data('bgh');
+                    if ($(this).hasClass("cur")) {
+                        $(this).css('background-image', 'url(' + bgh + ')')
+                    } else {
+                        $(this).css('background-image', 'url(' + bg + ')')
+                    }
+                })
+            }, function () {
+                $('header .nav-box .pro-li dd .link-b').each(function () {
+                    var bg = $(this).data('bg');
+                    var bgh = $(this).data('bgh');
+                    if ($(this).hasClass("cur")) {
+                        $(this).css('background-image', 'url(' + bgh + ')')
+                    } else {
+                        $(this).css('background-image', 'url(' + bg + ')')
+                    }
+                })
+            })
+
+            $('.mobile-nav-box h2').on('click', function () {
+                if (!$(this).hasClass("cur")) {
+                    $(this).addClass("cur").parent("li").siblings("li").find("h2").removeClass("cur");
+                    $(this).next('.con').slideDown().parent("li").siblings("li").find('.con').slideUp();
+                } else {
+                    $(this).removeClass("cur");
+                    $(this).next('.con').slideUp()
+                }
+            })
+
+            $('.mobile-nav-box p.on').on('click', function () {
+                if (!$(this).hasClass("but")) {
+                    $(this).addClass("but").siblings(".on").removeClass("but").parent(".con").parent("li").siblings("li").find(".on").removeClass("but");
+                    $(this).next('.tit-con').fadeIn().siblings(".tit-con").slideUp().parent(".con").parent("li").siblings("li").find(".tit-con").hide();
+                } else {
+                    $(this).removeClass("but");
+                    $(this).next('.tit-con').hide();
+                }
+            })
+
+            $('.mobile-nav').on('click', function () {
+                if (!$(this).hasClass("on")) {
+                    $(this).addClass("on");
+                    $(".mobile-nav-box").slideDown();
+                } else {
+                    $(this).removeClass("on");
+                    $(".mobile-nav-box").slideUp();
+                }
+            })
+
+            $('header .enght').hover(function () {
+                $(this).find('.con').fadeIn();
+            }, function () {
+                $(this).find('.con').fadeOut();
+            })
+        });
+        $(".footerwrap").load("footer.html");
+    })
+</script>
+<div class="body-box">
+
+    <div class="wel-banner case-banner">
+        <ul class="slides f-cb">
+            <li data-pc="img/2017/11/23/15114184818563p2rqd.jpg"
+                data-mobile="img/2017/11/23/15114184870227rfpks.jpg">
+                <a href="javascript:;">
+                    <img src="" alt="" class="pic">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="por">
+        <div class="w1400">
+            <div class="now">
+                <a href="index.html">首页</a><i></i>
+                <a href="cases.html">解决方案</a>
+                <i></i>
+                <a href="javascript:;">智能楼宇</a>
+            </div>
+        </div>
+        <div class="case-top">
+            <div class="w1400">
+                <h2 class="title"></h2>
+                <p class="describe"></p></div>
+        </div>
+    </div>
+    <div class="case-list">
+        <div class="w1400 case-listp">
+            <ul class="slides f-cb slides_item">
+
+            </ul>
+        </div>
+        <div class="w1400 case-listm">
+            <ul class="slides f-cb slides_item">
+
+            </ul>
+        </div>
+    </div>
+    <div class="case-bot">
+        <div class="w1400 case-bot-content">
+
+        </div>
+    </div>
+</div>
+<div class="footerwrap"></div>
+<script>window._bd_share_config = {
+    "common": {
+        "bdSnsKey": {},
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": "",
+        "bdStyle": "2",
+        "bdSize": "32"
+    }, "share": {}
+};
+with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+<script>
+    $(function () {
+
+        var news_index= UrlParm.parm("key");
+        var dataObj;
+        $.ajax({
+            type:"get",
+            url:"case.json",
+            async:true,
+            success:function(data){
+                var datas = data[news_index];
+                dataObj = datas;
+                if(datas.item != undefined){
+                    for(var i = 0;i < datas.item.length; i++){
+                        if(i == 0){
+                            var li = ' <li class="on" ><a href="javascript:;">'+datas.item[i]+'</a></li>';
+                        }else{
+                            var li = ' <li class="" ><a href="javascript:;">'+datas.item[i]+'</a></li>';
+                        }
+                        $(".slides_item").eq(0).append(li);
+                        $(".slides_item").eq(1).append(li);
+                    }
+                }
+                $(".case-bot-content").html(datas.content[0]);
+                $(".describe").html(datas.describe);
+                $(".title").html(datas.title);
+
+            },
+            error:function(){
+
+            }
+        });
+        $(document).on("click",'.slides_item>li',function () {
+            var on = $(this);
+            var index = on.index();
+            on.addClass('on').siblings().removeClass('on');
+            $(".case-bot-content").html(dataObj.content[index]);
+        })
+
+
+        $('.right-flex li.top').on('click', function () {
+            $('html,body').stop().animate({scrollTop: 0}, 1000);
+        })
+    })
+</script>
+<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/flexslider.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" charset="utf-8">
+<script src="js/scrollbar.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="css/scrollbar.css" type="text/css" media="screen" charset="utf-8">
+<script>
+    var $window = $(window),
+        flexslider = {vars: {}},
+        flexslider1 = {vars: {}};
+
+    function getGridSize() {
+        return ($window.innerWidth >= 1025) ? "fade" : "slide";
+    }
+
+    function getitemsSize() {
+        return (window.innerWidth < 480) ? 1 :
+            (window.innerWidth < 769) ? 2 : 4;
+    }
+
+    $(function () {
+        winsize()
+        $(window).resize(function () {
+            winsize()
+            flexslider.vars.animation = getGridSize();
+
+            flexslider1.vars.minItems = getitemsSize();
+            flexslider1.vars.maxItems = getitemsSize();
+        })
+
+        //首页banner图
+        function winsize() {
+            var winw = $(window).width();
+            if (winw > 1025) {
+                $('.wel-banner .slides li').each(function () {
+                    var wb = $(this).attr('data-pc');
+                    $(this).find(".pic").attr('src', wb);
+                })
+
+                var hs = $('.wel-case .slides li').width();
+                $('.wel-case .slides li').hover(function () {
+                    var h = $(this).find('img').width();
+                    $(this).stop().animate({width: h}, 500);
+                }, function () {
+                    $(this).stop().animate({width: hs}, 500);
+                })
+            } else {
+                $('.wel-banner .slides li').each(function () {
+                    var wb = $(this).attr('data-mobile');
+                    $(this).find(".pic").attr('src', wb);
+                })
+            }
+
+        }
+
+        var size = $('.wel-case .slides li').size();
+        if (size > 1) {
+            $('.wel-banner').flexslider({
+                animation: 'slide',
+                slideshowSpeed: 4000,
+                animationSpeed: 1000,
+                touch: true,
+                slideshow: true,
+                start: function (slider) {
+                    flexslider = slider;
+                    $('.wel-banner .loader').hide();
+                    $('.flex-direction-nav a').text("");
+                }
+            });
+        }
+        ;
+
+        $('.case-list .case-listm').flexslider({
+            animation: "slide",
+            touch: true,
+            slideshow: false,
+            itemWidth: 350,
+            minItems: getitemsSize(),
+            maxItems: getitemsSize(),
+            start: function (slider) {
+                flexslider1 = slider;
+                $('.flex-direction-nav a').text("");
+            },
+        })
+
+
+    })
+</script>
+</body>
+</html>

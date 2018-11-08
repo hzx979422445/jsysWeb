@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-language" content="zh-CN" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+    <title>以安全为核心的智慧物联解决方案提供商和运营服务商-江苏云深智能化系统有限公司</title>
+    <meta name="Keywords" content="江苏云深智能化系统有限公司,摄像机,存储,云深,股份,解决方案,报警,门禁,智能交通,民用,创新技术,招聘,供应商,民用,乐橙,dahua,全球安防十强，江苏云深，视频，无人机，机器视觉，服务商，安防品牌，好的安防品牌，产品中心，产品，服务支持，"/>
+    <meta name="Description" content="江苏云深智能化系统有限公司是领先的监控产品供应商和解决方案服务商，面向全球提供领先的视频存储、前端、显示控制和智能交通等系列化产品。"/>
+    <meta name="author" content="江苏云深智能化系统有限公司"/>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="img/favicon.ico" rel="shortcut icon">
+    <script>
+        var STATIC_URL  = "bocweb/" ;
+        var UPLOAD_URL  = "upload/" ;
+        var GLOBAL_URL = "index.php/";
+        var SITE_URL = "/";
+        var UPLOADDO_URL = "index.php/upload/";
+        var STATIC_VER = "";
+    </script>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/mobile.css" type="text/css" media="screen" charset="utf-8">
+    <script src="js/jQuery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/levideo.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.transit.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/html5.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bocfe.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/plug.preload.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+<div class="headerWrap">
+
+</div>
+
+<script>
+    $(function () {
+        $(".headerWrap").load('header.html', function () {
+            $('header .nav-box li').hover(function () {
+                $(this).find('.con').slideDown(0);
+                $(this).find('.con').show();
+            }, function () {
+                $(this).find('.con').slideUp(0);
+            })
+            function conSize(){
+                var bodyW = $("body").width();
+                $("header .nav-box li .con").css({
+                    "width":bodyW,
+                    "margin-left":-bodyW/2
+                })
+            }
+            conSize();
+            window.onresize = function(){
+                conSize();
+            }
+            $('header .nav-box .pro-li dd .link-b').each(function () {
+                var _this = $(this);
+                var bg = _this.data('bg');
+                var bgh = _this.data('bgh');
+                _this.css('background-image', 'url(' + bg + ')');
+                if (_this.hasClass("cur")) {
+                    _this.css('background-image', 'url(' + bgh + ')');
+                }
+                ;
+            })
+
+
+            $('header .nav-box .link-b').hover(function () {
+                $(this).addClass("cur").siblings("").removeClass("cur");
+                $(this).parent(".log-four").siblings(".log-four").find('.link-b').removeClass("cur")
+                $(this).parents(".con").show();
+            })
+
+            $('header .nav-box .pro-li dd .link-b').hover(function () {
+                var id = $(this).data('id');
+                var conn = $(this).data('conn');
+                var psr = $(this).parents('.con').find('.right');
+                $(this).addClass("cur").parent("dd").siblings("dd").find('.link-b').removeClass("cur");
+                $('header .nav-box .pro-li dd .link-b').each(function () {
+                    var bg = $(this).data('bg');
+                    var bgh = $(this).data('bgh');
+                    if ($(this).hasClass("cur")) {
+                        $(this).css('background-image', 'url(' + bgh + ')')
+                    } else {
+                        $(this).css('background-image', 'url(' + bg + ')')
+                    }
+                })
+            }, function () {
+                $('header .nav-box .pro-li dd .link-b').each(function () {
+                    var bg = $(this).data('bg');
+                    var bgh = $(this).data('bgh');
+                    if ($(this).hasClass("cur")) {
+                        $(this).css('background-image', 'url(' + bgh + ')')
+                    } else {
+                        $(this).css('background-image', 'url(' + bg + ')')
+                    }
+                })
+            })
+
+            $('.mobile-nav-box h2').on('click', function () {
+                if (!$(this).hasClass("cur")) {
+                    $(this).addClass("cur").parent("li").siblings("li").find("h2").removeClass("cur");
+                    $(this).next('.con').slideDown().parent("li").siblings("li").find('.con').slideUp();
+                } else {
+                    $(this).removeClass("cur");
+                    $(this).next('.con').slideUp()
+                }
+            })
+
+            $('.mobile-nav-box p.on').on('click', function () {
+                if (!$(this).hasClass("but")) {
+                    $(this).addClass("but").siblings(".on").removeClass("but").parent(".con").parent("li").siblings("li").find(".on").removeClass("but");
+                    $(this).next('.tit-con').fadeIn().siblings(".tit-con").slideUp().parent(".con").parent("li").siblings("li").find(".tit-con").hide();
+                } else {
+                    $(this).removeClass("but");
+                    $(this).next('.tit-con').hide();
+                }
+            })
+
+            $('.mobile-nav').on('click', function () {
+                if (!$(this).hasClass("on")) {
+                    $(this).addClass("on");
+                    $(".mobile-nav-box").slideDown();
+                } else {
+                    $(this).removeClass("on");
+                    $(".mobile-nav-box").slideUp();
+                }
+            })
+
+            $('header .enght').hover(function () {
+                $(this).find('.con').fadeIn();
+            }, function () {
+                $(this).find('.con').fadeOut();
+            })
+        });
+        $(".footerwrap").load("footer.html");
+    })
+</script>
+    <div class="inliner-banner body-box">
+		<ul class="slides f-cb">
+			<li>
+				<a href="javascript:;">
+					<img src="img/2017/09/30/15067554014619re0g4.jpg " alt="联系我们" class="pic">
+					<span class="con">
+						<h2>联系我们</h2>
+						<p class="font">Contact us</p>
+					</span>
+				</a>
+			</li>
+		</ul>
+		<div class="now">
+			<div class="w1400">
+	            <a href="index.html ">首页</a><i></i>
+	            <a href="about.html ">关于我们 </a><i></i>
+	            <a href="javascript:;">联系我们</a>
+            </div>
+        </div>
+	</div>
+	<div class="contact">
+		<div class="w1400">
+			<div class="cont-tit">欢迎您浏览云深官网，如果您遇到的问题，请在下方寻找对应的联系方式</div>
+			<ul class="f-cb">
+				<li>
+					<img src="img/ab41.png " alt="">
+					<h2>采购部门</h2>
+					<p>供应商资源开发组</p><p>E-mail：jiangsuyunshen@163.com</p>				</li>
+				<li>
+					<img src="img/ab42.png " alt="">
+					<h2>销售部门</h2>
+					<p>总部地址：中国南京,栖霞区,兴智科技园A座</p><p>总部电话：025-69561388</p><p>邮编：210046</p>
+                    <!--<a href="javascript:;" class="link">点击查看总部位置</a>-->
+					<h3>办事处</h3>
+					<select href="javascript:;" class="cha">
+                        <option value="298">中国</option>
+                    </select>
+					<div class="ban">
+						<select href="javascript:;" class="cha">
+							
+						</select>
+					</div>
+				</li>
+				<li>
+					<img src="img/ab43.png " alt="">
+					<h2>客户服务</h2>
+					<p>客服电话：025-69561388(固定电话、手机均可拨打)</p><p>商务传真：025-695613887</p><p>商务Email：jiangsuyunshen@163.com</p>					<dl class="f-cb">
+						<dd>
+							<img src="img/2017/10/08/150747821454229qcnk.jpg" alt="售后服务APP">
+							<p>售后服务APP</p>
+						</dd>
+						<dd>
+							<img src="img/2017/10/08/150747821454229qcnk.jpg" alt="售后服务微信号">
+							<p>售后服务微信号</p>
+						</dd>
+					</dl>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+<div class="footerwrap"></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"32"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+<script>
+	$(function(){
+		$('.right-flex li.top').on('click',function(){
+			$('html,body').stop().animate({scrollTop:0},1000);
+		})
+	})
+</script><script src="js/main.js" type="text/javascript" charset="utf-8"></script><script>
+
+$(function(){
+	resiwin()
+	$(window).resize(function(){
+		resiwin()
+	})
+
+	// var courAjax_Url = " ";
+	// $.ajax({ 
+ //            url: courAjax_Url, 
+ //            beforeSend: function(){
+ //                $(".contact li .box").html("加载中......");
+ //            },
+ //            success: function(data){
+ //                $(".contact li .box").html(data);
+ //            }
+ //        });
+        
+ //        $(".contact li .cha").change(function(e){
+ //            $.ajax({ 
+ //                url: courAjax_Url, 
+ //                beforeSend: function(){
+ //                    $(".contact li .box").html("加载中......");
+ //                },
+ //                success: function(data){
+ //                     $(".contact li .box").html(data);
+ //                }
+ //            });
+ //        })
+	function resiwin(){
+		var liw = $('.contact li').innerWidth();
+		console.log(liw);
+		$('.contact li .box').width(liw);
+	}
+})
+</script>
+</body>
+</html>

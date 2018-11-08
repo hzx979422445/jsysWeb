@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="content-language" content="zh-CN"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <title>以安全为核心的智慧物联解决方案提供商和运营服务商-江苏云深智能化系统有限公司</title>
+    <meta name="Keywords" content="江苏云深智能化系统有限公司,摄像机,存储,云深,股份,解决方案,报警,门禁,智能交通,民用,创新技术,招聘,供应商,民用,乐橙,dahua,全球安防十强，江苏云深，视频，无人机，机器视觉，服务商，安防品牌，好的安防品牌，产品中心，产品，服务支持，"/>
+    <meta name="Description" content="江苏云深智能化系统有限公司是领先的监控产品供应商和解决方案服务商，面向全球提供领先的视频存储、前端、显示控制和智能交通等系列化产品。"/>
+    <meta name="author" content="江苏云深智能化系统有限公司"/>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="img/favicon.ico" rel="shortcut icon">
+    <script>
+        var STATIC_URL  = "bocweb/" ;
+        var UPLOAD_URL  = "upload/" ;
+        var GLOBAL_URL = "index.php/";
+        var SITE_URL = "/";
+        var UPLOADDO_URL = "index.php/upload/";
+        var STATIC_VER = "";
+    </script>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/mobile.css" type="text/css" media="screen" charset="utf-8">
+    <script src="js/jQuery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/levideo.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.transit.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/html5.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bocfe.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/plug.preload.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body style="background:#f5f5f5">
+<div class="headerWrap">
+
+</div>
+
+<script>
+    $(function () {
+        $(".headerWrap").load('header.html', function () {
+            $('header .nav-box li').hover(function () {
+                $(this).find('.con').slideDown(0);
+                $(this).find('.con').show();
+            }, function () {
+                $(this).find('.con').slideUp(0);
+            })
+            function conSize(){
+                var bodyW = $("body").width();
+                $("header .nav-box li .con").css({
+                    "width":bodyW,
+                    "margin-left":-bodyW/2
+                })
+            }
+            conSize();
+            window.onresize = function(){
+                conSize();
+            }
+            $('header .nav-box .pro-li dd .link-b').each(function () {
+                var _this = $(this);
+                var bg = _this.data('bg');
+                var bgh = _this.data('bgh');
+                _this.css('background-image', 'url(' + bg + ')');
+                if (_this.hasClass("cur")) {
+                    _this.css('background-image', 'url(' + bgh + ')');
+                }
+                ;
+            })
+
+
+            $('header .nav-box .link-b').hover(function () {
+                $(this).addClass("cur").siblings("").removeClass("cur");
+                $(this).parent(".log-four").siblings(".log-four").find('.link-b').removeClass("cur")
+                $(this).parents(".con").show();
+            })
+
+            $('header .nav-box .pro-li dd .link-b').hover(function () {
+                var id = $(this).data('id');
+                var conn = $(this).data('conn');
+                var psr = $(this).parents('.con').find('.right');
+                $(this).addClass("cur").parent("dd").siblings("dd").find('.link-b').removeClass("cur");
+                $('header .nav-box .pro-li dd .link-b').each(function () {
+                    var bg = $(this).data('bg');
+                    var bgh = $(this).data('bgh');
+                    if ($(this).hasClass("cur")) {
+                        $(this).css('background-image', 'url(' + bgh + ')')
+                    } else {
+                        $(this).css('background-image', 'url(' + bg + ')')
+                    }
+                })
+            }, function () {
+                $('header .nav-box .pro-li dd .link-b').each(function () {
+                    var bg = $(this).data('bg');
+                    var bgh = $(this).data('bgh');
+                    if ($(this).hasClass("cur")) {
+                        $(this).css('background-image', 'url(' + bgh + ')')
+                    } else {
+                        $(this).css('background-image', 'url(' + bg + ')')
+                    }
+                })
+            })
+
+            $('.mobile-nav-box h2').on('click', function () {
+                if (!$(this).hasClass("cur")) {
+                    $(this).addClass("cur").parent("li").siblings("li").find("h2").removeClass("cur");
+                    $(this).next('.con').slideDown().parent("li").siblings("li").find('.con').slideUp();
+                } else {
+                    $(this).removeClass("cur");
+                    $(this).next('.con').slideUp()
+                }
+            })
+
+            $('.mobile-nav-box p.on').on('click', function () {
+                if (!$(this).hasClass("but")) {
+                    $(this).addClass("but").siblings(".on").removeClass("but").parent(".con").parent("li").siblings("li").find(".on").removeClass("but");
+                    $(this).next('.tit-con').fadeIn().siblings(".tit-con").slideUp().parent(".con").parent("li").siblings("li").find(".tit-con").hide();
+                } else {
+                    $(this).removeClass("but");
+                    $(this).next('.tit-con').hide();
+                }
+            })
+
+            $('.mobile-nav').on('click', function () {
+                if (!$(this).hasClass("on")) {
+                    $(this).addClass("on");
+                    $(".mobile-nav-box").slideDown();
+                } else {
+                    $(this).removeClass("on");
+                    $(".mobile-nav-box").slideUp();
+                }
+            })
+
+            $('header .enght').hover(function () {
+                $(this).find('.con').fadeIn();
+            }, function () {
+                $(this).find('.con').fadeOut();
+            })
+        });
+        $(".footerwrap").load("footer.html");
+    })
+</script>
+<div class="body-box">
+    <div class="wel-banner">
+        <ul class="slides f-cb">
+            <li data-pc="img/index_banner1.png" data-mobile="img/index_banner1.png">
+                <a href="javascript:;">
+                    <img src="" alt="" class="pic">
+                </a>
+            </li>
+            <li data-pc="img/index_banner2.png" data-mobile="img/index_banner2.png">
+                <a href="javascript:;">
+                    <img src="" alt="" class="pic">
+                </a>
+            </li>
+            <li data-pc="img/index_banner3.png" data-mobile="img/index_banner3.png">
+                <a href="javascript:;">
+                    <img src="" alt="" class="pic">
+                </a>
+            </li>
+
+        </ul>
+        <div class="loader"></div>
+    </div>
+    <div class="wel-case">
+        <div class="w1400">
+            <div class="wel-case-title">解决方案</div>
+            <div class="wel-case-list">
+                <ul class="slides f-cb">
+                    <li class="slide">
+                        <a href="194.html?key=building">
+                            <img src="img/2017/10/25/15089106591113g32dg.jpg " alt="智能楼宇">
+                            <span class="bg"></span>
+                            <span class="font-bg"></span>
+                            <span class="con">
+                                       <p class="tit">智能楼宇</p>
+                                       <p class="en">Intelligent Building</p>
+                                       <p class="font">
+                                           整合十大安防子系统，提供“互联、物联、智联”整体解决方案，打造新时代平安社会生态圈。                                       </p>
+                                       <p class="more"></p>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="slide">
+                        <a href="194.html?key=banking">
+                            <img src="img/2017/10/24/15088249047345orij8.jpg " alt="金融">
+                            <span class="bg"></span>
+                            <span class="font-bg"></span>
+                            <span class="con">
+                                       <p class="tit">金融</p>
+                                       <p class="en">Finance</p>
+                                       <p class="font">
+                                           采用人脸识别、智能分析、大数据等前沿技术，提升安全防范能力和处理效率，助力金融行业业务发展。                                       </p>
+                                       <p class="more"></p>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="slide">
+                        <a href="194.html?key=Safety">
+                            <img src="img/2017/10/24/15088258583617i7kyw.jpg " alt="平安城市">
+                            <span class="bg"></span>
+                            <span class="font-bg"></span>
+                            <span class="con">
+                                       <p class="tit">平安城市</p>
+                                       <p class="en">Safe City</p>
+                                       <p class="font">
+                                           通过多样化的实战布控方案形成立体化防控体系，提升公安机关对整个城市安全的可视化管控能力。                                       </p>
+                                       <p class="more"></p>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="slide">
+                        <a href="194.html?key=government">
+                            <img src="img/2017/10/17/15082323518525lgfem.jpg " alt="政府">
+                            <span class="bg"></span>
+                            <span class="font-bg"></span>
+                            <span class="con">
+                                       <p class="tit">政府</p>
+                                       <p class="en">Government</p>
+                                       <p class="font">
+                                           构建“高清、智能、感知、物联”的防控网络，基于大数据、云计算，为管理者的科学决策提供依据。                                       </p>
+                                       <p class="more"></p>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="slide">
+                        <a href="194.html?key=Operator">
+                            <img src="img/2017/10/17/15082325832367ghqc2.jpg " alt="运营商">
+                            <span class="bg"></span>
+                            <span class="font-bg"></span>
+                            <span class="con">
+                                       <p class="tit">运营商</p>
+                                       <p class="en">Operators</p>
+                                       <p class="font">
+                                           致力于为中国移动、中国联通、中国电信、中国广电以及中国铁塔公司提供一体化解决方案。                                       </p>
+                                       <p class="more"></p>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="wel-product w1400">
+        <div class="wel-product-title">
+            云深新品
+            <a href="product.html ">查看全部<span></span></a>
+        </div>
+        <div class="container">
+            <div class="row f-cb">
+                <div class="col-lg-6 left col-md-6 col-sm-6">
+                    <div class="col-lg-12 product-4 col-md-12 col-sm-12">
+                        <a href="13.html?key=camera&name=摄像机">
+                            <p class="pic">
+                                <img src="img/2017/12/26/15142787139122iu2ru.jpg " alt="高清（200万）超星光红外半球型网络摄像机">
+                            </p>
+                            <span class="bg"></span>
+                            <span class="contrast"></span>
+                            <span class="con">
+                                    <h2>高清（200万）超星光红外半球型网络摄像机</h2>
+                                    <p class="font">DH-IPC-HDBW8239E-Z</p>
+                                </span>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-6 product-1 ico-1 ico_11 col-md-6 col-sm-6 col-xs-6">
+                        <a href="13.html?key=camera&name=摄像机">
+                            <p class="pic">
+                                <img src="img/2017/12/26/15142792520639iz5em.jpg " alt="9寸高清星光红外网络高速智能球">
+                            </p>
+                            <span class="bg"></span>
+                            <span class="contrast"></span>
+                            <h2>9寸高清星光红外网络高速智能球</h2>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-6 product-2 ico-1 col-md-6 col-sm-6 col-xs-6">
+                        <a href="13.html?key=camera&name=摄像机">
+                            <p class="pic">
+                                <img src="img/2017/12/26/151427938530466j60p.jpg " alt="700万智能交通高清摄像机">
+                            </p>
+                            <span class="bg"></span>
+                            <span class="contrast"></span>
+                            <h2>700万智能交通高清摄像机</h2>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 right col-md-6 col-sm-6 col-sm-12">
+
+                    <div class="col-lg-6 product-1 ico-1 col-md-6 col-sm-6 col-xs-6">
+                        <a href="13.html?key=camera&name=摄像机">
+                            <p class="pic">
+                                <img src="img/2017/12/26/15142799397162ha4og.jpg " alt="云深重载激光云台">
+                            </p>
+                            <span class="bg"></span>
+                            <span class="contrast"></span>
+                            <h2>云深重载激光云台</h2>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-6 product-2 ico-1 col-md-6 col-sm-6 col-xs-6">
+                        <a href="13.html?key=storage&name=存储">
+                            <p class="pic">
+                                <img src="img/2017/12/26/1514279620575n0gn8.jpg " alt="16盘位高端型H.265 NVR">
+                            </p>
+                            <span class="bg"></span>
+                            <span class="contrast"></span>
+                            <h2>16盘位高端型H.265 NVR</h2>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-12 product-4 col-md-12 fl">
+                        <a href="13.html?key=camera&name=摄像机">
+                            <p class="pic">
+                                <img src="img/2017/12/26/15142796335671c5dz5.jpg " alt="超高清（1200万）红外枪型网络摄像机">
+                            </p>
+                            <span class="bg"></span>
+                            <span class="contrast"></span>
+                            <span class="con">
+                                    <h2>超高清（1200万）红外枪型网络摄像机</h2>
+                                    <p class="font">DH-IPC-HFW81230E-Z-IRA</p>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wel-video" data-id="44" style="background:url(img/2017/12/01/15121205343326uc6ht.jpg ) no-repeat center;">
+        <!-- <video controls src=" " type="video/mp4" id="wel-video"></video>  -->
+        <!-- <img src="" alt=""> -->
+    </div>
+    <div class="wel-news w1400">
+        <div class="wel-product-title">
+            资讯速递
+            <a href="news.html">查看全部<span></span></a>
+        </div>
+        <div class="wel-news-list">
+            <div class="container">
+                <div class="row f-cb">
+                    <div class="col-lg-3 news01 wnews col-md-3 col-sm-3 col-xs-12">
+                        <a href="707.html?index=2" style="background:url(img/wel11.jpg ) no-repeat center;">
+                            <h3>2018-05-20</h3>
+                            <h2>2018年公安消防工作会议、全面推荐智慧消防建设</h2>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 news02 wnews col-md-6 col-sm-6 col-xs-12">
+                        <a href="707.html?index=3" style="background:url(img/wel12.jpg ) no-repeat center;">
+                            <h3>2018-05-25</h3>
+                            <h2>消防部队转制纳入应急管理部</h2>
+                            <br>
+                            <br>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 news03 wnews col-md-3 col-sm-3 col-xs-12">
+                        <a href="707.html?index=0" style="background:#ee3a28;">
+                            <h3>2018-03-15</h3>
+                            <h2>公安部召开冬春火灾防控会议：坚决消除隐患，严防火灾发生</h2>
+                        </a>
+                        <a href="707.html?index=1" style="background:url(img/wel13.jpg ) no-repeat center;">
+                            <h3>2018-05-01</h3>
+                            <h2>2018年5月1日起正式实施《消防设施物联网系统技术标准》</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="video-ajax"></div>
+
+<div class="footerwrap"></div>
+
+
+<script>window._bd_share_config = {
+    "common": {
+        "bdSnsKey": {},
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": "",
+        "bdStyle": "2",
+        "bdSize": "32"
+    }, "share": {}
+};
+with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+<script>
+    $(function () {
+        $('.right-flex li.top').on('click', function () {
+            $('html,body').stop().animate({scrollTop: 0}, 1000);
+        })
+    })
+</script>
+<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/flexslider.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/flexslider-min.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" charset="utf-8">
+<script>
+    !(function (c, b, d, a) {
+        c[a] || (c[a] = {});
+        c[a].config = {pid: "bpw67dp3pv@5bddb1010070f9e", imgUrl: "https://arms-retcode.aliyuncs.com/r.png?"};
+        with (b) with (body) with (insertBefore(createElement("script"), firstChild)) setAttribute("crossorigin", "", src = d)
+    })(window, document, "https://retcode.alicdn.com/retcode/bl.js", "__bl");
+</script>
+<script>
+    $(function () {
+        var $window = $(window),
+            flexslider = {vars: {}},
+            flexslider1 = {vars: {}};
+
+        function getitemsSize() {
+            return (window.innerWidth < 480) ? 1 :
+                (window.innerWidth < 1025) ? 2 : 3;
+        }
+
+        function winsize() {
+            var winw = $(window).width();
+            if (winw > 1025) {
+                $('.wel-banner .slides li').each(function () {
+                    var wb = $(this).attr('data-pc');
+                    $(this).find(".pic").attr('src', wb);
+                })
+
+                var hs = $('.wel-case .slides li').width();
+                $('.wel-case .slides li').hover(function () {
+                    var h = $(this).find('img').width();
+                    $(this).stop().animate({width: h}, 500);
+                }, function () {
+                    $(this).stop().animate({width: hs}, 500);
+                })
+            } else {
+                $('.wel-banner .slides li').each(function () {
+                    var wb = $(this).attr('data-mobile');
+                    $(this).find(".pic").attr('src', wb);
+                })
+            }
+
+        }
+
+        winsize()
+        $(window).resize(function () {
+            flexslider1.vars.minItems = getitemsSize();
+            flexslider1.vars.maxItems = getitemsSize();
+            winsize()
+        })
+
+        //首页banner图
+        $('.wel-banner').flexslider({
+            // animation: getGridSize(),
+            animation: 'slide',
+            slideshowSpeed: 4000,
+            animationSpeed: 1000,
+            touch: true,
+            slideshow: true,
+            start: function (slider) {
+                flexslider = slider;
+                $('.wel-banner .loader').hide();
+                $('.flex-direction-nav a').text("");
+            }
+        });
+
+        var winw = $(window).width();
+        var winh = $(window).height();
+        $('.video-ajax').width(winw);
+        $('.video-ajax').height(winh);
+        $(window).resize(function () {
+            var winw = $(window).width();
+            var winh = $(window).height();
+            $('.video-ajax').width(winw);
+            $('.video-ajax').height(winh);
+        })
+        var url_ajax = "https://www.dahuatech.com/ajax/video";
+        $('.wel-video').on('click', function () {
+            var id = $(this).data("id");
+            /*$.ajax({
+                url: url_ajax + "/" + id,
+                success: function (data) {
+                    $(".video-ajax").html(data);
+                    $('.video-ajax').fadeIn();
+                }
+            });*/
+        })
+
+        //解决方案
+        $('.wel-case-list').flexslider({
+            animation: "slide",
+            touch: true,
+            slideshow: true,
+            animationLoop: true,
+            itemWidth: 420,
+            itemMargin: 25,
+            minItems: getitemsSize(),
+            maxItems: getitemsSize(),
+            startAt: 1,
+            move: 1,
+            start: function (slider) {
+                flexslider1 = slider;
+                $('.flex-direction-nav a').text("");
+            },
+            after: function (slider) {
+                $('.wel-case .slides li').eq(slider.animatingTo - 1).find(".bg").animate({opacity: 0.32}, 300).parents("li").siblings("li").find(".bg").animate({opacity: 0}, 300);
+            }
+        });
+        $('.wel-case .slides li').eq(0).find(".bg").animate({opacity: 0.32}, 300)
+
+        var len = $('#wel-video').length;
+        if (len == 1) {
+            $('.wel-video').on('click', function () {
+                $('.wel-video img').fadeOut()
+                document.getElementById('wel-video').play();
+            })
+        }
+        ;
+
+    })
+</script>
+</body>
+</html>
