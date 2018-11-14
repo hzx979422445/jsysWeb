@@ -478,12 +478,225 @@
 		}
 	],
 	"sidewalk":[
-
+		{
+			"img":"img/at/sidewalk/RNCF8008-X.jpg",
+			"name":"桥式斜角模具摆闸",
+			"code":"RNCF8008-X",
+			"detail":[
+				"<div class='one_content'><span style='line-height: 24px;'>采用人脸识别技术，在保留原有人行通道闸优点的同时，增加了安全性、便捷性。人脸识别闸机采用动态、非配合方式进行人脸验证通过，相较传统刷卡通过方式，更加便捷</span><br><p style='line-height: 2em;'><span style='font-size: 14px;'>1：1人证合一验证</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>1：N身份验证</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>静默活人甄别</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>刷脸、刷卡、密码多重认证方式</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>支持单机</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>适配韦根、继电器、网络控制器等主流控制信号</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>支持图片、时评、文字信息显示播报</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>支持网络管理和远程维护</span></p></div>",
+				"<table><tr><th>参数名</th><th>参数值</th></tr><tr><td>操作系统</td><td>Android 5.1</td></tr><tr><td>处理器</td><td>64位6核处理器</td></tr><tr><td>存储</td><td>4GB内存+32GB闪存（选配）</td></tr><tr><td>显示屏</td><td>5.5英寸IPS触摸屏，1280×800</td></tr><tr><td>摄像头</td><td>前置CMOS，500万像素</td></tr><tr><td>读卡器</td><td>IC/ID/二代身份证读卡模块（选配）</td></tr><tr><td>工作电压电流</td><td>DC12V，3A</td></tr><tr><td>工作温度</td><td>-10℃~40℃</td></tr><tr><td>设备功耗</td><td>工作功耗<35W，待机功能耗<3W</td></tr><tr><td>外观结构</td><td>147×160×117.5mm，≈500g</td></tr><tr><td>外观材质</td><td>高强度铝合金+纯平钢化玻璃</td></tr><tr><td>韦根输出</td><td>三芯信号线</td></tr><tr><td>继电器输出</td><td>两芯信号线</td></tr><tr><td>USB拓展</td><td>USB 2.0 OTCG接口1个</td></tr><tr><td>人脸库</td><td>无限制（推荐≤10000人）</td></tr><tr><td>准确率</td><td>99.9%</td></tr><tr><td>识别速度</td><td>0.6秒/5000人</td></tr><tr><td>安全级别</td><td>静默活体真人侦测</td></tr></table>",
+				"<p><img src='img/at/sidewalk/尺寸2.png'></p>",
+				"<p class='on'><p>RNCF8008-1</p><p>RNCF8008-1S</p></p>"
+			]
+		},
+		{
+			"img":"img/at/sidewalk/RNCF6088-X.jpg",
+			"name":"桥式斜角模具翼闸",
+			"code":"RNCF6088-X",
+			"detail":[
+				"<div class='one_content'><span style='line-height: 24px;'>采用人脸识别技术，在保留原有人行通道闸优点的同时，增加了安全性、便捷性。人脸识别闸机采用动态、非配合方式进行人脸验证通过，相较传统刷卡通过方式，更加便捷</span><br><p style='line-height: 2em;'><span style='font-size: 14px;'>200万像素摄像机，F1.6超大光圈，大尺寸宽动态图像传感器，只为更清晰的采集每一个关键信息。</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>语音提示系统：秒报人员姓名。</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>世界级人脸识别算法，检测速度快，识别准确度高，可离线运行。</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>大容量人脸库：标配3000人脸库，离线识别，无需部署识别服务器。</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>LED双色通行指示灯。</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>16颗LED补光灯柔光照明，人体光敏感应开启，有效提高肤色。</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>易安装：针对改造项目设计，安装时只需在原有闸机上开孔即可，不需更换整套闸机，减少设备投入成本。</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>全户外应用：机身防水设计，完全适应室外露天环境。</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>防盗结构设计。</span></p></div>",
+				"<table><tr><th>参数名</th><th>参数值</th></tr><tr><td>处理器</td><td>4核@1.8G</td></tr><tr><td>内存</td><td>2GB DDR3 @528M</td></tr><tr><td>闪存</td><td>16GB eMMC</td></tr><tr><td>操作系统</td><td>Android 5.1</td></tr><tr><td>摄像头</td><td>200W像素，1/3英寸图像传感器，6mm焦距，F2.4光圈</td></tr><tr><td>电源输出</td><td>DC12V±10%</td></tr><tr><td>屏幕特性</td><td>IPS 170°视角</td></tr><tr><td>屏幕尺寸</td><td>5英寸</td></tr><tr><td>屏幕分辨率</td><td>480*854</td></tr><tr><td>音频输入</td><td>麦克风1个</td></tr><tr><td>音频输出</td><td>2W扬声器1个</td></tr><tr><td>电源</td><td>DC12V 5.5mm接口1个</td></tr><tr><td>网络</td><td>10M/100M自适应以太网RJ45接口1个</td></tr><tr><td>显示</td><td>HDMI2.0 Type-A接口1个扩展RS232接线端子1个</td></tr><tr><td>人脸库</td><td>≥10000</td></tr><tr><td>误识率</td><td>万分之三</td></tr><tr><td>识别率</td><td>99.7%</td></tr></table>",
+				"<p><img src='img/at/sidewalk/尺寸1.png'></p>",
+				"<p class='on'><p>RNCF6088-1</p><p>RNCF6088-1S</p></p>"
+			]
+		}
 	],
 	"vehicleLane":[
 
 	],
 	"visitor":[
-
+		{
+			"img":"img/at/visitor/YS-VIS-FACEPAD.jpg",
+			"name":"智能人脸门禁",
+			"code":"",
+			"detail":[
+				"<div class='one_content'><p style='line-height: 2em;'><span style='font-size: 14px;'>1：1人证合一验证</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>1：N身份验证</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>静默活体真人甄别</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>红外人体感应自动唤醒开启识别</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>刷脸、刷卡、密码多重认证方式</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>支持单机联网方式使用</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>适配韦根、继电器、网络适配器等主流控制信号</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>支持图片、视频、文字信息显示播报</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>支持网络管理远程维护</span></p></div>",
+				"<table><tr><th>参数名</th><th>参数值</th></tr><tr><td>操作系统</td><td>Android 5.1</td></tr><tr><td>处理器</td><td>32位4核处理器</td></tr><tr><td>存储</td><td>2GB内存+16GB闪存（选配）</td></tr><tr><td>显示屏</td><td>8.0英寸IPS触摸屏，1280×800</td></tr><tr><td>摄像头</td><td>前置CMOS，500万像素</td></tr><tr><td>读卡器</td><td>IC/ID/二代身份证读卡模块（选配）</td></tr><tr><td>工作电压电流</td><td>DC12V，3A</td></tr><tr><td>工作温度</td><td>-10℃~40℃</td></tr><tr><td>设备功耗</td><td>工作功耗<35W，待机功能耗<3W</td></tr><tr><td>外观结构</td><td>274×150×32mm，≈800g</td></tr><tr><td>外观材质</td><td>高强度铝合金+纯平钢化玻璃</td></tr><tr><td>韦根输出</td><td>三芯信号线</td></tr><tr><td>继电器输出</td><td>两芯信号线</td></tr><tr><td>USB拓展</td><td>USB 2.0 OTCG接口1个</td></tr><tr><td>人脸库</td><td>无限制（推荐≤10000人）</td></tr><tr><td>准确率</td><td>99.9%</td></tr><tr><td>识别速度</td><td>0.6秒/5000人</td></tr><tr><td>安全级别</td><td>静默活体真人侦测</td></tr></table>",
+				"",
+				""
+			]
+		},
+		{
+			"img":"img/at/visitor/YS-VIS-PAD12A.jpg",
+			"name":"电子合同神器",
+			"code":"",
+			"detail":[
+				"<div class='one_content'><p style='line-height: 2em;'><span style='font-size: 14px;'>1：1人证合一验证</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>1：N身份验证</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>静默活体真人甄别</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>电子合同练联网安全认证</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>支持网络管理远程维护</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>支持IC/ID、人脸、指纹、护照、NFC识别</span></p></div>",
+				"<table><tr><th>参数名</th><th>参数值</th></tr><tr><td>操作系统</td><td>Android 5.1</td></tr><tr><td>处理器</td><td>32位4核处理器</td></tr><tr><td>存储</td><td>2GB内存+16GB闪存（选配）</td></tr><tr><td>显示屏</td><td>8.0英寸IPS触摸屏，1280×800</td></tr><tr><td>摄像头</td><td>前置CMOS，500万像素</td></tr><tr><td>读卡器</td><td>IC/ID/二代身份证读卡模块（选配）</td></tr><tr><td>工作电压电流</td><td>DC12V，3A</td></tr><tr><td>工作温度</td><td>-10℃~40℃</td></tr><tr><td>设备功耗</td><td>工作功耗<35W，待机功能耗<3W</td></tr><tr><td>外观结构</td><td>274×150×32mm，≈800g</td></tr><tr><td>外观材质</td><td>高强度铝合金+纯平钢化玻璃</td></tr><tr><td rowspan='2'>USB拓展</td><td>USB 2.0 OTCG接口1个</td></tr><tr><td>USB HOST接口2个</td></tr><tr><td>人脸库</td><td>无限制（推荐≤10000人）</td></tr><tr><td>准确率</td><td>99.9%</td></tr><tr><td>识别速度</td><td>0.6秒/5000人</td></tr><tr><td>安全级别</td><td>静默活体真人侦测</td></tr></table>",
+				"",
+				""
+			]
+		}
+	],
+	"constructionsite":[
+		{
+			"img":"img/at/constructionsite/PTP610.jpg",
+			"name":"4G高清智能安全帽",
+			"code":"",
+			"detail":[
+				"<div class='one_content'><span style='line-height: 24px;'>4G高清智能安全帽采用高速处理器、集高清视频、音频，3G/4G和WiFi无线通讯模块、GPS存储、报警模块；可适时记录现场情况、收集证据、规范施工等。并通过3G/4G、WiFi无线网络进行实时音视频信息传输，语音对讲等功能，协同后端功能完善的监控调度指挥平台协同实现针对户外移动式个体的远程调度及指挥功能。可广泛用于电力、铁路、矿山、石油、建筑等行业</span><br><p style='line-height: 2em;'><span style='font-size: 14px;'>支持1080P/720P/VGA分辨率</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>支持H.264编码</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>支持4G全网通，无线视频传输</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>支持双向语音对讲</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>支持双流码</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>高清录像存储，内置32G存储，最大可定制128G</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>支持北斗/GPS人员定位</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>防尘放水设计</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>支持SOS紧急一键呼叫</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>可拆卸大容量聚合物锂电池设计，增加续航时间</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>自带LED补光灯，适用于昏暗环境</span></p></div>",
+				"<table><tr><th>参数项</th><th>参数名</th><th>参数值</th></tr><tr><td rowspan='8'>视频</td><td>输入信号</td><td>内置高清广角摄像头</td></tr><tr><td>压缩标准</td><td>H.264</td></tr><tr><td>分辨率</td><td>支持的分辨率如下：1080P，720P，VGA</td></tr><tr><td>录像格式</td><td>AVI</td></tr><tr><td>帧率</td><td>1-30fps可设</td></tr><tr><td>码率</td><td>64Kbps-8Mbps可设</td></tr><tr><td>双码流</td><td>支持双码流（一个用于实时传输，一个用于前端存储）</td></tr><tr><td>抓拍</td><td>JPEG格式图片，分辨率如下：1080P，720P，VGA</td></tr><tr><td rowspan='3'>音频</td><td>输入信号</td><td>一路声音输入，内置MIC</td></tr><tr><td>输出信号</td><td>一路声音输出，内置扬声器</td></tr><tr><td>压缩标准</td><td>编码：G711A</td></tr><tr><td>存储</td><td>内置存储</td><td>标配32G存储，最大可定制128G</td></tr><tr><td rowspan='2'>网络</td><td>3G/4G</td><td>单SIM卡，支持WCDMA,EVDO,TD-SCDMA,TDD-LTE,FDD-LTE等7模制式</td></tr><tr><td>WiFi</td><td>内置WIFI模块，802.11b/g/n，2.4G；可以通过WIFI传输音视频数据；WIFI支持多种常用加密方式</td></tr><tr><td>定位</td><td>卫星定位</td><td>内置定位模块及天线，支持GPS和北斗定位</td></tr><tr><td rowspan='2'>电源</td><td>充电</td><td>Micro USB，DC 5V/2.0A充电状态指示：充电指示灯，红色表示正在充电，绿色表示充满</td></tr><tr><td>电池</td><td>可拆卸聚合物电池单块3100mAh，执行标准：GB31241-2014</td></tr><tr><td rowspan='4'>其他</td><td>工作温度</td><td>-30°--70°</td></tr><tr><td>工作湿度</td><td>10％--80％</td></tr><tr><td>外壳颜色</td><td>黄色</td></tr><tr><td>尺寸</td><td>290mm*235mm*150mm</td></tr></table>",
+				"",
+				""
+			]
+		},
+		{
+			"img":"img/at/constructionsite/2017061966972517.jpg",
+			"name":"4G高清布控球",
+			"code":"",
+			"detail":[
+				"<div class='one_content'><span style='line-height: 24px;'>一款功能全面、携带方便的无线视频应急指挥一体化产品,设备集成度高,内置高性能锂电池组,具备防水性等特性,可满足临时布控和快速安装的特殊要求。执行任务时可将设备临时安装在需要监控的位置或车辆上,任努结束将设备拆下,主要应用于公安、交警、消防、路政、城管、军区、法院、监狱、林业、水利、环保等单位。</span><br><p style='line-height: 2em;'><span style='font-size: 14px;'>远程实时监控,双向语音对讲</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>一体式设计,摄像头底部具有高强度磁铁,携带安装方便</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>不仅可以车载使用,亦可临时固定点布防,只需固定即可使用</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>360度全向云台,支持200个预置位,巡航扫描4条</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>采用高清晰彩色防水摄像机,红外距离80M,可以实现日夜监控</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>H264/H.265视频编码,支持双码流</span></p></div>",
+				"<table><tr><th>参数项</th><th>参数名</th><th>参数值</th></tr><tr><td rowspan='4'>视频</td><td>视频压缩</td><td>H.264、H.265</td></tr><tr><td>最大图像尺寸</td><td>1920*1080</td></tr><tr><td>帧率</td><td>1080P 25帧</td></tr><tr><td>双码流</td><td>支持</td></tr><tr><td rowspan='4'>云台</td><td>水平范围</td><td>360°连续旋转200°/s</td></tr><tr><td>垂直范围</td><td>-20°-90°旋转80°/s</td></tr><tr><td>巡航扫描</td><td>4条</td></tr><tr><td>预置点</td><td>200个</td></tr><tr><td rowspan='2'>音频</td><td>音频压缩</td><td>ADPCM、G711</td></tr><tr><td>对讲</td><td>支持</td></tr><tr><td rowspan='2'>红外</td><td>照射距离</td><td>80米（850nm）</td></tr><tr><td>红外灯数</td><td>4颗</td></tr><tr><td rowspan='5'>网络</td><td>网络接口</td><td>10/100M RJ45接口</td></tr><tr><td>3G/4G</td><td>支持电信、移动、联通三大运营商单双模，天线内置</td></tr><tr><td>蓝牙</td><td>内置天线；可接蓝牙设备</td></tr><tr><td>WiFi</td><td>支持802.11b/g/n</td></tr><tr><td>网络协议</td><td>Tcp/IP,HTTP,DHCP,DNS,RTP/RTCP,RTSP,PPPOE</td></tr><tr><td>存储</td><td>TF卡</td><td>双TF卡，每个最大可支持128G</td></tr><tr><td>显示</td><td>LED屏</td><td>支持LED屏显示4G、WIFI、GPS网络连接、信号强度等状态</td></tr><tr><td>复位</td><td>复位</td><td>支持单独复位开关回复出厂设置</td></tr><tr><td rowspan='2'>定位</td><td>卫星</td><td>外置北斗/GPS</td></tr><tr><td>辅助</td><td>支持基站定位</td></tr><tr><td rowspan='7'>其他</td><td>电源</td><td>内置10Ah锂电池，可持续工作6小时，支持DC12V电压输入，配备充电器12.6V 3A</td></tr><tr><td>功耗</td><td>正常15W/25W满载</td></tr><tr><td>工作温度和湿度</td><td>-20℃~60℃；0~90%</td></tr><tr><td>防护等级</td><td>IP66</td></tr><tr><td>安装方式</td><td>吸盘、固定支架（高端三脚架（选配）；3/8-16专业级螺旋纹孔）</td></tr><tr><td>标配</td><td>专业防护箱</td></tr><tr><td>尺寸重量</td><td>160*238（H），3.3KG</td></tr><tr><td>扩展</td><td>智能识别</td><td>支持智能车牌识别</td></tr></table>",
+				"",
+				""
+			]
+		}
+	],
+	"fire":[
+		{
+			"img":"img/at/fire/thumb.jpg",
+			"name":"NB-IOT压力变送器",
+			"code":"",
+			"detail":[
+				"<div class='one_content'><span style='line-height: 24px;'>该产品是以NBOT无线网络为核心,将压力数据进行无线传输的新型工业级变送器产品,支持集成大容量一次性3.6V锂电池组或选用外部电源供电;内部集成高可靠性的NB.OT网通信模组,压力数据的无线传送,弥补了传统压力变送器只能通过有线方式(RS485/232)进行数据传送的缺点;具有施工简单,真正做到即装即用,后期维护方便,按周期更换电池即可。具有多种量程,可带本地数字压力显示变头:零点、量程调试方便;反向极性保护及限流保护;抗雷击、抗冲击;本质安全防爆;体积小、外形美观、性价比高;高精度、高稳定性、高可靠性。</span><br></div>",
+				"<table><tr><th>参数名</th><th>参数值</th></tr><tr><td>外型尺寸</td><td>96mm*136mm*90mm(2088)</td></tr><tr><td>压力芯体</td><td>隔膜式扩散硅</td></tr><tr><td>重量</td><td>350g</td></tr><tr><td colspan='2'>工作参数</td></tr><tr><td>无线网络</td><td>中国电信</td></tr><tr><td>网络协议</td><td>UDP/CoAP</td></tr><tr><td>工作温度</td><td>-30℃~80℃</td></tr><tr><td>湿度范围</td><td>0-95%，非冷凝</td></tr><tr><td>量程范围</td><td>0-50MPa（分多种量程）</td></tr><tr><td>稳定性</td><td><0.1%/年</td></tr><tr><td>精度</td><td>0.5%</td></tr><tr><td colspan='2'>电源</td></tr><tr><td>电压范围（外供电版本）</td><td>DC5~24V/2A</td></tr><tr><td>电池参数（集成电池版本）</td><td>DC3.6V/9ah大容量锂电池（ER26500）</td></tr><tr><td>功耗</td><td>（30分钟进行一次数据上报,电池使用时长可达2年）通信平均电流60mA@36VDC，值守电流10uA@36VDC</td></tr><tr><td colspan='2'>接口</td></tr><tr><td>天线接口</td><td>50Ω/SMA天线接口</td></tr><tr><td>用户数据接口</td><td>RS485串行通信接口</td></tr><tr><td>波特率</td><td>1200~38400bps，默认为9600</td></tr></table>",
+				"",
+				""
+			]
+		},
+		{
+			"img":"img/at/fire/thumblora.jpg",
+			"name":"LoRa液位探测仪",
+			"code":"",
+			"detail":[
+				"<div class='one_content'><span style='line-height: 24px;'>该产品是以LoRa无线自组网络为核心，将液位数据进行无线传输的新型工业级变送器产品，支持集成大容量一次性3.6V锂电池或选用外部电源供电;内部集成高可靠性的LoRa自组网通信模组，液位数据的无线传送，弥补了传统液位变送器只能通过有线方式（RS485/232）进行数据传送的缺点；具有施工简单，真正做到即装即用，后期维护方便，按周期更换电池即可，采用工业型防爆壳体，在传感器处理方面，采用隔膜式扩散硅芯体，进行多点温度补偿,实现稳定的液位数据采集，保证液位数据的可靠性、准确性，具有多种量程，可带本地数字液位显示表头：零点、量程调试方便；反向极性保护及限流保护；抗雷击、抗冲击；本质安全防爆；体积小、外形美观、性价比高；高精度、高稳定性、高可靠性。</span><br><p style='line-height: 2em;'><span style='font-size: 14px;'>实时采集和显示液位值</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>出厂可集成大容量锂电池</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>LoRa无线数据双向传输</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>提供额外的RS485串口</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>支持Modbus通信协议</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>支持自动采集主动上报数据</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>支持图形化参数配置</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>隔膜式扩散硅芯体，数字化补偿，保证高精度</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>4位LED/LCD数字显示，方便直观</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>面板上提供量程设置及调节按钮</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>抗冲击、耐振动、适用于工业现场</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>复合式看门狗技术，永不死机</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>EMC抗干扰设计，适合电磁恶劣环境</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>适应低温和高温工作环境</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>提供灵活的DCS,SCADA,组态软件OPC接口</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>整机通过隔离防爆认证，可适用于防爆环境</span></p></div>",
+				"<table><tr><th>参数名</th><th>参数值</th></tr><tr><td>液体芯体</td><td>隔膜式扩散硅</td></tr><tr><td>重量</td><td>350g</td></tr><tr><th colspan='2'>工作参数</th></tr><tr><td>无线网络</td><td>LORA自组网，最远8km无线传输</td></tr><tr><td>网关网络模式</td><td>IPv4，TCP/UDP</td></tr><tr><td>工作温度</td><td>-30℃~80℃</td></tr><tr><td>湿度范围</td><td>0-95%，非冷凝</td></tr><tr><td>量程范围</td><td>0-10米（可定制其他量程）</td></tr><tr><td>稳定性</td><td><0.2%/年</td></tr><tr><td>精度</td><td>0.2%、0.5%</td></tr><tr><th colspan='2'>电源</th></tr><tr><td>电压范围（外供电版本）</td><td>DC5~24V/300mA</td></tr><tr><td>电池参数（集成电池版本）</td><td>DC3.6V/9ah大容量锂电池（ER26500）</td></tr><tr><td>功耗</td><td>（30分钟进行一次数据上报,电池使用时长可达1.5年）通信平均电流100mA@36VDC</td></tr><tr><th colspan='2'>接口</th></tr><tr><td>天线接口</td><td>50Ω/SMA天线接口</td></tr><tr><td>用户数据接口</td><td>RS485串行通信接口</td></tr><tr><td>波特率</td><td>1200~38400bps</td></tr></table>",
+				"<p><img src='img/at/fire/1524196708154871.png'></p>",
+				""
+			]
+		},
+		{
+			"img":"img/at/fire/thumbgas.jpg",
+			"name":"可燃气体探测器",
+			"code":"",
+			"detail":[
+				"<div class='one_content'><span style='line-height: 24px;'>该产品是基于NB-lot物联网专用网络通信的独立式可燃气体探测报警器,内置NB-lot无线通信模块,能够探测可燃气体,及时发岀报警,并将报警信息实时上报给智慧消防监控平台。可广泛用于餐厅、歌舞厅、咖啡厅、休闲厅、住宅等场所进行燃气泄露安全监测。</span><br><p style='line-height: 2em;'><span style='font-size: 14px;'>釆用NB-lot物联网实时通信,具有平安报和异常报功能,现场发生警情,智慧消防监控平台知道后,可以第一时间出警,降低损失</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>采用先进的半导体元器件及优良的生产工艺,工作稳定、安裝简单、无需调试</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>采用专用气敏元件,线性好,工作稳定</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>内置蜂鸣器和led报警灯,报警后发出强烈的声响</span></p></div>",
+				"<table><tr><th>参数名</th><th>参数值</th></tr><tr><td>电源</td><td>交流220V/50HZ</td></tr><tr><td>报警器浓度设定</td><td>天然气（LNG）</td></tr><tr><td>报警声响</td><td>>80dB</td></tr><tr><td>温度</td><td>-10℃~+50℃</td></tr><tr><td>相对湿度</td><td>≦90%，不凝露</td></tr><tr><td>外形尺寸</td><td>122*76*38mm</td></tr><tr><td>报警浓度</td><td>5000ppm（10%LEL）</td></tr></table>",
+				"",
+				""
+			]
+		},
+		{
+			"img":"img/at/fire/thumbnogas.jpg",
+			"name":"无线烟雾报警器 ",
+			"code":"",
+			"detail":[
+				"<div class='one_content'><span style='line-height: 24px;'>基于中国电信/中国移动两个NB-iot网络无线通信的烟雾探测器，CP-9V电池供电，内置芯片级SIM卡，当探测器监测到浓烟时，设备自身会鸣叫报警，同时将报警信息上传服务器最终通过手机语音电话，手机短信通知相关人员。</span><br><p style='line-height: 2em;'><span style='font-size: 14px;'>本地声光+微信信息推送两种告警方式,更安全可靠</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>工业级技术方案,适合各种应用场景</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>低耗能,值守状态时,耗电量低</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>光电感烟器件,工作稳定可靠</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>体积小,安装方便</span></p></div>",
+				"<table><tr><th>参数名</th><th>参数值</th></tr><tr><td>电源</td><td>H6F22 DC9V电池</td></tr><tr><td>指示灯</td><td>红色，正常工作时约每50秒闪烁一次</td></tr><tr><td>报警声响</td><td>>80dB</td></tr><tr><td>保护面积</td><td>60㎡~100㎡具体参数应以《火灾自动报警系统设计规范》(GB50116)为准</td></tr><tr><td>温度</td><td>-10℃~+55℃</td></tr><tr><td>相对湿度</td><td>≦95%，不凝露</td></tr><tr><td>外壳防护面积</td><td>IP30</td></tr><tr><td>外形尺寸</td><td>直径105mm,高53.5mm（带底座）</td></tr></table>",
+				"<p><img src='img/at/fire/1536740703565652.jpg'></p>",
+				""
+			]
+		},
+		{
+			"img":"img/at/fire/2018080714360257.jpg",
+			"name":"无线温湿度传感器 ",
+			"code":"DX-TH01",
+			"detail":[
+				"<div class='one_content'><span style='line-height: 24px;'>具备温度和湿度传感器,优异的超微功耗性能,体积超小便于隐蔽安装。远距离通讯,实现较大范围的温度数据实时采集功能:温度监控范围大,适用于电力设备、配电设备的长期温度实时监控:仓库、储物间的消防安全监控</span><br></div>",
+				"<table><tr><th>参数名</th><th>参数值</th></tr><tr><td>成品尺寸</td><td>Φ30mm*20mm</td></tr><tr><td>重量</td><td>20g</td></tr><tr><td>标签工艺材质</td><td>抗老化、耐高温ABS</td></tr><tr><td>发射功率</td><td>最大6DBM</td></tr><tr><td>温度传感器范围</td><td>-40℃至120℃</td></tr><tr><td>温度传感精度</td><td>±0.2℃</td></tr><tr><td>湿度传感精度</td><td>3%</td></tr><tr><td>电池</td><td>CR2450</td></tr><tr><td>平均电流</td><td>10UA</td></tr><tr><td>电池寿命</td><td>5年</td></tr><tr><td>单节点通讯距离</td><td>可视范围100米</td></tr><tr><td>频率</td><td>2.4GHz</td></tr><tr><td>协议</td><td>DEPLUS自组网协议</td></tr><tr><td>工作温度</td><td>-30℃至80℃</td></tr><tr><td>防护等级</td><td>IP65防护等级</td></tr></table>",
+				"",
+				""
+			]
+		},
+		{
+			"img":"img/at/fire/2018080714292214.jpg",
+			"name":"无线温度传感器（电缆专用） ",
+			"code":"DX-BS15",
+			"detail":[
+				"<div class='one_content'><span style='line-height: 24px;'>内置高清温度传感器,远距离通讯。高防护等级,优异的超微功耗性能,单节锂亚电池可以使用10-15年,20秒钟周期不间断实时采集,10-60分钟稳定心跳数据上传,检测异常20秒内实时上传:温度监控范围大,适用于地下电缆、电力设备的长期温度实时监控:仓库、储物间的消防安全监控</span><br></div>",
+				"<table><tr><th>参数名</th><th>参数值</th></tr><tr><td>成品尺寸</td><td>60*60*20mm</td></tr><tr><td>重量</td><td>40g</td></tr><tr><td>标签工艺材质</td><td>抗UV防火PC</td></tr><tr><td>发射功率</td><td>最大20DBM</td></tr><tr><td>温度传感器范围</td><td>-40℃至120℃</td></tr><tr><td>温度传感精度</td><td>±0.2℃</td></tr><tr><td>湿度传感精度</td><td>3%</td></tr><tr><td>电池</td><td>1200MAH锂亚电池</td></tr><tr><td>平均电流</td><td>15UA</td></tr><tr><td>电池寿命</td><td>10-15年</td></tr><tr><td>单节点通讯距离</td><td>可视范围200米</td></tr><tr><td>频率</td><td>2.4GHz</td></tr><tr><td>网络心跳频率</td><td>可设置</td></tr><tr><td>网络实时性</td><td><20秒实时上传</td></tr><tr><td>协议</td><td>DEPLUS自组网协议</td></tr><tr><td>工作温度</td><td>-30℃至80℃</td></tr><tr><td>防护等级</td><td>IP65防护等级</td></tr></table>",
+				"",
+				""
+			]
+		},
+		{
+			"img":"img/at/fire/2018090810501215.jpg",
+			"name":"无线门磁感应传感器",
+			"code":"DX-LW202",
+			"detail":[
+				"<div class='one_content'><span style='line-height: 24px;'>带霍尔门磁感应传感器,可灵敏感应柜门等开关状态,超微功耗性能,单节电池可以使用5年,具备DEPLUS自组网协议,可感应柜门等开关状态,实时传送状态信号,实时响应时间小于3秒。用于电力开关柜、环网柜,站房门等需要监控开关记录或开关报警应用场景。</span><br></div>",
+				"<table><tr><th>参数名</th><th>参数值</th></tr><tr><td>成品尺寸</td><td>50*35*15mm</td></tr><tr><td>附件尺寸</td><td>20*10*8mm</td></tr><tr><td>重量</td><td>60g</td></tr><tr><td>标签工艺材质</td><td>抗老化、耐高温ABS</td></tr><tr><td>发射功率</td><td>最大20DBM</td></tr><tr><td>传感器</td><td>霍尔磁场感应</td></tr><tr><td>感应位移</td><td>小于1.5cm（切线方向）；小于2cm（轴线方向）</td></tr><tr><td>响应时间</td><td>小于3秒</td></tr><tr><td>心跳周期</td><td>3-5分钟</td></tr><tr><td>电池</td><td>ER10450（980MAH）</td></tr><tr><td>平均电流</td><td>15UA</td></tr><tr><td>电池寿命</td><td>5年</td></tr><tr><td>单节点通讯距离</td><td>可视范围200米</td></tr><tr><td>频率</td><td>2.4GHz</td></tr><tr><td>协议</td><td>DEPLUS自组网协议</td></tr><tr><td>工作温度</td><td>-30℃至80℃</td></tr><tr><td>防护等级</td><td>IP65防护等级</td></tr></table>",
+				"",
+				""
+			]
+		},
+		{
+			"img":"img/at/fire/2018083015372246.jpg",
+			"name":"无线噪声传感器",
+			"code":"DX-TX17",
+			"detail":[
+				"<div class='one_content'><span style='line-height: 24px;'>高精度的声音计量仪器,量程高达30dB-120dB,高灵敏度的电容式麦克风,信号稳定,精度高。具有测量范围宽、线形度好,使用方便、便于安装。无线联网,支持DEPLUS自组网协议;超微功耗,适用于家庭、办公、车间、汽车测量、工业测量等应用场景。</span><br></div>",
+				"<table><tr><th>参数名</th><th>参数值</th></tr><tr><td>成品尺寸</td><td>107*35mm</td></tr><tr><td>重量</td><td>135g</td></tr><tr><td>待机电流</td><td>≤10uA</td></tr><tr><td>工作电流</td><td>30mA</td></tr><tr><td>单周期工作时间</td><td>10秒</td></tr><tr><td>单周期休眠时间</td><td>30分钟（可设）</td></tr><tr><td>工作温度</td><td>-20℃至75℃</td></tr><tr><td>测量范围</td><td>30dB至120dB</td></tr><tr><td>噪声精度</td><td>0.5dB</td></tr><tr><td>电池</td><td>11V/3000MAH锂亚电池</td></tr><tr><td>电池使用寿命</td><td>3年</td></tr><tr><td>通讯距离</td><td>可视距离200米</td></tr><tr><td>支持协议</td><td>DEPLUS无线自组网RFID协议</td></tr><tr><td>通讯频率</td><td>2.4G/433M</td></tr><tr><td>射频功率</td><td>0-20DBM自动调节</td></tr></table>",
+				"",
+				""
+			]
+		},
+		{
+			"img":"img/at/fire/2018083014201654.jpg",
+			"name":"无线粉尘传感器",
+			"code":"DX-TPM25",
+			"detail":[
+				"<div class='one_content'><span style='line-height: 24px;'>工业级通用颗粒物浓度变送器,采用激光散射测量原理,通过独有的数据双频采集技术进行筛分,得出单位体积内等效粒径的颗粒物粒子个数,并以科学独特的算法计算出单位体积内等效粒径的颗粒物质量浓度,PM25、PM10同时输出,独有双频数据采集及自动标定技术,一致性可达±10%,采用先进的激光防衰减技术,保证设备长期稳定性。</span><br></div>",
+				"<table><tr><th>参数名</th><th>参数值</th></tr><tr><td>成品尺寸</td><td>100*80*35mm</td></tr><tr><td>重量</td><td>335g</td></tr><tr><td>待机电流</td><td>≤10uA</td></tr><tr><td>工作电流</td><td>70mA</td></tr><tr><td>单周期工作时间</td><td>50秒</td></tr><tr><td>单周期休眠时间</td><td>30分钟（可设）</td></tr><tr><td>工作温度</td><td>-20℃至75℃</td></tr><tr><td>测量范围</td><td>0-500微克/立方米</td></tr><tr><td>长期稳定性</td><td>使用周期内小于2%</td></tr><tr><td>颗粒物测量范围</td><td>0.3微米~10微米</td></tr><tr><td>电池</td><td>外接12V电源</td></tr><tr><td>通讯距离</td><td>可视距离200米</td></tr><tr><td>支持协议</td><td>DEPLUS无线自组网RFID协议</td></tr><tr><td>通讯频率</td><td>2.4G/433M</td></tr><tr><td>射频功率</td><td>0-20DBM自动调节</td></tr></table>",
+				"",
+				""
+			]
+		},
+		{
+			"img":"img/at/fire/2018083014221070.jpg",
+			"name":"无线酸碱度传感器",
+			"code":"DX-PH114",
+			"detail":[
+				"<div class='one_content'><span style='line-height: 24px;'>检测液体酸碱度值,复合电极感应探头,信号稳定,精度高。使用方便、便于安装无线联网,支持DEPLUS自组网协议;超微功耗,电池使用5年以上(和标签心跳周期有关);适用于智能物业、工业现场等环境监控。</span><br></div>",
+				"<table><tr><th>参数名</th><th>参数值</th></tr><tr><td>成品尺寸</td><td>107*35mm</td></tr><tr><td>重量</td><td>135g</td></tr><tr><td>待机电流</td><td>6uA</td></tr><tr><td>工作电流</td><td>5mA</td></tr><tr><td>RFID唤醒周期</td><td>15分钟（可设）</td></tr><tr><td>工作温度</td><td>-20℃至75℃/95%湿度</td></tr><tr><td>量程</td><td>0-14PH值</td></tr><tr><td>精度</td><td>0.1PH（25℃）</td></tr><tr><td>响应时间</td><td><5秒</td></tr><tr><td>电池</td><td>3.6V/1200MAH锂亚电池</td></tr><tr><td>电池使用寿命</td><td>5年</td></tr><tr><td>通讯距离</td><td>可视距离200米</td></tr><tr><td>支持协议</td><td>DEPLUS无线自组网RFID协议</td></tr><tr><td>通讯频率</td><td>2.4G/433M</td></tr><tr><td>射频功率</td><td>0-20DBM自动调节</td></tr></table>",
+				"",
+				""
+			]
+		}
+	],
+	"security":[
+		{
+			"img":"img/at/security/201805121708391071.png",
+			"name":"V7系列张力式电子围栏主机",
+			"code":"",
+			"detail":[
+				"<div class='one_content'><p style='line-height: 2em;'><span style='font-size: 14px;'>灵活适应高低地形</span></p><span style='line-height: 24px;'>采用全新前端探测技术，提升信号响应灵敏度，实现前端任意点位移量不超过75mm报警，并改良滑轮结构，降低张力值损耗，在多拐角或高低落差的地区，信号传输不受影响，实现零漏报</span><br><p style='line-height: 2em;'><span style='font-size: 14px;'>防攀爬入侵报警</span></p><span style='line-height: 24px;'>前端测控杆、承力杆、轴承杆内置攀爬探测装置，支持攀爬报警、断线报警、松弛报警、主机掉电报警、主机和前端探测杆防拆报警等多种入侵报警功能，全方位提升周界防护等级</span><br><p style='line-height: 2em;'><span style='font-size: 14px;'>智能自适应环境</span></p><span style='line-height: 24px;'>当前端张力线受外界环境、气候等因素影响导致松弛时，系统可自动收紧至警戒张力值，降低误报及漏报，大大节约了运营维护的成本</span><br><p style='line-height: 2em;'><span style='font-size: 14px;'>多选择通信接口</span></p><span style='line-height: 24px;'>主机内置以太网、RS485接口，适应客户不同方案需求。前端攀爬杆件内置通信接口，方便张力主机统一管理各杆件</span><br></div>",
+				"<table><tr><th>参数名</th><th>参数值</th></tr><tr><td>外形尺寸</td><td>239mm×156mm×55mm</td></tr><tr><td>供电电源</td><td>AC24V（±15%）50Hz或12V 7Ah蓄电池</td></tr><tr><td>使用环境</td><td>温度：-40℃~+80℃</td></tr><tr><td>额定功率</td><td>15W</td></tr><tr><td>警戒张力值</td><td>100~450N</td></tr><tr><td>攀爬报警阈值</td><td>距离底端700m处,沿杆体和钢索所形成平面的垂直方向施加100N外力</td></tr><tr><td>张力线自收紧</td><td>自收紧范围0~75mm</td></tr><tr><td>拉紧报警位移量</td><td>75mm以内</td></tr><tr><td>松弛报警阈值</td><td>小于原正常运行警戒张力值的1/3</td></tr><tr><td>报警持续时间</td><td>1~999S可调</td></tr><tr><td>报警恢复时间</td><td>小于10秒</td></tr><tr><td>张力线抗拉断力</td><td>600~1000N</td></tr><tr><td>张力模块承受最大拉力</td><td>1000N以上</td></tr><tr><td>报警接口</td><td>常开、常闭触点</td></tr><tr><td>报警延时</td><td>≤3s</td></tr><tr><td>平均无故障时间</td><td>正常气候正常供电电压情况下60000h</td></tr></table>",
+				"",
+				""
+			]
+		},
+		{
+			"img":"img/at/security/201807101057096847.png",
+			"name":"张力电子围栏",
+			"code":"",
+			"detail":[
+				"<div class='one_content'><span style='line-height: 24px;'>张力电子围栏尤其适用于易燃易爆及不便于围栏前端带电的特殊场合。如加油站、加气站、仓库，以及中、小学校等。也可以安装于变电站、水厂、电厂、司法系统的看守所、监狱，以及机场、军事基地、政府机构、重点文物保护单位等场所的周界安全防范，主要由探测控制杆、中间支撑杆、终端受力杆、张力线、张力弹簧、紧线器、万向底座等组成。</span><br><p style='line-height: 2em;'><span style='font-size: 14px;'>安全可靠：前端金属杆和张力线等机械部件均不带电，对入侵者没有人体伤害</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>坚实耐用：铝合金材质强度高，表面阳极氧化处理，耐腐蚀性好</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>安装灵活：采用万向底座，多角度调节，高度落差可调</span></p></div>",
+				"",
+				"<p><img src='img/at/security/20180710102716_53138.png'></p>",
+				""
+			]
+		},
+		{
+			"img":"img/at/security/360d75eed9dce923.jpg",
+			"name":"红外对射三光束",
+			"code":"ABE-100",
+			"detail":[
+				"<div class='one_content'><span style='line-height: 24px;'>三光束室外探测距离100米，纯数码红外对射具有智能数字化光束编码识别技术，可组成真正的红外墙；超级光学镀膜技术；智能环境校正识别电路设计等。</span><br><p style='line-height: 2em;'><span style='font-size: 14px;'>红外探测距离：室内（300米）、室外：（100米）</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>纯正数码对射与其他防盗系统良好兼容</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>纯正数码DSP芯片控制电路，通过DSP芯片编程发射与接收，大功率红外发接收对管，低功耗数字变频处理技术、减少误报、杜绝漏报，真正对抗红外智能入侵</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>采用开关电源供电方式，无DC降压问题，供电电压值在DC13.8V-DC24V之间，便于集中供电</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>全密封防雨（雾）、防尘（虫）等的全天候一体化结构设计使其能在恶劣的环境中正常工作</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>抗强光达50，000LUX，内置自动调节强光过滤系统，抗阳光直射性能良好，完全抗击日光灯、强光或汽车灯干扰</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>当遇到浓雾或天气恶劣时探测器会自动增强灵敏度（AGC电路）</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>水平/垂直光学角度调整方便、内置光学瞄准镜，易于校准、调试，大大提高施工效率</span></p><p style='line-height: 2em;'><span style='font-size: 14px;'>C型继电器输出、防雷击电路设计、带防雨罩设计</span></p></div>",
+				"<table><tr><th>参数名</th><th>参数值</th></tr><tr><td>室外警戒距离</td><td>100米</td></tr><tr><td>室外警戒距离</td><td>300米</td></tr><tr><td>红外光束数</td><td>三光射（对射式）</td></tr><tr><td>探测方式</td><td>三光束遮断检知式</td></tr><tr><td>光源</td><td>红外LED</td></tr><tr><td>感应速度</td><td>50-700msec</td></tr><tr><td>报警输出</td><td>1C继电器接点输出，接点容量DC30V/0.5A MAX</td></tr><tr><td>电源、电压</td><td>DC13.8~24V;AC11~18V</td></tr><tr><td>消耗电流</td><td>90mA max</td></tr><tr><td>使用温度范围</td><td>-25℃至55℃</td></tr><tr><td>防拆输出</td><td>IB接点输出，DC26V/0.5A max</td></tr><tr><td>光轴调整角度（水平）</td><td>180°(±90°)</td></tr><tr><td>光轴调整角度（垂直）</td><td>20°(±10°)</td></tr><tr><td>接露、霜对策</td><td>恒温加热器</td></tr><tr><td>其他附加机能</td><td>光束指示、地址编码设置、报警响应时间设置</td></tr><tr><td>材质</td><td>铝材、PC工程塑料</td></tr></table>",
+				"",
+				""
+			]
+		}
 	]
 }
