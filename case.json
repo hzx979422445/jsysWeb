@@ -111,5 +111,23 @@
 			"<div class=\"case-link-list\"><ul class=\"f-cb\"><li><p class=\"pic\"><img src=\"img/152999568137898a3ol.jpg\"alt=\" 云深互联网安防云视讯解决方案\"></p><span class=\"con\"><h2> 云深互联网安防云视讯解决方案</h2><p class=\"font\"> 云深凭借在安防行业以及在大数据云计算上的多年积累，推出了面向运营商等大型客户的行业云平台，并可根据客户特点与需求提供个性化的定制服务，真正用技术帮助客户打造面向民用市场的互联网安防云视讯解决方案。 云深安防云...</p><p class=\"more\">查看详情</p></span></a></li></ul></div>",
 			"<div class=\"case-link-list\"><ul class=\"f-cb\"><li><p class=\"pic\"><img src=\"img/15299962065331fvv8j.jpg\"alt=\" 云深多功能杆塔解决方案\"></p><span class=\"con\"><h2> 云深多功能杆塔解决方案</h2><p class=\"font\"> 云深多功能杆塔以提升照明的舒适化、监控智能化、通讯人性化为出发点，以城市路灯杆为载体集新一代高速无线宽带网、物联网、视频安防、地下管网建设，融合工业设计、数据信息采集、分析与发布功能于一体，为完整呈现智慧、...</p><p class=\"more\">查看详情</p></span></a></li></ul></div>"
 		]
+	},
+	"Production":{
+		"title":"安全生产",
+		"describe":"实现信息共享，规范施工管理，降低安全隐患",
+		"item":[
+			"消防巡检",
+			"设备巡检",
+			"临电安全",
+			"劳务人员",
+			"物资管理"
+		],
+		"content": [
+			"<div class=\"case-link-list\"><ul class=\"f-cb\"><li><p class=\"pic\"><img src=\"img/15299955079328j92kj.jpg\"alt=\"云深二维码物业消防巡检解决方案\"></p><span class=\"con\"><h2>云深二维码物业消防巡检解决方案</h2><p class=\"font\">物业设备巡检存在巡检对象多、巡检点分散、纸质信息录入不方便等问题。急需一套简单方便的工具,提高巡检记录效率,规范巡检记录和流程。使于管理者快速查看日常巡检记录,及时了解设备运行状态,保物业系统安全...</p><p class=\"more\">查看详情</p></span></a></li></ul></div>",
+			"<div class=\"case-link-list\"><ul class=\"f-cb\"><li><p class=\"pic\"><img src=\"img/15299954920192nsrue.jpg\"alt=\"云深设备巡检管理解决方案\"></p><span class=\"con\"><h2>云深设备巡检管理解决方案</h2><p class=\"font\">以往的设备巡检方式，都是巡检人员手工填写纸质记录表，工作效率比较低，且经常出现代签、事后签等违规操作。纸质记录表还需由专人定期整理、汇总报表，工作量大而且容易出错，管理人员不能及时发现问题...</p><p class=\"more\">查看详情</p></span></a></li></ul></div>",
+			"<div class=\"case-link-list\"><ul class=\"f-cb\"><li><p class=\"pic\"><img src=\"img/20150814160747_8125.jpg\"alt=\"云深临电安全检查解决方案 —— 配电箱日常巡检\"></p><span class=\"con\"><h2>云深临电安全检查解决方案 —— 配电箱日常巡检</h2><p class=\"font\">针对配电箱的安全检查，可以做到二维码批量制作，一个配电箱对应一个专属的二维码，检查电工只需要到现场用手机扫码，根据设置好的检查项手机端填写记录，数据自动同步后台，还能根据定位和现场拍照...</p><p class=\"more\">查看详情</p></span></a></li></ul></div>",
+			"<div class=\"case-link-list\"><ul class=\"f-cb\"><li><p class=\"pic\"><img src=\"img/shiceshiliang_1a9deab.png\"alt=\"云深劳务人员信息管理安全解决方案 —— 响应实名制管理\"></p><span class=\"con\"><h2>云深劳务人员信息管理安全解决方案 —— 响应实名制管理</h2><p class=\"font\">实行劳务实名制管理,将劳务人员姓名、身份证号劳务合同书编号、岗位技能证书号登记入册,并确保人、证、册、合同、证书相符统一使项目对劳务分包人数清、情况明、人员对号、调配有序,从而促进劳务企业合法用工、切实维护农民工权...</p><p class=\"more\">查看详情</p></span></a></li></ul></div>",
+			"<div class=\"case-link-list\"><ul class=\"f-cb\"><li><p class=\"pic\"><img src=\"img/152999543249067aisj.jpg\"alt=\"云深物资管理安全解决方案\"></p><span class=\"con\"><h2>云深物资管理安全解决方案</h2><p class=\"font\">建筑施工现场，需要为原材料、构配件等工程材料及样品制作标识牌，展示材料的基本参数、验收、检验等信息，确保材料及样品在仓储和流转过程中可识别、可追溯，防止材料非预期使用，确保样品代表...</p><p class=\"more\">查看详情</p></span></a></li></ul></div>"
+		]
 	}
 }
