@@ -221,14 +221,19 @@
 		            async:true,
 		            success:function(data){
 		            	var datas = data[news_key]['info'][news_index1][news_index2];
-		            	$("h1").html(datas.title);
-		            	$(".bkg>strong>span").html(datas.item[0]);
-		            	$(".bkg").after(datas.content[0]);
-		            	$(".itd>strong>span").html(datas.item[1]);
-		            	$(".itd").after(datas.content[1]);
-		            	$(".adv>strong>span").html(datas.item[2]);
-		            	$(".adv").after(datas.content[2]);
 		            	$(".relevant>a").html(datas.title);
+		            	if(datas.item == "" || datas.item == undefined){
+		            		var div = "<p class='textcenter lingheight'><img src='img/index_tongzhigonggao_blank_img.png' alt='image.png' style='width:230px;height:230px;position: relative;left: 50%;margin-left:-115px;' /></p>";
+		            		$(".bkg").after(div);
+		            	}else{
+			            	$("h1").html(datas.title);
+			            	$(".bkg>strong>span").html(datas.item[0]);
+			            	$(".bkg").after(datas.content[0]);
+			            	$(".itd>strong>span").html(datas.item[1]);
+			            	$(".itd").after(datas.content[1]);
+			            	$(".adv>strong>span").html(datas.item[2]);
+			            	$(".adv").after(datas.content[2]);
+		            	}
 		            }
         		})
 				
