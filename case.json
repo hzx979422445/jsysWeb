@@ -128,6 +128,104 @@
 			"<div class=\"case-link-list\"><ul class=\"f-cb\"><li><p class=\"pic\"><img src=\"img/20150814160747_8125.jpg\"alt=\"云深临电安全检查解决方案 —— 配电箱日常巡检\"></p><span class=\"con\"><h2>云深临电安全检查解决方案 —— 配电箱日常巡检</h2><p class=\"font\">针对配电箱的安全检查，可以做到二维码批量制作，一个配电箱对应一个专属的二维码，检查电工只需要到现场用手机扫码，根据设置好的检查项手机端填写记录，数据自动同步后台，还能根据定位和现场拍照...</p><p class=\"more\">查看详情</p></span></a></li></ul></div>",
 			"<div class=\"case-link-list\"><ul class=\"f-cb\"><li><p class=\"pic\"><img src=\"img/shiceshiliang_1a9deab.png\"alt=\"云深劳务人员信息管理安全解决方案 —— 响应实名制管理\"></p><span class=\"con\"><h2>云深劳务人员信息管理安全解决方案 —— 响应实名制管理</h2><p class=\"font\">实行劳务实名制管理,将劳务人员姓名、身份证号劳务合同书编号、岗位技能证书号登记入册,并确保人、证、册、合同、证书相符统一使项目对劳务分包人数清、情况明、人员对号、调配有序,从而促进劳务企业合法用工、切实维护农民工权...</p><p class=\"more\">查看详情</p></span></a></li></ul></div>",
 			"<div class=\"case-link-list\"><ul class=\"f-cb\"><li><p class=\"pic\"><img src=\"img/152999543249067aisj.jpg\"alt=\"云深物资管理安全解决方案\"></p><span class=\"con\"><h2>云深物资管理安全解决方案</h2><p class=\"font\">建筑施工现场，需要为原材料、构配件等工程材料及样品制作标识牌，展示材料的基本参数、验收、检验等信息，确保材料及样品在仓储和流转过程中可识别、可追溯，防止材料非预期使用，确保样品代表...</p><p class=\"more\">查看详情</p></span></a></li></ul></div>"
+		],
+		"info":[
+			[
+				{
+					"title":"云深二维码物业消防巡检解决方案",
+					"item":[
+						"背景介绍",
+						"方案介绍",
+						"方案优势"
+					],
+					"content":[
+						"<p class=\"background textindent lingheight\"><span>物业设备巡检存在巡检对象多、巡检点分散、纸质信息录入不方便等问题。急需一套简单方便的工具,提高巡检记录效率,规范巡检记录和流程。使于管理者快速查看日常巡检记录,及时了解设备运行状态,保证物业系统安全运行。</span></p>",
+						"<p class='textcenter lingheight'><img src='img/at/case/20181116160740.png' title='20181116160740.png' alt='image.png' style='width:500px;height:250px;' /></p>",
+						"<p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><strong><span>操作简便效率高：</span></strong><span>访客:现场直接扫码查看信息，维护人员:现场扫码添加记录更新到云，管理者:可在现场係统后台/同事分享多种方式随时随地了解动态信息</span></p><p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><strong><span>学习成本低：</span></strong><span class='advantage'>后台管理员:一天即可学会二维码的制作，维护人员:一分钟学会添加记录，访客:无需学习,手机扫码直接查看信息</span></p><p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><strong><span>项目实施周期短：</span></strong><span class='advantage'>开通系统后，从资料搜集到二维码，标牌粘贴使用只需两周</span></p><p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><strong><span>数据安全可靠：</span></strong><span class='advantage'>采用国内最专业的阿里云，网络安全小组保障系统的稳定性和安全性，云系统定期灰度升级</span></p>"
+					]
+				}
+			]
+		]
+	},
+	"constructionsite":{
+		"title":"智慧工地",
+		"describe":"",
+		"item":[
+			"智慧工地"
+		],
+		"content": [
+			"<div class=\"case-link-list\"><ul class=\"f-cb\"><li><p class=\"pic\"><img src=\"img/建设1.jpg\"alt=\"云深智慧工地解决方案\"></p><span class=\"con\"><h2>云深智慧工地解决方案</h2><p class=\"font\">以工程建设现场的安全管控为主体，创新性的引入“风险源”管理的概念，并基于人脸大数据技术强 化务工人员管理，以及大型机械设备的实时监测，从而实现工程现场各个领域的风险预判，再加上基于BIM模型实现的工程进度...</p><p class=\"more\">查看详情</p></span></a></li></ul></div>"
+		],
+		"info":[
+			[
+				{
+					"title":"云深智慧工地解决方案",
+					"item":[
+						"背景介绍",
+						"方案介绍",
+						"方案优势"
+					],
+					"content":[
+						"<p class='background textindent lingheight'><span>目前我国城市建设已进入飞速发展阶段，各个城市都有大量的基础建设项目在紧锣密鼓的进行，在这些工程建设中，生产安全一直是一个首要问题。2017年《国务院办公厅关于促进建筑业持续健康发展的意见》指出，要“推进信息技术与安全生产深度融合，加快建设建筑施工安全监管信息系统，通过信息化手段加强安全生产管理。” 近年来，在各施工单位、监理单位以及政府监管部门的共同努力下，各个工程建设项目都建立了比较完善的规章制度和比较先进的管理手段，但是重大安全事故仍然时有发生。目前我国生产安全管理方面的水平，与我国城市建设健康发展的要求相比，还存在一定差距。</span></p>",
+						"<p class='textcenter lingheight'><img src='img/建设1.jpg'alt='image.png'style='width:500px;height:250px;'/></p><p class='background textindent lingheight'><span>该解决方案，是基于我国“预防为主”的安全生产指导方针，以安全管控平台为核心，融合了工程建设各个领域的成熟信息化手段，采用了大数据、物联网、智能识别、建筑综合模型、卫星遥感、地质建模等前沿技术，覆盖工程建设中人员、机械、物料、法规、环境等多个方面，为用户建立起安全预警的管理机制，从而大幅减少安全事故的发生的一套安全管控平台。以工程建设现场的安全管控为主体，创新性的引入“风险源”管理的概念，并基于人脸大数据技术强化务工人员管理，以及大型机械设备的实时监测，从而实现工程现场各个领域的风险预判，再加上基于BIM模型实现的工程进度、质量管理，最终覆盖人、机、料、法、环，实现完整全面的功能点部署。</span></p><p class='textcenter lingheight'><img src='img/at/case/建设2.jpg'alt='image.png'style='width:500px;height:250px;'/></p><p class='background textindent lingheight'><span>我们将工程周边一定范围内会受到工程影响的建筑或设施定义为“风险源”，这些建筑设施包括高层建筑、地铁、铁路、桥梁、管廊等。在工程施工期间，将会对这些风险源进行监测，以判断这些建筑设施是否出现了沉降、倾斜等现象，提前进行风险预警，大大降低安全事故的发生概率。</span></p><p class='textcenter lingheight'><img src='img/at/case/建设3.jpg'alt='image.png'style='width:500px;height:250px;'/></p><p class='background textindent lingheight'><span>在接入务工人员实名制与安全教育系统的基础上，通过人员人脸大数据识别系统，对现场人员信息进行采集，严格控制了入场人员身份的有效性，建立、完善了作业人员的考勤管理。与此同时，异常人员识别以及行为识别技术，自动识别不安全行为，比如未戴安全帽、未系安全绳、疲劳操作等。让管理人员能随时掌控所有信息，真正做到预防为主、早发现、早响应。</span></p><p class='textcenter lingheight'><img src='img/at/case/建设4.jpg'alt='image.png'style='width:500px;height:250px;'/></p><p class='background textindent lingheight'><span>工程建设中塔吊、龙门吊、盾构机等大型机械设备，也是生产安全管控的重要环节。系统采集这些机械设备的一系列运行数据，实现对机械设备安全状态的监测，从而能够在事故初期就及时掌握详细隐患信息，并及时采取相应措施，从而避免故障进一步扩大并导致安全事故发生。</span></p><p class='background textindent lingheight'><span>采用BIM模型，直观展示工程的外形、结构、组件、管网等，并确定了工程实施的阶段、计划、步骤等进度设计；在工程实施过程中，可实时呈现工程实景，并与BIM模型进行同步对比，可直观展示工程进度。</span></p>",
+						"<p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><span class='advantage'>全监测、更精准：卫星遥感InSAR、地质模型、自动监测、人工检测相结合，丰富的监测手段使得风险分析具有更高准确度。</span></p><p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><span class='advantage'>虚拟专家会诊，效率更高：植入风险分析专家的知识和经验，代替人工进行计算、分析、判断，提高风险分析的准确度和效率。</span></p><p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><span class='advantage'>一流的视频算法和识别技术：一流的识别算法为人员管理提供了强大的技术支撑，可通过技术手段大大提高施工人员的安全级别，避免人为因素造成的伤亡事故。</span></p><p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><span class='advantage'>强大的平台接入和整合能力：基于多年的技术积累，跨越IT、建筑、地质、公共安全等多个行业，实现所有数据源的综合接入。</span></p>"
+					]
+				}
+			]
+		]
+	},
+	"machine":{
+		"title":"智慧机房",
+		"describe":"",
+		"item":[
+			"机房监控"
+		],
+		"content": [
+			"<div class=\"case-link-list\"><ul class=\"f-cb\"><li><p class=\"pic\"><img src=\"img/20bbb39f2289ba7cd5af50be440455a5.jpg\"alt=\"云深参考环境监控系统\"></p><span class=\"con\"><h2>云深参考环境监控系统</h2><p class=\"font\">本系统适应监控数字化、网络化发展趋势，不落后，不重复投资;采用企业内部局域网或广域网通信和管理，稳定安全。采用TCP/IP方式，各个被监控机房可以很容易地与监控管理中心及数据库建立起联系...</p><p class=\"more\">查看详情</p></span></a></li></ul></div>"
+		],
+		"info":[
+			[
+				{
+					"title":"云深参考环境监控系统",
+					"item":[
+						"系统介绍",
+						"系统优势",
+						"系统特点"
+					],
+					"content":[
+						"<p class='background textindent lingheight'><span>系统属高可靠、稳定的、模块化的智能数据中心基础设施监控系统，针对UPS、精密空调、漏水、温湿度、安防、门禁、消防、烟雾传感器等设备，通过通讯交互，智能分析，智能控制，人性化的展现方式，让数据中心运维人员及时了解数据中心的健康状况，创建新型绿色节能机房。</span></p>",
+						"<p class='textcenter lingheight'><strong>稳定性和安全性</strong></p><p class='background textindent lingheight'><span>本系统适应监控数字化、网络化发展趋势，不落后，不重复投资;采用企业内部局域网或广域网通信和管理，稳定安全。采用TCP/IP方式，各个被监控机房可以很容易地与监控管理中心及数据库建立起联系，用较低的成本对被监控机房的动力设备、机房环境、安全保卫消防、视频图像等信息实施统一平台下的监控。</span></p><p class='textcenter lingheight'><strong>实时性和可扩展性</strong></p><p class='background textindent lingheight'><span>监控主机采用采集、解析、传输和报警一体化设计，报警迅速，数据显示及时，数据记录完整，数据分析直观;系统以模块化设计，具有开放性，能灵活地组建各种规模的监控系统，与企业内部网络系统连接，不管是何种网络传输方式都能有机融合成一个整体，将是十分重要的。机房大小差异较大，要求设计的系统能适合各种实际情况，有较强的可扩性，能随时适应对系统的扩容要求。</span></p>",
+						"<p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><strong><span>高度的集中管理&nbsp;</span></strong><span class='advantage'>系统基于TCP/IP及SNMP，具有高度的集中管理理念，不仅能够将单个机房内各种动力设备与环境设备的各种状态信息、报警信息、控制命令与历史数据等进行完整的集中监控，并且能够将分布在全国各地的多个机房实现跨区域的集中监控。</span></p><p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><strong><span>灵活的远程管理&nbsp;</span></strong><span class='advantage'>系统不仅可实现监控的本地管理，并可提供高可靠的远程管理，管理者可在Internet上通过web浏览方式，实现在任意终端上的远程查看各机房内设备、系统的运行情况，如果权限允许也可对设备、系统进行控制管理。</span></p><p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><strong><span>强大的报警处理&nbsp;</span></strong><span class='advantage'>系统可区分多级报警级别，根据用户需要设定报警级别，报警事件发生时系统自动按事件级别排队报警、处理，并对应各级别发送报警信息;系统提供电脑屏幕、多媒体语音、电话、手机短信、E-mail等多种报警方式供用户选择，在发生报警事件时，保证警情的及时告知;系统还可通过智能语音组合对分布在不同区域及不同设备的警情进行精确定位式报警，方便管理者准确了解发生警情的位置及状态，可实现现代化机房管理的无人或少人值守。</span></p><p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><strong><span>强大的数据管理&nbsp;</span></strong><span class='advantage'>系统自动对操作人员、操作内容、操作时间、故障点、故障内容、故障处理、故障时间等信息进行完整地记录，提供实时动态曲线与历史曲线两种查询方式，方便管理者借助直观的图形显示，快速分析系统运行状况，为管理者提供完备的系统操作维护资料。系统内嵌强大报表管理系统，可提供常用的日报表、周报表、月报表。</span></p><p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><strong><span>可靠的安全管理&nbsp;</span></strong><span class='advantage'>系统具有强大的权限管理功能，可对管理者和使用者分配不同的操作使用权限，并对所有管理者和使用者根据职能进行分组管理，防止系统信息泄露和被非授权人员所干扰。</span></p><p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><strong><span>系统的高可靠性&nbsp;</span></strong><span class='advantage'>系统全部硬件设备均为工控设备，信号处理接口板：其平均无故障时间在20万小时以上。模块采用全密封结构，固态封装，可靠性极高。中心监控设备采用嵌入式LINUX系统软件，具有很强的防病毒能力。</span></p><p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><strong><span>友好的人机界面&nbsp;</span></strong><span class='advantage'>系统提供电子地图显示，能够完全数字化地逼真模拟出各机房设备环境布局和运行状况，令操作人员一目了然。参数实时动态显示，界面完全汉化。</span></p>"
+					]
+				}
+			]
+		]
+	},
+	"warehouse":{
+		"title":"智慧仓库",
+		"describe":"",
+		"item":[
+			"仓库监控"
+		],
+		"content": [
+			"<div class=\"case-link-list\"><ul class=\"f-cb\"><li><p class=\"pic\"><img src=\"img/32de5641c4b586d2d42f4303b3ce5985.jpg\"alt=\"云深仓库温湿度监控解决方案\"></p><span class=\"con\"><h2>云深仓库温湿度监控解决方案</h2><p class=\"font\">本方案融合了最新的嵌入式技术和工业以太网总线控制技术，采用瑞士进口传感器元件，具有精度高、稳定可靠、安装操作方便、性价比高等特点，可广泛应用于电力、档案馆、军队、铁路、药品、粮食、烟草、物流、博物馆、实验室、工业厂房等场所...</p><p class=\"more\">查看详情</p></span></a></li></ul></div>"
+		],
+		"info":[
+			[
+				{
+					"title":"云深仓库温湿度监控解决方案",
+					"item":[
+						"方案背景",
+						"方案简介",
+						"技术优势"
+					],
+					"content":[
+						"<p class='background textindent lingheight'><span>仓库广泛应用在药品、粮食、烟草、物流、军队、电力、博物馆、艺术馆、企业等各行各业中，对促进生产提高效率起着重要的辅助作用。库房温湿度往往影响到存放货物的质量、性能等，需要对环境温度、湿度等参数进行监测和控制。本方案针对仓库存储物品的环境温湿度进行监控，能对大面积、多点的温度、湿度等物理量进行集中监测，大大提高工作效率。</span></p>",
+						"<p class='background textindent lingheight'><span>本方案融合了最新的嵌入式技术和工业以太网总线控制技术，采用瑞士进口传感器元件，具有精度高、稳定可靠、安装操作方便、性价比高等特点，可广泛应用于电力、档案馆、军队、铁路、药品、粮食、烟草、物流、博物馆、实验室、工业厂房等场所，架构图如下所示.</span></p><p class='textcenter lingheight'><img src='img/at/case/6564106086d9487fb9dade604f8440e4_18.jpg'alt='image.png'style='width:500px;height:250px;'/></p>",
+						"<p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><strong><span>1.&nbsp;</span></strong><span class='advantage'>基于嵌入式开发、低功耗、可靠性强</span></p><p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><strong><span>2.&nbsp;</span></strong><span class='advantage'>工业级别的数据采集设备，稳定性强，体积小，安装简易</span></p><p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><strong><span>3.&nbsp;</span></strong><span class='advantage'>系统扩展性强，容易集成</span></p><p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><strong><span>4.&nbsp;</span></strong><span class='advantage'>一体化设计，无需另配计算机即可独立运行</span></p><p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><strong><span>5.&nbsp;</span></strong><span class='advantage'>电脑或PDA远程监控</span></p><p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><strong><span>6.&nbsp;</span></strong><span class='advantage'>温湿度和空调、除湿机联动控制</span></p><p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><strong><span>7.&nbsp;</span></strong><span class='advantage'>集成温湿、湿度、空调、除湿机、漏水、门禁、烟雾、红外、视频于一体</span></p><p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><strong><span>8.&nbsp;</span></strong><span class='advantage'>支持三大协议：B接口、IEC 61850、光芒104，无缝对接铁塔、铁路、电信、电力平台</span></p><p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><strong><span>9.&nbsp;</span></strong><span class='advantage'>现场声音、电话、短信、彩信、图像、声光、邮件多种报警方式</span></p>"
+					]
+				}
+			]
 		]
 	}
 }

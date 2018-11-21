@@ -209,7 +209,7 @@
 with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
 <script>
     $(function () {
-
+		var index = 0;
         var news_index= UrlParm.parm("key");
         var dataObj;
         $.ajax({
@@ -241,11 +241,17 @@ with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createEl
         });
         $(document).on("click",'.slides_item>li',function () {
             var on = $(this);
-            var index = on.index();
+            index = on.index();
+            console.log(index);
             on.addClass('on').siblings().removeClass('on');
             $(".case-bot-content").html(dataObj.content[index]);
         })
-
+		$(document).on("click",'.case-link-list>ul>li',function () {
+				    var on = $(this);
+					var index2 = on.index();
+					var key = on.attr("key");
+					location.href='459.html?index1='+index+"&key="+news_index+"&index2="+index2;
+        })
 
         $('.right-flex li.top').on('click', function () {
             $('html,body').stop().animate({scrollTop: 0}, 1000);
