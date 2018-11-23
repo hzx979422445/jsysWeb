@@ -4601,6 +4601,9 @@
     .product-channel-list li:hover .ico017 {
         background: url(../img/chongdianzhuang_h.png) no-repeat left center
     }
+    .product-channel-list li:hover .ico018 {
+        background: url(../img/xiaofang_h.png) no-repeat left center
+    }
     .product-channel-list li .dd-tit:hover {
         background: #d9271b;
         color: #fff

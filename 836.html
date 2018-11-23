@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="content-language" content="zh-CN" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<title>以安全为核心的智慧物联解决方案提供商和运营服务商-江苏云深智能化系统有限公司</title>
+		<meta name="Keywords" content="江苏云深智能化系统有限公司,摄像机,存储,云深,股份,解决方案,报警,门禁,智能交通,民用,创新技术,招聘,供应商,民用,乐橙,dahua,全球安防十强，江苏云深，视频，无人机，机器视觉，服务商，安防品牌，好的安防品牌，产品中心，产品，服务支持，" />
+		<meta name="Description" content="江苏云深智能化系统有限公司是领先的监控产品供应商和解决方案服务商，面向全球提供领先的视频存储、前端、显示控制和智能交通等系列化产品。" />
+		<meta name="author" content="江苏云深智能化系统有限公司" />
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<link href="img/favicon.ico" rel="shortcut icon">
+		<script>
+			var STATIC_URL = "bocweb/";
+			var UPLOAD_URL = "upload/";
+			var GLOBAL_URL = "index.php/";
+			var SITE_URL = "/";
+			var UPLOADDO_URL = "index.php/upload/";
+			var STATIC_VER = "";
+		</script>
+		<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen" charset="utf-8">
+		<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" charset="utf-8">
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">
+		<link rel="stylesheet" href="css/mobile.css" type="text/css" media="screen" charset="utf-8">
+		<script src="js/jQuery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/levideo.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.transit.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/html5.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bocfe.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/plug.preload.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/getUrlParam.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<script>
+		$(function(){
+			var new_key = UrlParm.parm("key");
+				var new_name = UrlParm.parm("name");
+				$.ajax({
+		            type:"get",
+		            url:"download.json",
+		            async:true,
+		            success:function(data){
+		            	$("download-list-tit").innerHTML = new_name;
+		                var datas = data[new_key];
+		                for(var i = 0;i < datas.length; i++){
+		                	var div = '<li>'
+                                div +='<div class="title f-cb">'
+                                div +='<span class="fl t">'+datas[i].title+'  '+datas[i].code+'</span>'
+                                div +='<span class="fr time">'+datas[i].time+'</span>'
+                                div +='</div>'
+                                div +='<div class="con">'
+                                div +='<dl><dd>'
+                                div +='<h2>'+datas[i].name+'</h2>'
+                                div +='<div class="line">'
+                                div +='<p>功能说明：</p>'
+                                div +=datas[i].content
+                                div +='<p><span class="model">适用于以下型号：</span></p>'
+                                div +='<p><span class="model_con">'+datas[i].model+'</span></p>'
+                                div +='</div>'
+                                div +='<div class="link f-cb">'
+                                div +='<a data-id="18607" target="_blank" href="'+datas[i].load+'" class="download fl">下载</a>'
+                                div +='</div>'
+                                div +='</dd></dl>'
+                                div +='</div>'
+                                div +='</li>'
+		            		$("ul.f-cb").append(div);
+		            	}
+		                $('.download-list-box .title').on('click', function() {
+							if(!$(this).hasClass("on")) {
+								$(this).addClass("on").parent("li").siblings("li").find(".title").removeClass("on");
+								$(this).next('.con').slideDown().parent("li").siblings("li").find(".con").slideUp();
+							} else {
+								$(this).removeClass("on");
+								$(this).next('.con').slideUp();
+							}
+						})
+		            },
+		    	});
+		})
+	</script>
+	<style>
+		.line>p{white-space: normal}
+		.model{line-height: 2;font-family: SimSun;font-size: 12px}
+		.model_con{color: rgb(51, 51, 51); white-space: normal; line-height: 2; font-size: 12px; font-family: 宋体, SimSun; background-color: rgb(255, 255, 255);}
+	</style>
+	<body style="background:#fff;">
+		<div class="headerWrap">
+			
+		</div>
+		<script>
+			$(function() {
+				$(".headerWrap").load('header.html', function() {
+					$('header .nav-box li').hover(function() {
+						$(this).find('.con').slideDown(0);
+						$(this).find('.con').show();
+					}, function() {
+						$(this).find('.con').slideUp(0);
+					})
+
+					function conSize() {
+						var bodyW = $("body").width();
+						$("header .nav-box li .con").css({
+							"width": bodyW,
+							"margin-left": -bodyW / 2
+						})
+					}
+					conSize();
+					window.onresize = function() {
+						conSize();
+					}
+					$('header .nav-box .pro-li dd .link-b').each(function() {
+						var _this = $(this);
+						var bg = _this.data('bg');
+						var bgh = _this.data('bgh');
+						_this.css('background-image', 'url(' + bg + ')');
+						if(_this.hasClass("cur")) {
+							_this.css('background-image', 'url(' + bgh + ')');
+						};
+					})
+
+					$('header .nav-box .link-b').hover(function() {
+						$(this).addClass("cur").siblings("").removeClass("cur");
+						$(this).parent(".log-four").siblings(".log-four").find('.link-b').removeClass("cur")
+						$(this).parents(".con").show();
+					})
+
+					$('header .nav-box .pro-li dd .link-b').hover(function() {
+						var id = $(this).data('id');
+						var conn = $(this).data('conn');
+						var psr = $(this).parents('.con').find('.right');
+						$(this).addClass("cur").parent("dd").siblings("dd").find('.link-b').removeClass("cur");
+						$('header .nav-box .pro-li dd .link-b').each(function() {
+							var bg = $(this).data('bg');
+							var bgh = $(this).data('bgh');
+							if($(this).hasClass("cur")) {
+								$(this).css('background-image', 'url(' + bgh + ')')
+							} else {
+								$(this).css('background-image', 'url(' + bg + ')')
+							}
+						})
+					}, function() {
+						$('header .nav-box .pro-li dd .link-b').each(function() {
+							var bg = $(this).data('bg');
+							var bgh = $(this).data('bgh');
+							if($(this).hasClass("cur")) {
+								$(this).css('background-image', 'url(' + bgh + ')')
+							} else {
+								$(this).css('background-image', 'url(' + bg + ')')
+							}
+						})
+					})
+
+					$('.mobile-nav-box h2').on('click', function() {
+						if(!$(this).hasClass("cur")) {
+							$(this).addClass("cur").parent("li").siblings("li").find("h2").removeClass("cur");
+							$(this).next('.con').slideDown().parent("li").siblings("li").find('.con').slideUp();
+						} else {
+							$(this).removeClass("cur");
+							$(this).next('.con').slideUp()
+						}
+					})
+
+					$('.mobile-nav-box p.on').on('click', function() {
+						if(!$(this).hasClass("but")) {
+							$(this).addClass("but").siblings(".on").removeClass("but").parent(".con").parent("li").siblings("li").find(".on").removeClass("but");
+							$(this).next('.tit-con').fadeIn().siblings(".tit-con").slideUp().parent(".con").parent("li").siblings("li").find(".tit-con").hide();
+						} else {
+							$(this).removeClass("but");
+							$(this).next('.tit-con').hide();
+						}
+					})
+
+					$('.mobile-nav').on('click', function() {
+						if(!$(this).hasClass("on")) {
+							$(this).addClass("on");
+							$(".mobile-nav-box").slideDown();
+						} else {
+							$(this).removeClass("on");
+							$(".mobile-nav-box").slideUp();
+						}
+					})
+
+					$('header .enght').hover(function() {
+						$(this).find('.con').fadeIn();
+					}, function() {
+						$(this).find('.con').fadeOut();
+					})
+				});
+				$(".footerwrap").load("footer.html");
+			})
+		</script>
+		<div class="body-box">
+			<div class="service-banner cur" style="background:url(img/15064938874986oq9ce.jpg ) no-repeat center;">
+				<h2>欢迎来到服务支持</h2>
+				<p>我们随时提供帮助</p>
+				<form action="" class="f-cb" onsubmit="">
+					<input type="submit" value="" class="submit fl">
+					<input type="text" name="keyword" id="banKey" placeholder="搜索支持" class="text fl">
+				</form>
+			</div>
+			<script>
+				function bannerSearch() {
+					var banKey = $('#banKey').val();
+					if(banKey == '' || banKey.trim() == "") {
+						return false;
+					} else {
+						return true;
+					}
+				}
+			</script>
+			<div class="download-list w1400">
+				<div class="now">
+					<a href="welcome.html ">首页</a><i></i>
+					<a href="service.html ">服务支持</a><i></i>
+					<a href="javascript:;">下载中心</a>
+				</div>
+				<!--<div class="product-nav f-cb">
+					<div class="product-nav-box">
+						<a href="javascript:;" class="tit fl">SDK开发</a>
+						<div class="tit-box">
+							<a href="" class="tit-l">工具软件</a>
+							<a href="" class="tit-l">SDK开发</a>
+							<a href="" class="tit-l">说明书</a>
+							<a href="" class="tit-l">程序升级包</a>
+
+						</div>
+					</div>
+					<div class="nav-con fl">
+						<a href="javascript:;" class="nav-link">设备网络SDK</a>
+						<div class="link-box">
+							<a href="" class="link-tit">设备网络SDK</a>
+							<div class="link-box-b">
+							</div>
+							<a href="" class="link-tit">播放库SDK</a>
+							<div class="link-box-b">
+							</div>
+							<a href="" class="link-tit">其他SDK</a>
+							<div class="link-box-b">
+							</div>
+							<a href="" class="link-tit">板卡SDK</a>
+							<div class="link-box-b">
+							</div>
+						</div>
+					</div>
+				</div>-->
+				<div class="download-list-tit">设备网络SDK</div>
+				<div class="download-list-box">
+					<ul class="f-cb">
+						
+					</ul>
+				</div>
+
+			</div>
+
+		</div>
+		<div class="footerwrap"></div>
+
+		<script>
+			window._bd_share_config = {
+				"common": {
+					"bdSnsKey": {},
+					"bdText": "",
+					"bdMini": "2",
+					"bdMiniList": false,
+					"bdPic": "",
+					"bdStyle": "2",
+					"bdSize": "32"
+				},
+				"share": {}
+			};
+			with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+		</script>
+		<script>
+			$(function() {
+				$('.right-flex li.top').on('click', function() {
+					$('html,body').stop().animate({
+						scrollTop: 0
+					}, 1000);
+				})
+			})
+		</script>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/flexslider.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/flexslider-min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" charset="utf-8">
+		<script src="js/scrollbar.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="css/scrollbar.css" type="text/css" media="screen" charset="utf-8">
+		<script>
+			$(function() {
+				$('a.download').click(function() {
+					var _id = $(this).data('id');
+					var url = "";
+					$.ajax({
+						url: url + '/' + _id,
+						success: function() {
+							console.log('success');
+						}
+					})
+				})
+
+				getwidth()
+				$(window).resize(function() {
+					getwidth()
+				})
+
+				function getwidth() {
+					var winw = $(window).width(),
+						w14 = $('.w1400').width(),
+						nw = (winw - w14) / 2
+
+					$('.product-nav').css('left', -nw);
+				}
+
+				$('.product-nav .link-box .link-tit').on('click', function() {
+					if($(this).hasClass("cur")) {
+						$(this).removeClass("cur");
+						$(this).next('.link-box-b').slideUp();
+					} else {
+						$(this).addClass("cur").siblings('.link-tit').removeClass("cur");
+						$(this).next('.link-box-b').slideDown().siblings(".link-box-b").slideUp();
+					}
+				})
+				$('.product-nav .nav-link').on('click', function() {
+					if($(this).hasClass("on")) {
+						$(this).removeClass("on");
+						$(this).next('.link-box').slideUp();
+					} else {
+						$(this).addClass("on");
+						$(this).next('.link-box').slideDown();
+						$('.product-nav .tit-box').slideUp();
+					}
+				})
+
+				$('.product-nav .tit').on('click', function() {
+					if($(this).hasClass("on")) {
+						$(this).removeClass("on");
+						$('.product-nav .tit-box').slideUp();
+					} else {
+						$(this).addClass("on");
+						$('.product-nav .tit-box').slideDown();
+						$('.product-nav .nav-con .link-box').slideUp();
+
+					}
+				})
+
+				$('.product-nav .nav-con').hover(function() {
+					$(this).addClass("on");
+					$(this).find('.link-box').slideDown();
+				}, function() {
+					$(this).removeClass("on");
+					$(this).find('.link-box').slideUp();
+				})
+
+				$('.product-nav-box').hover(function() {
+					$(this).addClass("on");
+					$('.product-nav .tit-box').slideDown();
+				}, function() {
+					$(this).removeClass("on");
+					$('.product-nav .tit-box').slideUp();
+				})
+
+				// $('.download-list-box li').eq(0).find(".title").addClass("on").next('.con').slideDown();
+			})
+		</script>
+	</body>
+
+</html>
