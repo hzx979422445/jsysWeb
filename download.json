@@ -1,4 +1,48 @@
 {
+	"CMCC":[
+		{
+			"title":"中国移动",
+			"code":"YS-SDK-CMCC",
+			"time":"",
+			"name":"APP安装文件",
+			"content":"基于低功耗物联网、移动互联网、RFID、大数据分析等多种先进技术，采用了科技化、智能化的技术手段，对“安全+”各方面的人的行为规范、财务的安全、设施设备的运行维护进行管理控制。",
+			"model":"YS-SDK-CMCC",
+			"load":"upload/DOC/SDK/CMCC/app-release.zip"
+		}
+	],
+	"ChinaTelecom":[
+		{
+			"title":"中国电信",
+			"code":"YS-SDK-ChinaTelecom",
+			"time":"",
+			"name":"APP安装文件",
+			"content":"基于低功耗物联网、移动互联网、RFID、大数据分析等多种先进技术，采用了科技化、智能化的技术手段，对“安全+”各方面的人的行为规范、财务的安全、设施设备的运行维护进行管理控制。",
+			"model":"YS-SDK-ChinaTelecom",
+			"load":"upload/DOC/SDK/ChinaTelecom/app-release.zip"
+		}
+	],
+	"SGCC":[
+		{
+			"title":"国家电网",
+			"code":"YS-SDK-SGCC",
+			"time":"",
+			"name":"APP安装文件",
+			"content":"基于低功耗物联网、移动互联网、RFID、大数据分析等多种先进技术，采用了科技化、智能化的技术手段，对“安全+”各方面的人的行为规范、财务的安全、设施设备的运行维护进行管理控制。",
+			"model":"YS-SDK-SGCC",
+			"load":"upload/DOC/SDK/SGCC/app-release.zip"
+		}
+	],
+	"ChinaRailway":[
+		{
+			"title":"中国铁路",
+			"code":"YS-SDK-ChinaRailway",
+			"time":"",
+			"name":"APP安装文件",
+			"content":"基于低功耗物联网、移动互联网、RFID、大数据分析等多种先进技术，采用了科技化、智能化的技术手段，对“安全+”各方面的人的行为规范、财务的安全、设施设备的运行维护进行管理控制。",
+			"model":"YS-SDK-ChinaRailway",
+			"load":"upload/DOC/SDK/ChinaRailway/app-release.zip"
+		}
+	],
 	"camera":[
 		{
 			"title":"高清（600万）红外海螺半球型网络摄像机",
@@ -60,8 +104,8 @@
 			"title":"国内云深网络硬盘录像机",
 			"code":"YS-IBM-IBMYS7658203",
 			"time":"",
-			"name":"使用说明书",
-			"content":"主要介绍产品功能、产品结构、线缆连接、本地界面操作、WEB界面操作、常见问题和技术参数等。",
+			"name":"快速操作手册",
+			"content":"主要介绍硬盘安装、接口说明以及基本操作方法。",
 			"model":"YS-IBM-IBMYS7658203",
 			"load":"upload/DOC/storage/YS-IBM-IBMYS7658203.pdf"
 		},
@@ -69,8 +113,8 @@
 			"title":"1盘位通用型H.265 NVR",
 			"code":"YS-IBM-IBMYS4657294",
 			"time":"",
-			"name":"使用说明书",
-			"content":"主要介绍产品功能、产品结构、线缆连接、本地界面操作、WEB界面操作、常见问题和技术参数等。",
+			"name":"快速操作手册",
+			"content":"主要介绍硬盘安装、接口说明以及基本操作方法。",
 			"model":"YS-IBM-IBMYS4657294",
 			"load":"upload/DOC/storage/YS-IBM-IBMYS4657294.pdf"
 		},
@@ -78,8 +122,8 @@
 			"title":"国内云深网络硬盘录像机",
 			"code":"YS-IBM-INBMYS845218",
 			"time":"",
-			"name":"使用说明书",
-			"content":"主要介绍产品功能、产品结构、线缆连接、本地界面操作、WEB界面操作、常见问题和技术参数等。",
+			"name":"快速操作手册",
+			"content":"主要介绍硬盘安装、接口说明以及基本操作方法。",
 			"model":"YS-IBM-INBMYS845218",
 			"load":"upload/DOC/storage/YS-IBM-INBMYS845218.pdf"
 		},
@@ -87,8 +131,8 @@
 			"title":"国内云深网络硬盘录像机",
 			"code":"YS-IBM-IBMYS156841",
 			"time":"",
-			"name":"使用说明书",
-			"content":"主要介绍产品功能、产品结构、线缆连接、本地界面操作、WEB界面操作、常见问题和技术参数等。",
+			"name":"快速操作手册",
+			"content":"主要介绍硬盘安装、接口说明以及基本操作方法。",
 			"model":"YS-IBM-IBMYS156841",
 			"load":"upload/DOC/storage/YS-IBM-IBMYS156841.pdf"
 		},
@@ -96,8 +140,8 @@
 			"title":"1盘位通用型H.264 NVR",
 			"code":"YS-IBM-IBMYS8741651",
 			"time":"",
-			"name":"使用说明书",
-			"content":"主要介绍产品功能、产品结构、线缆连接、本地界面操作、WEB界面操作、常见问题和技术参数等。",
+			"name":"快速操作手册",
+			"content":"主要介绍硬盘安装、接口说明以及基本操作方法。",
 			"model":"YS-IBM-IBMYS8741651",
 			"load":"upload/DOC/storage/YS-IBM-IBMYS8741651.pdf"
 		},
@@ -105,8 +149,8 @@
 			"title":"1盘位通用型H.264 NVR",
 			"code":"YS-IBM-IBMYS12484616",
 			"time":"",
-			"name":"使用说明书",
-			"content":"主要介绍产品功能、产品结构、线缆连接、本地界面操作、WEB界面操作、常见问题和技术参数等。",
+			"name":"快速操作手册",
+			"content":"主要介绍硬盘安装、接口说明以及基本操作方法。",
 			"model":"YS-IBM-IBMYS12484616",
 			"load":"upload/DOC/storage/YS-IBM-IBMYS12484616.pdf"
 		},
@@ -114,8 +158,8 @@
 			"title":"1盘位经济型H.264 NVR",
 			"code":"YS-IBM-IBMYSYEUW1654",
 			"time":"",
-			"name":"使用说明书",
-			"content":"主要介绍产品功能、产品结构、线缆连接、本地界面操作、WEB界面操作、常见问题和技术参数等。",
+			"name":"快速操作手册",
+			"content":"主要介绍硬盘安装、接口说明以及基本操作方法。",
 			"model":"YS-IBM-IBMYSYEUW1654",
 			"load":"upload/DOC/storage/YS-IBM-IBMYSYEUW1654.pdf"
 		},
@@ -123,8 +167,8 @@
 			"title":"1盘位经济型H.264 NVR",
 			"code":"YS-IBM-IBMYSYUIW7465",
 			"time":"",
-			"name":"使用说明书",
-			"content":"主要介绍产品功能、产品结构、线缆连接、本地界面操作、WEB界面操作、常见问题和技术参数等。",
+			"name":"快速操作手册",
+			"content":"主要介绍硬盘安装、接口说明以及基本操作方法。",
 			"model":"YS-IBM-IBMYSYUIW7465",
 			"load":"upload/DOC/storage/YS-IBM-IBMYSYUIW7465.pdf"
 		},
@@ -132,21 +176,92 @@
 			"title":"1盘位经济型H.264 NVR",
 			"code":"YS-IBM-IBMYSYIE13455",
 			"time":"",
-			"name":"使用说明书",
-			"content":"主要介绍产品功能、产品结构、线缆连接、本地界面操作、WEB界面操作、常见问题和技术参数等。",
+			"name":"快速操作手册",
+			"content":"主要介绍硬盘安装、接口说明以及基本操作方法。",
 			"model":"YS-IBM-IBMYSYIE13455",
 			"load":"upload/DOC/storage/YS-IBM-IBMYSYIE13455.pdf"
 		}
 	],
 	"displayScreen":[
+		
+	],
+	"system":[
 		{
-			"title":"1盘位经济型H.264 NVR",
-			"code":"YS-IBM-IBMYSYIE13455",
+			"title":"9路高清解码器",
+			"code":"YS-SYS-SYSYS498451",
 			"time":"",
 			"name":"使用说明书",
-			"content":"主要介绍产品功能、产品结构、线缆连接、本地界面操作、WEB界面操作、常见问题和技术参数等。",
-			"model":"YS-IBM-IBMYSYIE13455",
-			"load":"upload/DOC/storage/YS-IBM-IBMYSYIE13455.pdf"
+			"content":"主要介绍产品功能、产品结构、线缆连接、本地界面操作、WEB界面操作、报警输入输出设备的连接等。",
+			"model":"YS-SYS-SYSYS498451",
+			"load":"upload/DOC/system/YS-SYS-SYSYS498451.pdf"
+		},
+		{
+			"title":"嵌入式解码器",
+			"code":"YS-SYS-SYSYS7648",
+			"time":"",
+			"name":"使用说明书",
+			"content":"主要介绍产品功能、产品结构、线缆连接、本地界面操作、WEB界面操作、报警输入输出设备的连接等。",
+			"model":"YS-SYS-SYSYS7648",
+			"load":"upload/DOC/system/YS-SYS-SYSYS7648.pdf"
 		}
+	],
+	"Software":[
+		
+	],
+	"cloud":[
+		
+	],
+	"Videoconferencing":[
+	
+	],
+	"Charging":[
+		
+	],
+	"constructionsite":[
+	
+	],
+	"fire":[
+		{
+			"title":"压力变送器",
+			"code":"YS-FIR-FIRZYB1584",
+			"time":"",
+			"name":"用户手册",
+			"content":"主要介绍产品外型尺寸、功能特点、技术指标、选型及注意事项、组网简介、操作方法等",
+			"model":"YS-FIR-FIRZYB1584",
+			"load":"upload/DOC/fire/YS-FIR-FIRZYB1584.pdf"
+		},
+		{
+			"title":"液位探测器",
+			"code":"YS-FIR-FIRZWB1146",
+			"time":"",
+			"name":"用户手册",
+			"content":"主要介绍产品外型尺寸、功能特点、技术指标、选型及注意事项、组网简介、操作方法等",
+			"model":"YS-FIR-FIRZWB1146",
+			"load":"upload/DOC/fire/YS-FIR-FIRZWB1146.pdf"
+		},
+		{
+			"title":"可燃气体探测器",
+			"code":"YS-FIR-FIRKADNB311",
+			"time":"",
+			"name":"用户手册",
+			"content":"主要介绍产品外型尺寸、功能特点、技术指标、选型及注意事项、组网简介、操作方法等",
+			"model":"YS-FIR-FIRKADNB311",
+			"load":"upload/DOC/fire/YS-FIR-FIRKADNB311.pdf"
+		},
+		{
+			"title":"无线烟雾报警器",
+			"code":"YS-FIR-FIRYGNB301",
+			"time":"",
+			"name":"用户手册",
+			"content":"主要介绍产品外型尺寸、功能特点、技术指标、选型及注意事项、组网简介、操作方法等",
+			"model":"YS-FIR-FIRYGNB301",
+			"load":"upload/DOC/fire/YS-FIR-FIRYGNB301.pdf"
+		}
+	],
+	"security":[
+		
+	],
+	"building":[
+		
 	]
 }

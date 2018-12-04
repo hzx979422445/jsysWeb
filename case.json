@@ -47,11 +47,11 @@
 		],
 		"content": [
 			"<div class=\"case-link-list\"><ul class=\"f-cb\"><li><p class=\"pic\"><img src=\"img/15299964092479x5gum.jpg\"alt=\"云深银行信贷监管解决方案\"></p><span class=\"con\"><h2>云深银行信贷监管解决方案</h2><p class=\"font\">贷后管理作为信贷工作的重要一环，是贷款发放后继续对客户的资金运作及研发生产进行跟踪监测和分析，以便及时减少或化解风险，确保信贷资金安全有效运作。在信贷行业，随着政策的变化、市场竞争的不断加剧、客户环境的不断...</p><p class=\"more\">查看详情</p></span></a></li></ul></div>",
-			"<div class=\"case-link-list\"><ul class=\"f-cb\"><li><p class=\"pic\"><img src=\"img/15299963758323ee5mf.jpg\"alt=\"云深保险远程查勘定损系统解决方案\"></p><span class=\"con\"><h2>云深保险远程查勘定损系统解决方案</h2><p class=\"font\">随着汽车保有量的迅速增长、车险案件的数量激增，现有的汽车查勘和定损的模式已不能适应理赔管理要求，如何节省人力成本，提高理赔效率，最终提升用户满意度，成为保险公司管理人员迫切关注的问题。</p><p class=\"more\">查看详情</p></span></a></li><li><p class=\"pic\"><img src=\"img/1529996387014535mxj.jpg\"alt=\"云深保险销售过程录音录像系统解决方案\"></p><span class=\"con\"><h2>云深华保险销售过程录音录像系统解决方案</h2><p class=\"font\">云深股份保险业销售过程录音录像系统解决方案，在银行理财“双录”解决方案的基础上进一步升级，充分利用音视频采集技术、大数据存储技术，并综合考虑音视频采集环境、网络稳定性、审核时效、数据存储、信息安全等五大因素...</p><p class=\"more\">查看详情</p></span></a></li></ul></div>"
+			"<div class=\"case-link-list\"><ul class=\"f-cb\"><li><p class=\"pic\"><img src=\"img/15299963758323ee5mf.jpg\"alt=\"云深保险远程查勘定损系统解决方案\"></p><span class=\"con\"><h2>云深保险远程查勘定损系统解决方案</h2><p class=\"font\">随着汽车保有量的迅速增长、车险案件的数量激增，现有的汽车查勘和定损的模式已不能适应理赔管理要求，如何节省人力成本，提高理赔效率，最终提升用户满意度，成为保险公司管理人员迫切关注的问题。</p><p class=\"more\">查看详情</p></span></a></li><li><p class=\"pic\"><img src=\"img/1529996387014535mxj.jpg\"alt=\"云深保险销售过程录音录像系统解决方案\"></p><span class=\"con\"><h2>云深保险销售过程录音录像系统解决方案</h2><p class=\"font\">云深股份保险业销售过程录音录像系统解决方案，在银行理财“双录”解决方案的基础上进一步升级，充分利用音视频采集技术、大数据存储技术，并综合考虑音视频采集环境、网络稳定性、审核时效、数据存储、信息安全等五大因素...</p><p class=\"more\">查看详情</p></span></a></li></ul></div>"
 		],
 		"info":[
 			[{"title":"云深银行信贷监管解决方案"}],
-			[{"title":"云深保险远程查勘定损系统解决方案"},{"title":"云深华保险销售过程录音录像系统解决方案"}]
+			[{"title":"云深保险远程查勘定损系统解决方案"},{"title":"云深保险销售过程录音录像系统解决方案"}]
 		]
 
 	},
@@ -226,12 +226,12 @@
 			"机房监控"
 		],
 		"content": [
-			"<div class=\"case-link-list\"><ul class=\"f-cb\"><li><p class=\"pic\"><img src=\"img/20bbb39f2289ba7cd5af50be440455a5.jpg\"alt=\"云深参考环境监控系统\"></p><span class=\"con\"><h2>云深参考环境监控系统</h2><p class=\"font\">本系统适应监控数字化、网络化发展趋势，不落后，不重复投资;采用企业内部局域网或广域网通信和管理，稳定安全。采用TCP/IP方式，各个被监控机房可以很容易地与监控管理中心及数据库建立起联系...</p><p class=\"more\">查看详情</p></span></a></li></ul></div>"
+			"<div class=\"case-link-list\"><ul class=\"f-cb\"><li><p class=\"pic\"><img src=\"img/20bbb39f2289ba7cd5af50be440455a5.jpg\"alt=\"云深智慧机房监控系统\"></p><span class=\"con\"><h2>云深智慧机房监控系统</h2><p class=\"font\">本系统适应监控数字化、网络化发展趋势，不落后，不重复投资;采用企业内部局域网或广域网通信和管理，稳定安全。采用TCP/IP方式，各个被监控机房可以很容易地与监控管理中心及数据库建立起联系...</p><p class=\"more\">查看详情</p></span></a></li></ul></div>"
 		],
 		"info":[
 			[
 				{
-					"title":"云深参考环境监控系统",
+					"title":"云深智慧机房监控系统",
 					"item":[
 						"系统介绍",
 						"系统优势",
@@ -268,6 +268,63 @@
 						"<p class='background textindent lingheight'><span>仓库广泛应用在药品、粮食、烟草、物流、军队、电力、博物馆、艺术馆、企业等各行各业中，对促进生产提高效率起着重要的辅助作用。库房温湿度往往影响到存放货物的质量、性能等，需要对环境温度、湿度等参数进行监测和控制。本方案针对仓库存储物品的环境温湿度进行监控，能对大面积、多点的温度、湿度等物理量进行集中监测，大大提高工作效率。</span></p>",
 						"<p class='background textindent lingheight'><span>本方案融合了最新的嵌入式技术和工业以太网总线控制技术，采用瑞士进口传感器元件，具有精度高、稳定可靠、安装操作方便、性价比高等特点，可广泛应用于电力、档案馆、军队、铁路、药品、粮食、烟草、物流、博物馆、实验室、工业厂房等场所，架构图如下所示.</span></p><p class='textcenter lingheight'><img src='img/at/case/6564106086d9487fb9dade604f8440e4_18.jpg'alt='image.png'style='width:500px;height:250px;'/></p>",
 						"<p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><strong><span>1.&nbsp;</span></strong><span class='advantage'>基于嵌入式开发、低功耗、可靠性强</span></p><p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><strong><span>2.&nbsp;</span></strong><span class='advantage'>工业级别的数据采集设备，稳定性强，体积小，安装简易</span></p><p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><strong><span>3.&nbsp;</span></strong><span class='advantage'>系统扩展性强，容易集成</span></p><p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><strong><span>4.&nbsp;</span></strong><span class='advantage'>一体化设计，无需另配计算机即可独立运行</span></p><p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><strong><span>5.&nbsp;</span></strong><span class='advantage'>电脑或PDA远程监控</span></p><p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><strong><span>6.&nbsp;</span></strong><span class='advantage'>温湿度和空调、除湿机联动控制</span></p><p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><strong><span>7.&nbsp;</span></strong><span class='advantage'>集成温湿、湿度、空调、除湿机、漏水、门禁、烟雾、红外、视频于一体</span></p><p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><strong><span>8.&nbsp;</span></strong><span class='advantage'>支持三大协议：B接口、IEC 61850、光芒104，无缝对接铁塔、铁路、电信、电力平台</span></p><p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><strong><span>9.&nbsp;</span></strong><span class='advantage'>现场声音、电话、短信、彩信、图像、声光、邮件多种报警方式</span></p>"
+					]
+				}
+			]
+		]
+	},
+	"water":{
+		"title":"智慧水务",
+		"describe":"",
+		"item":[
+			"排水防涝",
+			"积水监测"
+		],
+		"content":[
+			"<div class=\"case-link-list\"><ul class=\"f-cb\"><li><p class=\"pic\"><img src=\"img/3323160060.jpg\"alt=\"云深排水防涝信息化建设解决方案\"></p><span class=\"con\"><h2>云深排水防涝信息化建设解决方案</h2><p class=\"font\">以“水联网”理念，利用物联网、云计算、水动力分析等技术为支持，坚持“物联化排水防涝设施、互联化水务时空信息、模型化城市内涝风险、协同化专业管理服务”...</p><p class=\"more\">查看详情</p></span></a></li><li><p class=\"pic\"><img src=\"img/timg.jpg\"alt=\"云深内涝监测解决方案\"></p><span class=\"con\"><h2>云深内涝监测解决方案</h2><p class=\"font\">城市内涝灾害是由于短时强降雨或过程雨量偏大而造成径流过多，在隧道、地下停车场、地铁站等地势低洼，排水不畅等情况下而形成积水的城市自然灾害...</p><p class=\"more\">查看详情</p></li></ul></div>",
+			"<div class=\"case-link-list\"><ul class=\"f-cb\"><li><p class=\"pic\"><img src=\"img/timg2.jpg\"alt=\"云深智慧城市积水监测解决方案\"></p><span class=\"con\"><h2>云深智慧城市积水监测解决方案</h2><p class=\"font\">城市积水监测系统作为智慧城市的一部分，可有效提升城市的信息化管理程度，政府职能部门可以通过系统纵览城区水文信息，协调安排各部门的工作...</p><p class=\"more\">查看详情</p></span></a></li></ul></div>"
+		],
+		"info":[
+			[
+				{
+					"title":"云深排水防涝信息化建设解决方案",
+					"item":[
+						"现状分析",
+						"建设必要性",
+						"方案介绍"
+					],
+					"content":[
+						"<p class='background lingheight'><span>1．排水管网运行管理水平较低，排水设施的管理与查询仍为手工操作阶段，工作效率低下。<br/>2．管网人工管理及养护难度大。<br/>3．排水系统调度分析和布局优化相对滞后。<br/>4．缺乏有效的管网运行评估和监测手段。<br/>5. 违章排放及野蛮施工，导致城区河湖调蓄能力下降。<br/>6. 行政许可办理时限越来越短、审批难度越来越大。<br/>7. 城市内涝风险评估不足，应急管理水平较低有效的管网运行评估和监测手段。</span></p>",
+						"<p class='background lingheight'><span>1．可以科学管理排水管网运行数据，完善应用数据中心。<br/>2．提高工作效率，辅助管理决策。<br/>3．实现管网运行现状分析和评估<br/>4．辅助进行管网规划设计<br/>5．提高管网应急事件处置能力<br/>6．为打造“智慧城市”、“海绵城市”奠定基础</span></p>",
+						"<p class='background textindent lingheight'><span>在充分调研勘察的基础上，分析客户的实际需求和业务流程，以“水联网”理念，利用物联网、云计算、水动力分析等技术为支持，坚持“物联化排水防涝设施、互联化水务时空信息、模型化城市内涝风险、协同化专业管理服务”的特点，排水防涝信息化总体架构由感知层、传输层、数据层、服务层、应用层以及标准规范和运行保障体系组成。根据排水管理的实际需求，设计并实现监测数据分析模型，并对监测结果进行了对比分析和展示。同时，实现与城市防汛视频监控系统、防汛预警决策支持系统、市长服务热线系统以及排水其他相关系统的有机整合，为城市排水设施、城区河道、泵站的运行、调控等方面的提供在线监视、监测、监控以及应急指挥调度的管理，实现排水管网管理的数字化、信息化、智能化。系统架构图如下所示</span></p><p class='textcenter lingheight'><img src='img/at/case/pic1.png'alt='image.png'style='width:500px;height:250px;'/></p><p class='background textindent lingheight'><span>数据感知层主要为流量计、液位计、流速计、水质、视频、温湿度等自动化的管网和设施监测设备。数据感知层监测到的数据通过数据传输层到数据层进行存储，用于为软件应用平台提供监测数据。</span></p><p class='background textindent lingheight'><span>数据传输层主要功能是通过相应的设备，比如RTU、数采仪等将数据感知层采集到的实时监测数据通过Intemet网、3G网络或光纤专线传输到中心的数据服务器，中心服务器与外部网络之间传输的数据是严格经过中心防火墙审查的，确保中心服务器的安全性。</span></p><p class='background textindent lingheight'><span>数据层是排水管网监测管理系统最核心的建设，通过整合现有的监测与管网数据并可接入新的数据，主要包括排水设施、管网、地理地形、视频、档案、监测信息等其他数据库，作为软件应用平台的数据支撑。</span></p><p class='background textindent lingheight'><span>服务层主要由信息共享、数据交换、数据采集和处理引擎等业务和GIS服务等支撑管理平台组成，能有效的实现数据层和软件层之间的衔接，增加系统的灵活性和扩展性。</span></p><p class='background textindent lingheight'><span>软件应用层是加工处理由数据传输层传输过来的各种管网监测数据，并将处理结果按需求在不同的终端进行分析展示。软件应用层包括主要完成的监控数据管理系统、设施管理、巡线养护、管道运行分析系统、水力模型分析、管网监测分析系统、自定义数据对比分析系统、管网评估优化系统、辅助调度决策分析系统、业务对接管理系统与手持移动监测系统等部分。</span></p><p class='textcenter lingheight'><img src='img/at/case/pic2.png'alt='image.png'style='width:500px;height:500px !important;'/></p>"
+					]
+				},
+				{
+					"title":"云深内涝监测解决方案",
+					"item":[
+						"背景与现状",
+						"系统简介",
+						"平台功能"
+					],
+					"content":[
+						"<p class='background textindent lingheight'><span>城市内涝灾害是由于短时强降雨或过程雨量偏大而造成径流过多，在隧道、地下停车场、地铁站等地势低洼，排水不畅等情况下而形成积水的城市自然灾害。近年来，高速发展的城市化进程引起城市水文特性的显著变化：城市房屋建筑密集，混凝土覆盖面积增大，雨水渗透减少，雨水滞留与调蓄功能下降；使得近年来城市内涝问题频繁发生，造成不可估量的经济损失以及人员伤亡。</span></p>",
+						"<p class='background textindent lingheight'><span>系统采用太阳能供电模式，成本较低。拥有强大完善的信息管理平台，产品性能稳定。在充分满足用户需求的基础上，系统还设计了趋势分析、报警、及时提示等功能。真正做到城市内涝安全动态的实时监控，实现智能信息化管理。该系统采用GPRS、3G/4G、Internet公网等网络应用技术，与物联网结构体系、局域网、通讯网无缝连接，将监控、报警、广播集于一体，通过无线网络将采集数据信息、图片信息传输给客户手机APP和终端管理平台。基于云服务器的安全提示系统可容纳上万个点的数据采集、传输。当设备出现任何的故障，自动检测功能通过故障提示平台以短信方式告用户，现场发生的任何情况，报警信息图文并茂及时告知用户，保障系统稳定。系统可根据客户不同的需求可做定制化服务，使系统达到安全可靠、技术先进、功能齐全、性价比高、操作维护更加简便。城市内涝预警系统一般安装在城区各低洼路段（如：地下停车场、地铁站、隧道等），系统实施监测各监控点的积水水位并实现自动预警。市政管理部门借助该系统可整体把握整个城区内涝状况，及时进行排水调度。交通管理部门通过该系统可获取各路段的实时积水水位，并借助广播、电视等媒体为广大群众提供出行指南，避免人员、车辆误入深水路段造成重大损失。可在各监测站点设立LED显示屏，通过显示屏显示路段积水是否可以安全通过，减少经济损失。</span></p>",
+						"<p class='background textindent lingheight'><span>数据查询管理以GIS技术为支撑，建立数据空间和属性特征的拓扑关系，实现地图查询管理，界面友好，操作简单灵活，功能组织条块合理。</span></p><p class='background textindent lingheight'><span>水利信息化平台采用开放式结构，信息系统建设并非一蹴而就，而是分阶段逐步实施，因此系统采用开放式结构，在软硬件方面，保证具有良好的扩展性，今后系统可不断地升级完善。同时，系统可预置多个时段，将实时数据转化为时段数据。</span></p><p class='background textindent lingheight'><span>在适用前提下将城市防汛过程中的新思想、新方法融入到系统开发，做到数据和图形相融合、GIS与数学模型相结合，把科学计算的结果通过三维情景表现和动态的形式直观表现。</span></p><p class='background textindent lingheight'><span>城市防汛监测管理平台加强顶层设计，有效克服低水平重复建设、信息资源分散、开发利用效率低下、信息资源共享不足等问题，促进水务信息资源的共享，强化业务协同效应。</span></p><p class='background textindent lingheight'><span>强化资源整合，梳理了城市防汛信息资源目录体系，制定数据采集规程、标准化体系与接口技术规范，建立集中存储、共享、分发水务数据的公共数据平台，为决策和业务系统建设提供数据支持。</span></p><p class='background textindent lingheight'><span>系统可遵照优化调度准则，运用最优化方法求解，及时、准确的采集水位、雨量等相关信息。</span></p><p class='textcenter lingheight'><img src='img/at/case/pic3.png'alt='image.png'style='width:500px;height:250px;'/></p>"
+					]
+				}
+			],
+			[
+				{
+					"title":"云深内涝监测解决方案",
+					"item":[
+						"背景介绍",
+						"设计原则",
+						"平台功能"
+					],
+					"content":[
+						"<p class='background textindent lingheight'><span>随着我国经济的不断繁荣，大中城市建设也在突飞猛进地高速发展，为了缓解交通压力和保证出行的通畅，许多城市建设了不少的立桥桥与隧道，而这些地区地势相对较低，容易形成积水。</span></p><p class='background textindent lingheight'><span>大规模的城市建设与扩张，城市排水系统建设的相对滞后，导致原有城市排水设施排水不畅与超负荷运转，而短时间内无法从根本上解决此类问题。</span></p><p class='background textindent lingheight'><span>近几年，北京、上海、武汉、成都等地区已出现过因强降雨而导致城区积水，给市民的生产生活带来一定程度的影响。</span></p>",
+						"<p class='advantage_ard'><strong><span>1.&nbsp;</span></strong><span class='advantage'>性能可靠：选择可靠性高、抗干扰和适应环境能力强的数据采集设备及传感器，保证监测自动化系统能够长期稳定、可靠地运行。</span></p><p class='advantage_ard'><strong><span>2.&nbsp;</span></strong><span class='advantage'>技术先进：在汲取其它城市经验的基础上进行本系统设计，坚持先进性和实用相结合的原则。采用先进技术，实现高效、快速可靠的目标。结合现场实际情况选用安装、操作及维护简便且具有很高的效使性设备和技术。</span></p><p class='advantage_ard'><strong><span>3.&nbsp;</span></strong><span class='advantage'>结果准确：被采集的数据应能满足积水监测要求，系统中设备必须满足精确测量与监测要求，以保证监测数据的准确可靠。</span></p><p class='advantage_ard'><strong><span>4.&nbsp;</span></strong><span class='advantage'>符合实际要求：在监测系统设计中应考虑实际情况，尤其电路部分。另传感器、电缆部分做好防水措施，设备安装要求坚固牢靠，同时做好防盗保护。</span></p><p class='advantage_ard'><strong><span>5.&nbsp;</span></strong><span class='advantage'>具有良好扩展性和开放性：信息化应用是一个不断建设完善的系统，因此本设计需要兼顾扩展性和开放原则，方便再次升级和增加其它应用的需要。</span></p>",
+						"<p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><strong><span>在线监测&nbsp;</span></strong><span class='advantage'>以GIS地理信息系统、模拟数据图在线视频等多种方式，全方位体现低洼区域积水的实际运行参数情况，保证了监测信息全面、及时、准确。</span></p><p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><strong><span>预报预警&nbsp;</span></strong><span class='advantage'>实时分析和解读各监测数据，做出单项或多项对比报警功能，对出现的预报预警情况进行在低洼区LED提示屏，并在预报预警的处理过程中建立消除机制，保证预报预警得到及时的处理。</span></p><p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><strong><span>智能报表&nbsp;</span></strong><span class='advantage'>针对排洪运行中的各项指标集中分析，提供了历史数据查询及多个安全指标数据对比的功能。</span></p><p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><strong><span>设备管理&nbsp;</span></strong><span class='advantage'>站点动态增加，LED屏动态信息维护</span></p><p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><strong><span>系统管理&nbsp;</span></strong><span class='advantage'>为信息发布平台提供了良好管理支持，使信息发布平台更加灵活、更易扩展。</span></p><p class='advantage_ard'><span style='font-size:16px;line-height:150%;font-family:Wingdings'>Ø<span>&nbsp;</span></span><strong><span>系统接口&nbsp;</span></strong><span class='advantage'>系统提供多元化接口，可供其他平台调用，进行数据共享。</span></p>"
 					]
 				}
 			]

@@ -198,7 +198,11 @@
                         var datas = data[news_index];
                         if(datas.length > 0){
                             for(var i = 0; i < datas.length; i++){
-                                var div = '<li class="product-list-item" style="width: 30.7%" key=\''+news_index+'\'>'
+                            	var info = "1"
+	                        	if(datas[i].detail[0] == ""){
+	                        		info = "0";
+	                        	}
+                                var div = '<li class="product-list-item" style="width: 30.7%" key=\''+news_index+'\' info=\''+info+'\'>'
                                 div +='<p class="pic">'
                                 div +='<a href="javascript:;" class="link">'
                                 div +='<img src=\''+datas[i].img+'\' alt=\''+datas[i].name+'\'>'
@@ -227,8 +231,11 @@
 				$(document).on("click",'.product-list-item',function () {
 				    var on = $(this);
 					var index = on.index();
-					var key = on.attr("key");
-					location.href='875.html?index='+index+"&key="+key;
+					var info = on.attr("info");
+					if(info != "0"){
+						var key = on.attr("key");
+						location.href='875.html?index='+index+"&key="+key;
+					}
                 })
 
 				$('.right-flex li.top').on('click', function() {

@@ -41,15 +41,16 @@
 	<script>
 		$(function(){
 			var new_key = UrlParm.parm("key");
-				var new_name = UrlParm.parm("name");
-				$.ajax({
-		            type:"get",
-		            url:"download.json",
-		            async:true,
-		            success:function(data){
-		            	$("download-list-tit").innerHTML = new_name;
-		                var datas = data[new_key];
-		                for(var i = 0;i < datas.length; i++){
+			var new_name = UrlParm.parm("name");
+			$.ajax({
+	            type:"get",
+	            url:"download.json",
+	            async:true,
+	            success:function(data){
+	                var datas = data[new_key];
+	                if(datas.length > 0){
+	                	$(".download-list-tit").html(new_name);
+	                	for(var i = 0;i < datas.length; i++){
 		                	var div = '<li>'
                                 div +='<div class="title f-cb">'
                                 div +='<span class="fl t">'+datas[i].title+'  '+datas[i].code+'</span>'
@@ -72,17 +73,20 @@
                                 div +='</li>'
 		            		$("ul.f-cb").append(div);
 		            	}
-		                $('.download-list-box .title').on('click', function() {
-							if(!$(this).hasClass("on")) {
-								$(this).addClass("on").parent("li").siblings("li").find(".title").removeClass("on");
-								$(this).next('.con').slideDown().parent("li").siblings("li").find(".con").slideUp();
-							} else {
-								$(this).removeClass("on");
-								$(this).next('.con').slideUp();
-							}
-						})
-		            },
-		    	});
+	                }else{
+	                	$("ul.f-cb").append('<li style="text-align: center;"><img src="img/index_tongzhigonggao_blank_img.png"/></li>');
+	                }
+	                $('.download-list-box .title').on('click', function() {
+						if(!$(this).hasClass("on")) {
+							$(this).addClass("on").parent("li").siblings("li").find(".title").removeClass("on");
+							$(this).next('.con').slideDown().parent("li").siblings("li").find(".con").slideUp();
+						} else {
+							$(this).removeClass("on");
+							$(this).next('.con').slideUp();
+						}
+					})
+	            },
+	    	});
 		})
 	</script>
 	<style>
@@ -250,7 +254,7 @@
 						</div>
 					</div>
 				</div>-->
-				<div class="download-list-tit">设备网络SDK</div>
+				<div class="download-list-tit"></div>
 				<div class="download-list-box">
 					<ul class="f-cb">
 						

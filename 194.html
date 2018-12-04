@@ -242,7 +242,6 @@ with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createEl
         $(document).on("click",'.slides_item>li',function () {
             var on = $(this);
             index = on.index();
-            console.log(index);
             on.addClass('on').siblings().removeClass('on');
             $(".case-bot-content").html(dataObj.content[index]);
         })
