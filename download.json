@@ -262,6 +262,32 @@
 		
 	],
 	"building":[
-		
+		{
+			"title":"云深安全巡查设备",
+			"code":"YS-SJ01-ZNLY-18",
+			"time":"",
+			"name":"云深安全巡查设备技术白皮书",
+			"content":"主要介绍产品概述、功能特点、基本参数和技术参数等",
+			"model":"YS-SJ01-ZNLY-18",
+			"load":"upload/DOC/building/YS-SJ01-ZNLY-18.pdf"
+		},
+		{
+			"title":"云深蓝牙信标技术",
+			"code":"YS-LY02-ZNLY-18",
+			"time":"",
+			"name":"云深蓝牙信标技术白皮书",
+			"content":"主要介绍产品概述、功能特点、基本参数和技术参数等",
+			"model":"YS-LY02-ZNLY-18",
+			"load":"upload/DOC/building/YS-LY02-ZNLY-18.pdf"
+		},
+		{
+			"title":"云深智能标签",
+			"code":"YS-BQ02-ZNLY-18",
+			"time":"",
+			"name":"云深智能标签技术白皮书",
+			"content":"主要介绍产品概述、功能特点、基本参数和技术参数等",
+			"model":"YS-BQ02-ZNLY-18",
+			"load":"upload/DOC/building/YS-BQ02-ZNLY-18.pdf"
+		}
 	]
 }
