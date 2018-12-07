@@ -289,5 +289,8 @@
 			"model":"YS-BQ02-ZNLY-18",
 			"load":"upload/DOC/building/YS-BQ02-ZNLY-18.pdf"
 		}
-	]
+	],
+	"sidewalk":[],
+	"vehicleLane":[],
+	"visitor":[]
 }
