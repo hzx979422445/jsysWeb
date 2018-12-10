@@ -193,7 +193,7 @@
 			"name":"使用说明书",
 			"content":"主要介绍产品功能、产品结构、线缆连接、本地界面操作、WEB界面操作、报警输入输出设备的连接等。",
 			"model":"YS9R01-JM17",
-			"load":"upload/DOC/system/YS-SYS-SYSYS498451.pdf"
+			"load":"upload/DOC/system/YS9R01-JM17.pdf"
 		},
 		{
 			"title":"嵌入式解码器",
@@ -202,7 +202,7 @@
 			"name":"使用说明书",
 			"content":"主要介绍产品功能、产品结构、线缆连接、本地界面操作、WEB界面操作、报警输入输出设备的连接等。",
 			"model":"YSIS01-JM17",
-			"load":"upload/DOC/system/YS-SYS-SYSYS7648.pdf"
+			"load":"upload/DOC/system/YSIS01-JM17.pdf"
 		}
 	],
 	"Software":[
@@ -232,12 +232,12 @@
 		},
 		{
 			"title":"液位探测器",
-			"code":"YSHP01-XF17",
+			"code":"YSNB16-XF17",
 			"time":"",
 			"name":"用户手册",
 			"content":"主要介绍产品外型尺寸、功能特点、技术指标、选型及注意事项、组网简介、操作方法等",
-			"model":"YSHP01-XF17",
-			"load":"upload/DOC/fire/YSHP01-XF17.pdf"
+			"model":"YSNB16-XF17",
+			"load":"upload/DOC/fire/YSNB16-XF17.pdf"
 		},
 		{
 			"title":"可燃气体探测器",
@@ -322,7 +322,7 @@
 	"vehicleLane":[],
 	"visitor":[
 		{
-			"title":"云深访客管理系统",
+			"title":"云深台式人工访客终端",
 			"code":"YS-SYS-VIS-18",
 			"time":"",
 			"name":"身份识别与访客登记系统技术白皮书",
