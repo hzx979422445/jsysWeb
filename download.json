@@ -222,19 +222,19 @@
 	],
 	"fire":[
 		{
-			"title":"压力变送器",
+			"title":"无线型压力变送器",
 			"code":"YSPT01-XF17",
 			"time":"",
-			"name":"用户手册",
+			"name":"使用说明书",
 			"content":"主要介绍产品外型尺寸、功能特点、技术指标、选型及注意事项、组网简介、操作方法等",
 			"model":"YSPT01-XF17",
 			"load":"upload/DOC/fire/YSPT01-XF17.pdf"
 		},
 		{
-			"title":"液位探测器",
+			"title":"无线型液位变送器",
 			"code":"YSNB16-XF17",
 			"time":"",
-			"name":"用户手册",
+			"name":"使用说明书",
 			"content":"主要介绍产品外型尺寸、功能特点、技术指标、选型及注意事项、组网简介、操作方法等",
 			"model":"YSNB16-XF17",
 			"load":"upload/DOC/fire/YSNB16-XF17.pdf"
