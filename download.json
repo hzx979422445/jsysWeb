@@ -292,31 +292,13 @@
 	],
 	"sidewalk":[
 		{
-			"title":"桥式斜角模具摆闸",
+			"title":"人员通行道闸",
 			"code":"YS-PB01-RNCF-17",
 			"time":"",
-			"name":"身份识别与访客登记系统技术白皮书",
+			"name":"人员通行道闸技术白皮书",
 			"content":"主要介绍产品概述、功能特点、基本参数和技术参数等",
-			"model":"YS-PB01-RNCF-17,YS-PB02-RNCF-17,YSFA01-SN17,YS-SYS-VIS-18",
-			"load":"upload/DOC/visitor/YS-SYS-VIS-18.pdf"
-		},
-		{
-			"title":"桥式斜角模具翼闸",
-			"code":"YS-PB02-RNCF-17",
-			"time":"",
-			"name":"身份识别与访客登记系统技术白皮书",
-			"content":"主要介绍产品概述、功能特点、基本参数和技术参数等",
-			"model":"YS-PB01-RNCF-17,YS-PB02-RNCF-17,YSFA01-SN17,YS-SYS-VIS-18",
-			"load":"upload/DOC/visitor/YS-SYS-VIS-18.pdf"
-		},
-		{
-			"title":"智能人脸门禁",
-			"code":"YSFA01-SN17",
-			"time":"",
-			"name":"身份识别与访客登记系统技术白皮书",
-			"content":"主要介绍产品概述、功能特点、基本参数和技术参数等",
-			"model":"YS-PB01-RNCF-17,YS-PB02-RNCF-17,YSFA01-SN17,YS-SYS-VIS-18",
-			"load":"upload/DOC/visitor/YS-SYS-VIS-18.pdf"
+			"model":"YS-PB01-RNCF-17",
+			"load":"upload/DOC/sidewalk/YS-PB01-RNCF-17.pdf"
 		}
 	],
 	"vehicleLane":[],
@@ -327,7 +309,7 @@
 			"time":"",
 			"name":"身份识别与访客登记系统技术白皮书",
 			"content":"主要介绍产品概述、功能特点、基本参数和技术参数等",
-			"model":"YS-PB01-RNCF-17,YS-PB02-RNCF-17,YSFA01-SN17,YS-SYS-VIS-18",
+			"model":"YS-SYS-VIS-18",
 			"load":"upload/DOC/visitor/YS-SYS-VIS-18.pdf"
 		}
 	]
