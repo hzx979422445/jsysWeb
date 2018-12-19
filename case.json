@@ -71,7 +71,8 @@
 			"平安社区与地网",
 			"雪亮工程",
 			"平安城市视频云",
-			"视频侦查与应用"
+			"视频侦查与应用",
+			"平交道口可视化"
 		],
 		"content": [
 			"<div class=\"case-link-list\"><ul class=\"f-cb\"><li><p class=\"pic\"><img src=\"img/15299969742575s0raj.jpg\"alt=\"云深公共安全视频联网解决方案 —— 资源汇聚 智联共享\"></p><span class=\"con\"><h2>云深公共安全视频联网解决方案 —— 资源汇聚 智联共享</h2><p class=\"font\">目前公共安全视频联网平台建设，普遍存在点位覆盖不足、资源整合滞后、深度应用欠缺、缺乏顶层规划；技术层面上分析，软件平台功能日趋同质化，基础功能已趋于同质化。随着平安城市建设的不断深入，公共安全视频联网平台日...</p><p class=\"more\">查看详情</p></span></a></li></ul></div>",
@@ -86,7 +87,8 @@
 			"<div class=\"case-link-list\"><ul class=\"f-cb\"><li><p class=\"pic\"><img src=\"img/152999682776911qyap.jpg\"alt=\" 云深平安社区解决方案｜以小安积大安 小社区构建大和谐\"></p><span class=\"con\"><h2> 云深平安社区解决方案｜以小安积大安 小社区构建大和谐</h2><p class=\"font\">近年来，随着我国经济的高速发展，城镇化建设水平不断提高，导致城市中人口密集，流动人口急剧增加，给社区治安管理带来新的问题。由于流动人口居住存在不稳定性，如何妥善的进行治安管理是当下的一个难题。当前城镇居民大...</p><p class=\"more\">查看详情</p></span></a></li></ul></div>",
 			"<div class=\"case-link-list\"><ul class=\"f-cb\"><li><p class=\"pic\"><img src=\"img/152999681040834e8n2.jpg\"alt=\" 云深雪亮工程解决方案\"></p><span class=\"con\"><h2> 云深雪亮工程解决方案</h2><p class=\"font\">公共安全视频监控建设联网应用是新形势下维护国家安全和社会稳定、预防和打击暴力恐怖犯罪的重要手段，是动态化、信息化条件下社会治安防控体系建设的重要组成部分，对于提升城乡管理水平、创新社会治理体制具有十分重要的...</p><p class=\"more\">查看详情</p></span></a></li></ul></div>",
 			"<div class=\"case-link-list\"><ul class=\"f-cb\"><li><p class=\"pic\"><img src=\"img/15299967952404dw0p9.jpg\"alt=\" 云深视频云解决方案\"></p><span class=\"con\"><h2> 云深视频云解决方案</h2><p class=\"font\">随着安防视频监控系统网络化和高清化的变化，尤其是平安城市、基于物联网的智慧城市的建设以及各个行业应用的深度挖掘，海量级的城市规模和跨地域的监控系统对存储的容量、扩展性、稳定性、可靠性、管理型都出现更强烈的需...</p><p class=\"more\">查看详情</p></span></a></li></ul></div>",
-			"<div class=\"case-link-list\"><ul class=\"f-cb\"><li><p class=\"pic\"><img src=\"img/15299966975805uj0c6.jpg\"alt=\" 云深平安城市视频侦查解决方案\"></p><span class=\"con\"><h2> 云深平安城市视频侦查解决方案</h2><p class=\"font\">随着平安城市建设的全面开展，视频图像应用的不断深入，视频图像在公安刑事侦查中的价值越来越凸显，视频图像以其直观可见的特点，已逐步成为各类案事件侦破处置过程中搜集犯罪证据、提取犯罪线索的重要手段和工具，视频侦...</p><p class=\"more\">查看详情</p></span></a></li></ul></div>"
+			"<div class=\"case-link-list\"><ul class=\"f-cb\"><li><p class=\"pic\"><img src=\"img/15299966975805uj0c6.jpg\"alt=\" 云深平安城市视频侦查解决方案\"></p><span class=\"con\"><h2> 云深平安城市视频侦查解决方案</h2><p class=\"font\">随着平安城市建设的全面开展，视频图像应用的不断深入，视频图像在公安刑事侦查中的价值越来越凸显，视频图像以其直观可见的特点，已逐步成为各类案事件侦破处置过程中搜集犯罪证据、提取犯罪线索的重要手段和工具，视频侦...</p><p class=\"more\">查看详情</p></span></a></li></ul></div>",
+			"<div class=\"case-link-list\"><ul class=\"f-cb\"><li><p class=\"pic\"><img src=\"img/timg3.jpg\"alt=\" 云深平交道口可视化管理方案\"></p><span class=\"con\"><h2> 云深平交道口可视化管理方案</h2><p class=\"font\">档针对铁路与公路交汇口处全天候视频监控提供解决方案。项目采用全数字视频监控系统。在铁道与公路交汇口处设计各类型的IP高清摄像机监控点。为确保网络数字监控系统的网络安全和网络带宽，提供给使用者一个高质量的图像质量和畅通的使用平台，设计会考虑建立一套独立的安防系统专用网络...</p><p class=\"more\">查看详情</p></span></a></li></ul></div>"
 		],
 		"info":[
 			[{"title":"云深公共安全视频联网解决方案 —— 资源汇聚 智联共享"}],
@@ -101,7 +103,22 @@
 			[{"title":"云深平安社区解决方案｜以小安积大安 小社区构建大和谐"}],
 			[{"title":"云深雪亮工程解决方案"}],
 			[{"title":"云深视频云解决方案"}],
-			[{"title":"云深平安城市视频侦查解决方案"}]
+			[{"title":"云深平安城市视频侦查解决方案"}],
+			[
+				{
+					"title":"云深平交道口可视化管理方案",
+					"item":[
+						"需求分析",
+						"建设原则",
+						"总体思路"
+					],
+					"content":[
+						"<p class='background textindent lingheight'><span>本文针对铁路与公路交汇口处全天候视频监控提供解决方案。项目采用全数字视频监控系统。在铁道与公路交汇口处设计各类型的IP高清摄像机监控点。</span></p><p class='background textindent lingheight'><span>为确保网络数字监控系统的网络安全和网络带宽，提供给使用者一个高质量的图像质量和畅通的使用平台，设计会考虑建立一套独立的安防系统专用网络。</span></p>",
+						"<p class='background textindent lingheight'><span>为满足视频监控系统要求，达到对监控点进行全方位的监控以及对安防信息的及时反应，在一定范围内联动警示设备，通知有关人员做出反应，采取措施，并对相关设备进行集中监控、集中维护和集中管理。网络视频监控系统设计遵循以下原则：</span></p><p class='advantage_ard textindent'><strong><span>A.&nbsp;</span></strong><span class='advantage'>实用性</span></p><p class='background textindent lingheight'><span>依照用户要求，坚持实用性为主的原则，系统务必完全满足视频监控的实际需求，采用当前计算机主流应用技术和相对成熟的安防管理模式，在适当考虑未来发展需求的前提下，避免盲目追求系统设计超前性和设备豪奢性，统筹规划，实事求是。</span></p><p class='advantage_ard textindent'><strong><span>B.&nbsp;</span></strong><span class='advantage'>安全性</span></p><p class='background textindent lingheight'><span>系统的建设需要融合以往建设经验，结合监控系统的具体应用需求，使用具有成熟应用实践的软件平台架构确保系统的健壮性，选用具备高可靠性、高安全性，具有数万小时平均无故障时间的设备，同时为关键设备、关键部件设计冗余备份。建立健全系统安全稳定运行保障机制、建设系统运行故障预案，全方位多角度保障系统的顺利运行。</span></p><p class='advantage_ard textindent'><strong><span>C.&nbsp;</span></strong><span class='advantage'>先进性</span></p><p class='background textindent lingheight'><span>系统设计遵循系统工程的设计准则，通过科学合理地设计，既防止片面追求某一高指标，又充分体现系统的先进性，选用先进、成熟、可靠的设备，最大程度地采用成熟、可继承、具备广阔发展前景的先进安保技术，搭建可升级、可扩展、可兼容的系统和应用平台，构建数字化、网络化和智能化的视频监控系统。</span></p><p class='advantage_ard textindent'><strong><span>D.&nbsp;</span></strong><span class='advantage'>开放性</span></p><p class='background textindent lingheight'><span>系统设计采用标准化设计，严格遵循相关技术的国际、国内和行业标准，确保系统之间的透明性和互通互联，并充分考虑与其它监控系统的连接。在设计和设备选型时，将科学预测未来扩容需求，进行余量设计。</span></p><p class='advantage_ard textindent'><strong><span>E.&nbsp;</span></strong><span class='advantage'>易管理性、易维护性</span></p><p class='background textindent lingheight'><span>系统采用全中文、图形化软件平台实现整个监控系统管理与维护。可自动检测系统中任何一台设备的运行状态，并显示详细参数，以辅佐管理人员及时准确地判断和解决问题。采用稳定易用的硬件和软件，完全不需借助任何专用维护工具，既降低了对管理人员进行专业知识的培训费用，又节省了日常的维护费用。</span></p>",
+						"<p class='background textindent lingheight'><span>项目分两级监控架构组成，一级为总控中心，二级为N个分控中心（铁道与公路交汇口）。每个分控中心服务器1个全景球机，负责轨道边区域入侵监测告警，同时进行视频录像。总控中心服务器管理各分控中心服务器。所有监控点位由服务器进行管理，存储，转发上墙显示。另外，也可以通过4G无线方式进行传输，通过手机实时监控，语音对讲，接收微信推送消息。监控拓扑图如下所示。</span></p><p class='textcenter lingheight'><img src='img/at/case/gradecross1.jpg'alt='image.png'style='width:1000px;height:500px;'/></p><br/><p class='textcenter lingheight'><img src='img/at/case/gradecross2.jpg'alt='image.png'style='width:500px;height:250px;'/></p>"
+					]
+				}
+			]
 		]
 	},
 	"government":{
