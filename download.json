@@ -205,6 +205,9 @@
 			"load":"upload/DOC/system/YSIS01-JM17.pdf"
 		}
 	],
+	"Transmission":[
+		
+	],
 	"Software":[
 		
 	],
@@ -312,5 +315,11 @@
 			"model":"YS-SYS-VIS-18",
 			"load":"upload/DOC/visitor/YS-SYS-VIS-18.pdf"
 		}
+	],
+	"platform":[
+	
+	],
+	"client":[
+	
 	]
 }
