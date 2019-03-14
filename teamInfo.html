@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="content-language" content="zh-CN" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<title>以安全为核心的智慧物联解决方案提供商和运营服务商-江苏云深智能化系统有限公司</title>
+		<meta name="Keywords" content="江苏云深智能化系统有限公司,摄像机,存储,云深,股份,解决方案,报警,门禁,智能交通,民用,创新技术,招聘,供应商,民用,乐橙,dahua,全球安防十强，江苏云深，视频，无人机，机器视觉，服务商，安防品牌，好的安防品牌，产品中心，产品，服务支持，" />
+		<meta name="Description" content="江苏云深智能化系统有限公司是领先的监控产品供应商和解决方案服务商，面向全球提供领先的视频存储、前端、显示控制和智能交通等系列化产品。" />
+		<meta name="author" content="江苏云深智能化系统有限公司" />
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<link href="favicon.ico" rel="shortcut icon">
+		<script>
+			var STATIC_URL = "bocweb/";
+			var UPLOAD_URL = "upload/";
+			var GLOBAL_URL = "index.php/";
+			var SITE_URL = "/";
+			var UPLOADDO_URL = "index.php/upload/";
+			var STATIC_VER = "";
+		</script>
+		<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen" charset="utf-8">
+		<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" charset="utf-8">
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">
+		<link rel="stylesheet" href="css/mobile.css" type="text/css" media="screen" charset="utf-8">
+		<script src="js/jQuery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/levideo.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.transit.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/html5.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bocfe.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/plug.preload.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<style type="text/css">
+		.join-box .title p{
+			width: 16.6%;
+		}
+		.join-box li .tit p{
+			width: 16.6%;
+		}
+		.join-box li{
+			padding: 0 1%;
+		}
+	</style>
+	<body>
+		<div class="headerWrap">
+
+		</div>
+
+		<script>
+			$(function() {
+				$(".headerWrap").load('header.html', function() {
+					$('header .nav-box li').hover(function() {
+						$(this).find('.con').slideDown(0);
+						$(this).find('.con').show();
+					}, function() {
+						$(this).find('.con').slideUp(0);
+					})
+
+					function conSize() {
+						var bodyW = $("body").width();
+						$("header .nav-box li .con").css({
+							"width": bodyW,
+							"margin-left": -bodyW / 2
+						})
+					}
+
+					conSize();
+					window.onresize = function() {
+						conSize();
+					}
+					$('header .nav-box .pro-li dd .link-b').each(function() {
+						var _this = $(this);
+						var bg = _this.data('bg');
+						var bgh = _this.data('bgh');
+						_this.css('background-image', 'url(' + bg + ')');
+						if(_this.hasClass("cur")) {
+							_this.css('background-image', 'url(' + bgh + ')');
+						};
+					})
+
+					$('header .nav-box .link-b').hover(function() {
+						$(this).addClass("cur").siblings("").removeClass("cur");
+						$(this).parent(".log-four").siblings(".log-four").find('.link-b').removeClass("cur")
+						$(this).parents(".con").show();
+					})
+
+					$('header .nav-box .pro-li dd .link-b').hover(function() {
+						var id = $(this).data('id');
+						var conn = $(this).data('conn');
+						var psr = $(this).parents('.con').find('.right');
+						$(this).addClass("cur").parent("dd").siblings("dd").find('.link-b').removeClass("cur");
+						$('header .nav-box .pro-li dd .link-b').each(function() {
+							var bg = $(this).data('bg');
+							var bgh = $(this).data('bgh');
+							if($(this).hasClass("cur")) {
+								$(this).css('background-image', 'url(' + bgh + ')')
+							} else {
+								$(this).css('background-image', 'url(' + bg + ')')
+							}
+						})
+					}, function() {
+						$('header .nav-box .pro-li dd .link-b').each(function() {
+							var bg = $(this).data('bg');
+							var bgh = $(this).data('bgh');
+							if($(this).hasClass("cur")) {
+								$(this).css('background-image', 'url(' + bgh + ')')
+							} else {
+								$(this).css('background-image', 'url(' + bg + ')')
+							}
+						})
+					})
+
+					$('.mobile-nav-box h2').on('click', function() {
+						if(!$(this).hasClass("cur")) {
+							$(this).addClass("cur").parent("li").siblings("li").find("h2").removeClass("cur");
+							$(this).next('.con').slideDown().parent("li").siblings("li").find('.con').slideUp();
+						} else {
+							$(this).removeClass("cur");
+							$(this).next('.con').slideUp()
+						}
+					})
+
+					$('.mobile-nav-box p.on').on('click', function() {
+						if(!$(this).hasClass("but")) {
+							$(this).addClass("but").siblings(".on").removeClass("but").parent(".con").parent("li").siblings("li").find(".on").removeClass("but");
+							$(this).next('.tit-con').fadeIn().siblings(".tit-con").slideUp().parent(".con").parent("li").siblings("li").find(".tit-con").hide();
+						} else {
+							$(this).removeClass("but");
+							$(this).next('.tit-con').hide();
+						}
+					})
+
+					$('.mobile-nav').on('click', function() {
+						if(!$(this).hasClass("on")) {
+							$(this).addClass("on");
+							$(".mobile-nav-box").slideDown();
+						} else {
+							$(this).removeClass("on");
+							$(".mobile-nav-box").slideUp();
+						}
+					})
+
+					$('header .enght').hover(function() {
+						$(this).find('.con').fadeIn();
+					}, function() {
+						$(this).find('.con').fadeOut();
+					})
+				});
+				$(".footerwrap").load("footer.html");
+			})
+		</script>
+		<div class="body-box company">
+			<div class="inliner-banner">
+				<ul class="slides f-cb">
+					<li>
+						<a href="javascript:;">
+							<img src="img/2017/09/29/15066745938652gipgq.jpg " alt="关于我们" class="pic">
+							<span class="con">
+						<h2>关于我们</h2>
+						<p class="font">About US</p>
+					</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="w1400">
+				<div class="now">
+					<a href="index.html ">首页</a><i></i>
+					<a href="about.html ">关于我们 </a><i></i>
+					<a href="javascript:;">团队介绍</a>
+				</div>
+			</div>
+			<div class="join-box">
+				<div class="w1400">
+					<h2>团队介绍</h2>
+					  <div class="title f-cb">
+					  	<p>
+	                  	  照片	
+	                </p>
+                	<p>
+	                 	   姓名
+	                </p>
+	                
+	                <p>
+	                                                              年龄
+	                </p>
+	                <p>
+	                   	 性别
+	                </p>
+	                <p>
+	                                                             工作年限
+	                </p>
+	                <p>
+	                                                            
+	                </p>
+	            </div>
+					<ul>
+						<li>
+							<div class="tit f-cb">
+								<p>
+									<img src="img/yuewei.png" style="width: 50px;height: 50px;border-radius: 50%;"/>
+								</p>
+								<p>
+									岳巍
+								</p>
+								
+								<p>
+									32
+								</p>
+								<p>
+									男
+								</p>
+								<p>
+									9
+								</p>
+								<p>
+									更多
+								</p>
+							</div>
+							<div class="in f-cb">
+								 <div class="bot f-cb">
+                            <div class="left">
+                                <h1>
+                                                                                                              执业内容
+                                </h1>
+                                <p>
+                                    <br/>
+                                    <span style="font-size:14px;font-family:宋体">
+                                        1. 新三板挂牌审计、政府专项资金审计、政府领导经济责任专项审计、财务报表年报及专项审计.<br/>
+                                        2. 税务鉴证、税务筹划、企业合并、分立、清算审计.<br/>
+                                        3. 中小企业财务体系框架搭建等前端服务、顾问单位日常财务咨询、财务培训等.<br/>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="left">
+                                <h1>
+                                    	主要执业经历
+                                </h1>
+                                <p>
+                                    <br/>
+                                    <span style="font-size:14px;font-family:宋体">
+                                        1.苏州喜之家母婴护理服务股份有限公司（股票代码	832128）新三板挂牌审计项目经理.<br/>
+                                        2.浦口高新区管委会清产核资项目经理.<br/>
+                                        3.南京江宁国有资产经营集团有限公司专项审计项目经理.<br/>
+                                        4.江苏省纺织集团有限公司年报审计项目经理.<br/>
+                                        5.江苏省苏豪控股集团有限公司年报审计项目经理.<br/>
+                                        6.江苏省高科技投资集团年报审计项目经理.<br/>
+                                        7.江苏舜天国际集团机械进出口有限公司年报审计项目经理.<br/>
+                                        8.江苏中外运有限公司所得税汇算清缴、资产损失认定项目经理.<br/>
+                                        9.碧桂园房地产开发有限公司江苏区域所得税汇算清缴项目经理.<br/>
+                                        10.中国中材国际工程股份有限公司高新认定审计项目经理.<br/>
+                                        11.大全集团高新认定审计项目经理.<br/>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+							</div>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footerwrap"></div>
+
+		<script>
+			window._bd_share_config = {
+				"common": {
+					"bdSnsKey": {},
+					"bdText": "",
+					"bdMini": "2",
+					"bdMiniList": false,
+					"bdPic": "",
+					"bdStyle": "2",
+					"bdSize": "32"
+				},
+				"share": {}
+			};
+			with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+		</script>
+		<script>
+			$(function() {
+				$('.right-flex li.top').on('click', function() {
+					$('html,body').stop().animate({
+						scrollTop: 0
+					}, 1000);
+				})
+			})
+		</script>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/flexslider.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="css/flexslider.css?t=1541144369" type="text/css" media="screen" charset="utf-8">
+		<script>
+			var $window = $(window),
+				flexslider = {
+					vars: {}
+				};
+			$(function() {
+				function getGridSize() {
+					return(window.innerWidth >= 1025) ? "fade" : "slide";
+				}
+
+				$(window).resize(function() {
+					flexslider.vars.animation = getGridSize();
+				})
+
+				$('.authen_nav a').eq(1).addClass("on");
+
+				//首页banner图
+				$('.inliner-banner').flexslider({
+					animation: getGridSize(),
+					slideshowSpeed: 4000,
+					animationSpeed: 1000,
+					touch: true,
+					slideshow: true,
+					start: function(slider) {
+						flexslider = slider;
+						$('.flex-direction-nav a').text("");
+					}
+				});
+
+				$(".join-box li").eq(0).find(".tit").addClass("on");
+				$(".join-box li").eq(0).find(".in").addClass("on");
+
+				$(".join-box li .tit").on('click', function(event) {
+					if($(this).hasClass('on') == "") {
+						$(this).addClass('on');
+						$(this).next().stop(true, true).slideDown();
+						$(this).parent().siblings().find('.tit').removeClass('on');
+						$(this).parent().siblings().find('.in').stop(true, true).slideUp();
+					} else {
+						$(this).removeClass('on');
+						$(this).next().stop(true, true).slideUp();
+						$(this).parent().siblings().find('.tit').removeClass('on');
+						$(this).parent().siblings().find('.in').stop(true, true).slideUp();
+					}
+				});
+			})
+		</script>
+	</body>
+
+</html>
