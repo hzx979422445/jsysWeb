@@ -15,7 +15,7 @@
 		<meta name="author" content="江苏云深智能化系统有限公司" />
 		<meta name="renderer" content="webkit">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<link href="favicon.ico" rel="shortcut icon">
+		<link href="img/favicon.ico" rel="shortcut icon">
 		<script>
 			var STATIC_URL = "bocweb/";
 			var UPLOAD_URL = "upload/";
@@ -37,6 +37,36 @@
 		<script src="js/bocfe.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/plug.preload.js" type="text/javascript" charset="utf-8"></script>
 	</head>
+	<script>
+		$(function(){
+			$.ajax({
+				type:"get",
+				url:"teamInfo.json",
+				async:true,
+				success:function(data){
+					var datas = data;
+					if(datas.length > 0){
+						for(var i = 0; i < datas.length; i++){
+							var div =  '<div class="inner">'
+								div += '<div class="inner_left"><img alt="证件照" src="'+datas[i].img+'"/></div>'
+								div += '<div class="inner_right">'
+								div += '<div class="name">'+datas[i].name+'</div>'
+								div += '<div class="post"><span>'+datas[i].position+'</span><span>'+datas[i].post+'</span></div>'
+								div += '<div class="introduce">'+datas[i].introduce+'</div>'
+								div += '<div class="word">'
+								div += '<div><span>“</span><span>'+datas[i].word+'</span></div>'
+								div += '</div>'
+								div += '</div>'
+								div += '</div>'
+							$(".main").append(div);
+						}
+					}else{
+						$(".main").append('<div style="text-align: center;"><img src="img/index_tongzhigonggao_blank_img.png"/></div>');
+					}
+				}
+			})
+		})
+	</script>
 	<style type="text/css">
 		.join-box .title p{
 			width: 16.6%;
@@ -46,6 +76,88 @@
 		}
 		.join-box li{
 			padding: 0 1%;
+		}
+		.main{
+			position: relative;
+	        max-width: 950px;
+	        margin: 0 auto;
+	        width: 92%;
+	        height: 100%;
+		}
+		.inner{
+			width: 1200px;
+			height: 400px;
+			margin-bottom: 50px;
+		}
+		.inner_left{
+			height: 100%;
+			width: 274px;
+			float: left;
+		}
+		.inner_left > img{
+			border-radius: 6px;
+			width: 100%;
+			height: 100%;
+			box-shadow: 5px 5px 10px #888888;
+		}
+		.inner_right{
+			position: relative;
+			width: 700px;
+			height: 100%;
+			float: left;
+			margin-left: 80px;
+		}
+		.inner_right > .name{
+			font-size: 35px;
+			font-weight: bold;
+		}
+		.inner_right > .post{
+			position: relative;
+			top: -5px;
+			font-size: 14px;
+			width: 100%;
+		}
+		.inner_right > .post > span:first-child{
+			text-align: center;
+			line-height: 22px;
+			color: #0085d0;
+			width: 120px;
+			height: 20px;
+			display:inline-block;
+			background-color: #f3f5f7;
+			border-radius: 20px;
+		}
+		.inner_right > .post > span:last-child{
+			margin-left: 25px;
+			color: #999999;
+		}
+		.introduce{
+			color: #111111;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 20px;
+		}
+		.word{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			border-radius: 10px;
+			height: 70px;
+			background-color: #fafafa;
+		}
+		.word > div{
+			position: relative;
+			left: 20px;
+			font-family: "楷体";
+		}
+		.word > div > span:first-child{
+			font-size: 42px;
+			color:#dadada;
+		}
+		.word > div > span:last-child{
+			font-size: 18px;
+			color: #666666;
 		}
 	</style>
 	<body>
@@ -161,10 +273,10 @@
 				<ul class="slides f-cb">
 					<li>
 						<a href="javascript:;">
-							<img src="img/2017/09/29/15066745938652gipgq.jpg " alt="关于我们" class="pic">
+							<img src="img/2017/09/29/15066745938652gipgq.jpg " alt="团队介绍" class="pic">
 							<span class="con">
-						<h2>关于我们</h2>
-						<p class="font">About US</p>
+						<h2>团队介绍</h2>
+						<p class="font">Team Introduction</p>
 					</span>
 						</a>
 					</li>
@@ -178,93 +290,30 @@
 				</div>
 			</div>
 			<div class="join-box">
-				<div class="w1400">
-					<h2>团队介绍</h2>
-					  <div class="title f-cb">
-					  	<p>
-	                  	  照片	
-	                </p>
-                	<p>
-	                 	   姓名
-	                </p>
-	                
-	                <p>
-	                                                              年龄
-	                </p>
-	                <p>
-	                   	 性别
-	                </p>
-	                <p>
-	                                                             工作年限
-	                </p>
-	                <p>
-	                                                            
-	                </p>
-	            </div>
-					<ul>
-						<li>
-							<div class="tit f-cb">
-								<p>
-									<img src="img/yuewei.png" style="width: 50px;height: 50px;border-radius: 50%;"/>
-								</p>
-								<p>
-									岳巍
-								</p>
-								
-								<p>
-									32
-								</p>
-								<p>
-									男
-								</p>
-								<p>
-									9
-								</p>
-								<p>
-									更多
-								</p>
+				<div class="main">
+					<!--<div class="inner">
+						<div class="inner_left"><img alt="证件照" src="img/teamInfo/yuewei.png"/></div>
+						<div class="inner_right">
+							<div class="name">岳巍</div>
+							<div class="post"><span>财务总监</span><span>新三板挂牌审计  | 政府专项资金审计  | 政府领导经济责任专项审计</span></div>
+							<div class="introduce">
+                                1.苏州喜之家母婴护理服务股份有限公司（股票代码	832128）新三板挂牌审计项目经理。<br/>
+                                2.浦口高新区管委会清产核资项目经理。<br/>
+                                3.南京江宁国有资产经营集团有限公司专项审计项目经理。<br/>
+                                4.江苏省纺织集团有限公司年报审计项目经理。<br/>
+                                5.江苏省苏豪控股集团有限公司年报审计项目经理。<br/>
+                                6.江苏省高科技投资集团年报审计项目经理。<br/>
+                                7.江苏舜天国际集团机械进出口有限公司年报审计项目经理。<br/>
+                                8.江苏中外运有限公司所得税汇算清缴、资产损失认定项目经理。<br/>
+                                9.碧桂园房地产开发有限公司江苏区域所得税汇算清缴项目经理。<br/>
+                                10.中国中材国际工程股份有限公司高新认定审计项目经理。<br/>
+                                11.大全集团高新认定审计项目经理。<br/>
 							</div>
-							<div class="in f-cb">
-								 <div class="bot f-cb">
-                            <div class="left">
-                                <h1>
-                                                                                                              执业内容
-                                </h1>
-                                <p>
-                                    <br/>
-                                    <span style="font-size:14px;font-family:宋体">
-                                        1. 新三板挂牌审计、政府专项资金审计、政府领导经济责任专项审计、财务报表年报及专项审计.<br/>
-                                        2. 税务鉴证、税务筹划、企业合并、分立、清算审计.<br/>
-                                        3. 中小企业财务体系框架搭建等前端服务、顾问单位日常财务咨询、财务培训等.<br/>
-                                    </span>
-                                </p>
-                            </div>
-                            <div class="left">
-                                <h1>
-                                    	主要执业经历
-                                </h1>
-                                <p>
-                                    <br/>
-                                    <span style="font-size:14px;font-family:宋体">
-                                        1.苏州喜之家母婴护理服务股份有限公司（股票代码	832128）新三板挂牌审计项目经理.<br/>
-                                        2.浦口高新区管委会清产核资项目经理.<br/>
-                                        3.南京江宁国有资产经营集团有限公司专项审计项目经理.<br/>
-                                        4.江苏省纺织集团有限公司年报审计项目经理.<br/>
-                                        5.江苏省苏豪控股集团有限公司年报审计项目经理.<br/>
-                                        6.江苏省高科技投资集团年报审计项目经理.<br/>
-                                        7.江苏舜天国际集团机械进出口有限公司年报审计项目经理.<br/>
-                                        8.江苏中外运有限公司所得税汇算清缴、资产损失认定项目经理.<br/>
-                                        9.碧桂园房地产开发有限公司江苏区域所得税汇算清缴项目经理.<br/>
-                                        10.中国中材国际工程股份有限公司高新认定审计项目经理.<br/>
-                                        11.大全集团高新认定审计项目经理.<br/>
-                                    </span>
-                                </p>
-                            </div>
-                        </div>
+							<div class="word">
+								<div><span>“</span><span>用有限的资金，创无限的利润</span></div>
 							</div>
-						</li>
-						
-					</ul>
+						</div>
+					</div>-->
 				</div>
 			</div>
 		</div>
